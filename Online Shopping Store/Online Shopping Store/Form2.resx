@@ -117,17 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="skynews-stars-galaxy_4311979" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\skynews-stars-galaxy_4311979.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2465861" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2465861.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="246586" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\246586.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eshtry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eshtry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKkAAABWCAYAAAC0EbbjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK0SURBVHhe7dmhT6pRHMZxo9F4o9FovNFoNBr9M2zXwCbB
+        QCAQ3CSwSWCTZmEjEG4kEN5AIBgIhDcQ3kD43T3nBSYXoXi5POH72c58Pajpu3POezwJwByRwh6Rwh6R
+        wh6Rwh6Rwt7eSIvFIl5Ho7jtdOKq2YzzWi1OHh4YjG8PtaSmbtrteBkOIy+KZXXbdkb6Ph6nP6RAFWp/
+        MolJni8/Bb5HLamptyyLu243taZYv7IVqYrWL123WjGdz5ezwGHt624jUv3gZaOxs2jg0LSD/3x+3ti1
+        NyJVyQSKY9MxQOfVlXWkKlhLLeDgvteLx8EgPadI9RavgytnULhQkzp6ZrNZGam2eG31gBOtpFpRU6S6
+        q9JVAOBkOJ2m1TRFelGvp2UVcKIt/7RSKSM9q1b33vgDx5L+Q7V6ABwRKewRKewRKewRKewRKewRKewR
+        KewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewR
+        KewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewRKewR
+        KewRKewRKewRKewRKewRKeytIz2tVKJYLNIk4GQd6XmtFpM8T5OAk3Wk161WvI/HaRJwkc1mcVGvl5E+
+        DgZx3+ulDwAXL8Nh3HW7ZaTa6lUs51I4uWm34y3LykjlV7+fBuDgdTSK204nPa8j1Sp61WzG74+P5Qxw
+        HNP5PO3seVGk79eRig6ql41G+gocgwLVYtmfTJYzf0UqWkkVql6mgP9J50+toJ8Dla1IRVu/3vZVtN6w
+        VDdwCNrSV+dPvSittvjPvox0RUXrCuDH01N5qcpg/ONxVq2mQBXqLnsjBRwQKewRKewRKewRKcxF/AEv
+        iLKGgSPMhgAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

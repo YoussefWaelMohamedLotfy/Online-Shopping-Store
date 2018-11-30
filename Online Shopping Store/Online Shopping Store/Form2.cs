@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace Online_Shopping_Store
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        private void bunifuCustomTextbox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }
