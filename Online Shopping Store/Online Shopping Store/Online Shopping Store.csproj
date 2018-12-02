@@ -36,6 +36,9 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3 %281%29">
+      <HintPath>E:\Downloads\Bunifu_UI_v1.5.3 (1).dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,6 +59,18 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerAccount.Designer.cs">
+      <DependentUpon>OwnerAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="home_page.cs">
       <SubType>Form</SubType>
@@ -79,11 +94,17 @@
     <Compile Include="ViewProductDetails.Designer.cs">
       <DependentUpon>ViewProductDetails.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerAccount.resx">
+      <DependentUpon>OwnerAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_page.resx">
       <DependentUpon>home_page.cs</DependentUpon>
