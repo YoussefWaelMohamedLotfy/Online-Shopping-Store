@@ -16,7 +16,9 @@ namespace Online_Shopping_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Change the parameter below to the form you want to begin execution at
+            Application.Run(new Form2());
         }
     }
 }

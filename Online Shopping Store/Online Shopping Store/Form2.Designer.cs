@@ -44,9 +44,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Online_Shopping_Store.Properties.Resources._2465861;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(316, 366);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,9 +57,10 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(224, 9);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(168, 7);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(199, 39);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(160, 31);
             this.bunifuCustomLabel1.TabIndex = 1;
             this.bunifuCustomLabel1.Text = "Login Form";
             // 
@@ -67,9 +69,10 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(170, 108);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(128, 88);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(74, 20);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(62, 17);
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "Email : ";
             // 
@@ -78,9 +81,10 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(170, 164);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(128, 133);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(103, 20);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(87, 17);
             this.bunifuCustomLabel3.TabIndex = 3;
             this.bunifuCustomLabel3.Text = "Password :";
             // 
@@ -88,9 +92,10 @@
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(171, 329);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(128, 267);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(171, 17);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(131, 13);
             this.bunifuCustomLabel4.TabIndex = 4;
             this.bunifuCustomLabel4.Text = "Don\'t have an account ? -";
             // 
@@ -98,9 +103,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.linkLabel1.Location = new System.Drawing.Point(348, 329);
+            this.linkLabel1.Location = new System.Drawing.Point(261, 267);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(137, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(106, 13);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Create new account.";
@@ -124,36 +130,38 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Teal;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Teal;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(238, 236);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(178, 192);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(169, 86);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(127, 70);
             this.bunifuThinButton21.TabIndex = 6;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuCustomTextbox1
             // 
             this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(250, 106);
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(188, 86);
+            this.bunifuCustomTextbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(244, 22);
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(184, 20);
             this.bunifuCustomTextbox1.TabIndex = 7;
             // 
             // bunifuCustomTextbox2
             // 
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(291, 164);
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(218, 133);
+            this.bunifuCustomTextbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(203, 22);
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(153, 20);
             this.bunifuCustomTextbox2.TabIndex = 8;
             this.bunifuCustomTextbox2.TextChanged += new System.EventHandler(this.bunifuCustomTextbox2_TextChanged);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(684, 450);
+            this.ClientSize = new System.Drawing.Size(513, 366);
             this.Controls.Add(this.bunifuCustomTextbox2);
             this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuThinButton21);
@@ -163,8 +171,11 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Online Store - Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
