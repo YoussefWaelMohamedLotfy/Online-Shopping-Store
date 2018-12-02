@@ -28,5 +28,11 @@ namespace Online_Shopping_Store
             Form1 f1 = new Form1();
             f1.Show();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {    
+            home_page home = new home_page();
+            home.Show();
+        }
     }
 }

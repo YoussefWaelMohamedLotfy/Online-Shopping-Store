@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="skynews-stars-galaxy_4311979" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\skynews-stars-galaxy_4311979.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="2465861" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2465861.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,5 +126,23 @@
   </data>
   <data name="eshtry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eshtry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mobile-Tablet-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mobile-Tablet-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skynews-stars-galaxy_4311979" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skynews-stars-galaxy_4311979.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12183-dress-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12183-dress-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfume-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfume-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food-processor-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food-processor-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,6 +63,16 @@ namespace Online_Shopping_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12183_dress_icon {
+            get {
+                object obj = ResourceManager.GetObject("12183-dress-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _246586 {
             get {
                 object obj = ResourceManager.GetObject("246586", resourceCulture);
@@ -93,9 +103,49 @@ namespace Online_Shopping_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap food_processor_icon {
+            get {
+                object obj = ResourceManager.GetObject("food-processor-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mobile_Tablet_icon {
+            get {
+                object obj = ResourceManager.GetObject("Mobile-Tablet-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perfume_icon {
+            get {
+                object obj = ResourceManager.GetObject("perfume-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap skynews_stars_galaxy_4311979 {
             get {
                 object obj = ResourceManager.GetObject("skynews-stars-galaxy_4311979", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white {
+            get {
+                object obj = ResourceManager.GetObject("white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
