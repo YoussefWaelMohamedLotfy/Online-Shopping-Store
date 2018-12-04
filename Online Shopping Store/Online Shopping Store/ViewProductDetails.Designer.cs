@@ -32,7 +32,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.itemRating = new Bunifu.Framework.UI.BunifuRating();
             this.label6 = new System.Windows.Forms.Label();
-            this.addToCart_Button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.description_RichTextbox = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addToCart_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,31 +74,6 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Remaining in stock :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // addToCart_Button
-            // 
-            this.addToCart_Button.ActiveBorderThickness = 1;
-            this.addToCart_Button.ActiveCornerRadius = 20;
-            this.addToCart_Button.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.addToCart_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.addToCart_Button.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.addToCart_Button.BackColor = System.Drawing.SystemColors.Control;
-            this.addToCart_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addToCart_Button.BackgroundImage")));
-            this.addToCart_Button.ButtonText = "Add to Cart";
-            this.addToCart_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addToCart_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addToCart_Button.ForeColor = System.Drawing.Color.Black;
-            this.addToCart_Button.IdleBorderThickness = 1;
-            this.addToCart_Button.IdleCornerRadius = 20;
-            this.addToCart_Button.IdleFillColor = System.Drawing.Color.White;
-            this.addToCart_Button.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.addToCart_Button.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.addToCart_Button.Location = new System.Drawing.Point(241, 679);
-            this.addToCart_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.addToCart_Button.Name = "addToCart_Button";
-            this.addToCart_Button.Size = new System.Drawing.Size(181, 41);
-            this.addToCart_Button.TabIndex = 20;
-            this.addToCart_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // description_RichTextbox
             // 
@@ -173,16 +148,50 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // addToCart_Button
+            // 
+            this.addToCart_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.addToCart_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.addToCart_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addToCart_Button.BorderRadius = 0;
+            this.addToCart_Button.ButtonText = "Add to Cart";
+            this.addToCart_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addToCart_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.addToCart_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.addToCart_Button.Iconimage = ((System.Drawing.Image)(resources.GetObject("addToCart_Button.Iconimage")));
+            this.addToCart_Button.Iconimage_right = null;
+            this.addToCart_Button.Iconimage_right_Selected = null;
+            this.addToCart_Button.Iconimage_Selected = null;
+            this.addToCart_Button.IconMarginLeft = 0;
+            this.addToCart_Button.IconMarginRight = 0;
+            this.addToCart_Button.IconRightVisible = true;
+            this.addToCart_Button.IconRightZoom = 0D;
+            this.addToCart_Button.IconVisible = true;
+            this.addToCart_Button.IconZoom = 90D;
+            this.addToCart_Button.IsTab = false;
+            this.addToCart_Button.Location = new System.Drawing.Point(286, 671);
+            this.addToCart_Button.Name = "addToCart_Button";
+            this.addToCart_Button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.addToCart_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.addToCart_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.addToCart_Button.selected = false;
+            this.addToCart_Button.Size = new System.Drawing.Size(134, 48);
+            this.addToCart_Button.TabIndex = 24;
+            this.addToCart_Button.Text = "Add to Cart";
+            this.addToCart_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addToCart_Button.Textcolor = System.Drawing.Color.White;
+            this.addToCart_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // ViewProductDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(726, 731);
+            this.Controls.Add(this.addToCart_Button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.itemRating);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.addToCart_Button);
             this.Controls.Add(this.description_RichTextbox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -206,7 +215,6 @@
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuRating itemRating;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuThinButton2 addToCart_Button;
         private System.Windows.Forms.RichTextBox description_RichTextbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -214,5 +222,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuFlatButton addToCart_Button;
     }
 }

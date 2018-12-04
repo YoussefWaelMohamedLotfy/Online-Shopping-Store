@@ -7,13 +7,14 @@ using System.IO;
 
 namespace Online_Shopping_Store
 {
+    [Serializable]
     class Shopper
     {
-        string name;
-        string address;
-        string phone_number;
-        string Email;
-        string password;
+        public string name;
+        public string address;
+        public string phoneNumber;
+        public string Email;
+        public string password;
 
         public void Add_Item()
         {
