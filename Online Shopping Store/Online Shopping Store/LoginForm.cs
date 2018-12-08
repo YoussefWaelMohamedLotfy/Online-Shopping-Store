@@ -50,7 +50,9 @@ namespace Online_Shopping_Store
                 formatter.Serialize(database, newShopper);
 
                 // Open the home page
-                login_Button_Click(sender, e);
+                home_page homePage = new home_page();
+                homePage.Show();
+                this.Close();
             }
             else
             {
@@ -71,7 +73,7 @@ namespace Online_Shopping_Store
                 Shopper shopper = (Shopper)formatter.Deserialize(database);
 
                 // Check if data entered by user exists in the database
-                if (shopper.Email == email_Textbox.Text)
+                if (shopper.Email == email_Textbox.Text && shopper.password == password_Textbox.Text)
                 {
                     // Open the home page and hide the login form
                     //this.Hide();
@@ -82,7 +84,7 @@ namespace Online_Shopping_Store
                 else
                 {
                     MessageBox.Show("Check your credentials! Enter your data again.", "Wrong Email or password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    email_Textbox.Text = password_Textbox.Text = String.Empty; // Clear textboxes
+                    //email_Textbox.Text = password_Textbox.Text = String.Empty; // Clear textboxes
                 }
 
             }
@@ -130,6 +132,7 @@ namespace Online_Shopping_Store
                 return true;
             }
         }
-          
+
+
     }
 }
