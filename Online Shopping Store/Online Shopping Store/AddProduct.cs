@@ -30,10 +30,6 @@ namespace Online_Shopping_Store
             this.Close();
         }
 
-        private void QuantityCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            for (int i = 2; i <= 1000; i++)
-                QuantityCB.Items.Add(i);
-        }
+
     }
 }

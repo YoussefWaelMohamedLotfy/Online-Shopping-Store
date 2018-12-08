@@ -52,7 +52,7 @@ namespace Online_Shopping_Store
                 // Open the home page
                 home_page homePage = new home_page();
                 homePage.Show();
-                this.Close();
+                //this.Close();
             }
             else
             {
