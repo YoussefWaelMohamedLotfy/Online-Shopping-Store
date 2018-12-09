@@ -38,7 +38,7 @@ namespace Online_Shopping_Store
             for (int I = 0; I < 10; I++)
             {
                 UC = new UserControl();
-                flowLayoutPanel1.Controls.Add(UC);
+                productsDisplay_FlowLayoutPanel.Controls.Add(UC);
             }
         }
     }

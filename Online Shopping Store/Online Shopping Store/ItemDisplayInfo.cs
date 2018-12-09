@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Online_Shopping_Store
 {
-    public partial class UserControl1 : UserControl
+    public partial class ItemDisplayInfo : UserControl
     {
-        public UserControl1()
+        public ItemDisplayInfo()
         {
             InitializeComponent();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

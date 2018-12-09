@@ -23,7 +23,7 @@ namespace Online_Shopping_Store
         private void Buttsignup_Click(object sender, EventArgs e)
         {
             //save data in file through sign up form 
-            string NAME = Textbox1_fname.Text + Textbox2_lname.Text;
+            string NAME = Textbox1_fname.Text + " " + Textbox2_lname.Text;
             string EMAIL = Textbox3_email.Text;
             string PASSWORD = Textbox4_pass.Text;
             string COUNTRY = Textbox5_country.Text;
@@ -36,7 +36,7 @@ namespace Online_Shopping_Store
             }
             else
             {
-                Shoper S = new Shoper(NAME, ADDRESS, CITY, COUNTRY, PHONE, EMAIL, PASSWORD);
+                Shopper S = new Shopper(NAME, ADDRESS, CITY, COUNTRY, PHONE, EMAIL, PASSWORD);
                 FileStream shoper_file = new FileStream("shoper.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
                 formatter.Serialize(shoper_file, S);
@@ -63,7 +63,7 @@ namespace Online_Shopping_Store
 
             while (shoper_file_open.Position != shoper_file_open.Length)
             {
-                Shoper S = (Shoper)Formatter.Deserialize(shoper_file_open);
+                Shopper S = (Shopper)Formatter.Deserialize(shoper_file_open);
                 if (S.email == TextBox1_emailin.Text)
                 {
                     if (S.password == TextBox2_passin.Text)
@@ -92,6 +92,11 @@ namespace Online_Shopping_Store
         private void butSign_up_tab_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
