@@ -30,21 +30,27 @@ namespace Online_Shopping_Store
             string CITY = Textbox6_city.Text;
             string ADDRESS = Textbox7_address.Text;
             string PHONE = Textbox8_phone.Text;
-            Shoper S = new Shoper(NAME, ADDRESS, CITY, COUNTRY, PHONE, EMAIL, PASSWORD);
-            FileStream shoper_file = new FileStream("shoper.txt", FileMode.Append);
-            BinaryFormatter formatter = new BinaryFormatter();
-            formatter.Serialize(shoper_file, S);
-            shoper_file.Close();
-            MessageBox.Show("Successfully Added!!");
-            Textbox1_fname.Text = null;
-            Textbox2_lname.Text = null;
-            Textbox3_email.Text = null;
-            Textbox4_pass.Text = null;
-            Textbox5_country.Text = null;
-            Textbox6_city.Text = null;
-            Textbox7_address.Text = null;
-            Textbox8_phone.Text = null;
-
+            if (string.IsNullOrWhiteSpace(Textbox1_fname.Text) || string.IsNullOrWhiteSpace(Textbox2_lname.Text) || string.IsNullOrWhiteSpace(Textbox3_email.Text) || string.IsNullOrWhiteSpace(Textbox4_pass.Text) || string.IsNullOrWhiteSpace(Textbox5_country.Text) || string.IsNullOrWhiteSpace(Textbox6_city.Text) || string.IsNullOrWhiteSpace(Textbox7_address.Text) || string.IsNullOrWhiteSpace(Textbox8_phone.Text))
+            {
+                MessageBox.Show("Missing");
+            }
+            else
+            {
+                Shoper S = new Shoper(NAME, ADDRESS, CITY, COUNTRY, PHONE, EMAIL, PASSWORD);
+                FileStream shoper_file = new FileStream("shoper.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(shoper_file, S);
+                shoper_file.Close();
+                MessageBox.Show("Successfully Added!!");
+                Textbox1_fname.Text = null;
+                Textbox2_lname.Text = null;
+                Textbox3_email.Text = null;
+                Textbox4_pass.Text = null;
+                Textbox5_country.Text = null;
+                Textbox6_city.Text = null;
+                Textbox7_address.Text = null;
+                Textbox8_phone.Text = null;
+            }
         }
 
        
