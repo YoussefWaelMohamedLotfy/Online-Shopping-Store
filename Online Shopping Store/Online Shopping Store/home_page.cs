@@ -26,5 +26,20 @@ namespace Online_Shopping_Store
         {
 
         }
+
+        private void search_txt_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_txt_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void home_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

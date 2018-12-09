@@ -49,11 +49,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Users\el aqsa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -78,6 +79,12 @@
     <Compile Include="home_page.Designer.cs">
       <DependentUpon>home_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="incs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="incs.Designer.cs">
+      <DependentUpon>incs.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemsDetails.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -91,9 +98,22 @@
     <Compile Include="OwnerAccount.Designer.cs">
       <DependentUpon>OwnerAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="shopper.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="products_show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="products_show.Designer.cs">
+      <DependentUpon>products_show.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shoper.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +126,17 @@
     <EmbeddedResource Include="home_page.resx">
       <DependentUpon>home_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="incs.resx">
+      <DependentUpon>incs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OwnerAccount.resx">
       <DependentUpon>OwnerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products_show.resx">
+      <DependentUpon>products_show.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,6 +148,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewProductDetails.resx">
       <DependentUpon>ViewProductDetails.cs</DependentUpon>
     </EmbeddedResource>

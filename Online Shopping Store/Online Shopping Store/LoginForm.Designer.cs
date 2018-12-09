@@ -150,7 +150,7 @@
             this.login_Button.Size = new System.Drawing.Size(146, 103);
             this.login_Button.TabIndex = 6;
             this.login_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.login_Button.Click += new System.EventHandler(this.login_Button_Click);
+           
             // 
             // password_Textbox
             // 
