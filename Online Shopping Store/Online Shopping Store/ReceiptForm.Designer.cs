@@ -237,6 +237,8 @@
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
+
+
         }
 
         #endregion
