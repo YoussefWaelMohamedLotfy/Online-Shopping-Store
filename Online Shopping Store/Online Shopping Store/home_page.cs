@@ -46,5 +46,11 @@ namespace Online_Shopping_Store
         {
            
         }
+
+        private void showCart_MenuOption_Click(object sender, EventArgs e)
+        {
+            ReceiptForm cart = new ReceiptForm();
+            cart.Show();
+        }
     }
 }

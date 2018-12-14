@@ -25,7 +25,11 @@ namespace Online_Shopping_Store
            // Bitmap bmp = new Bitmap( System.Reflection.Assembly.GetEntryAssembly(). GetManifestResourceStream("Online_Shopping_Store.Resources.eshtry.png"));
 
         }
-       
 
+        private void but_readmore_Click(object sender, EventArgs e)
+        {
+            ViewProductDetails details = new ViewProductDetails();
+            details.Show();
+        }
     }
 }

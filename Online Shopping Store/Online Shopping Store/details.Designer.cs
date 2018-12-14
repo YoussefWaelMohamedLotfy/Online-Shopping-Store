@@ -74,10 +74,11 @@
             // 
             this.but_readmore.Location = new System.Drawing.Point(193, 256);
             this.but_readmore.Name = "but_readmore";
-            this.but_readmore.Size = new System.Drawing.Size(69, 38);
+            this.but_readmore.Size = new System.Drawing.Size(66, 38);
             this.but_readmore.TabIndex = 31;
             this.but_readmore.Text = "Read More";
             this.but_readmore.UseVisualStyleBackColor = true;
+            this.but_readmore.Click += new System.EventHandler(this.but_readmore_Click);
             // 
             // Buy_Cart
             // 

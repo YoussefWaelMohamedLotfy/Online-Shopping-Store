@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.checkout_TabControl = new System.Windows.Forms.TabControl();
+            this.cart_tabPage = new System.Windows.Forms.TabPage();
+            this.receipt_tabPage = new System.Windows.Forms.TabPage();
             this.Name = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.price = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -39,46 +39,48 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.receipt_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkout_TabControl.SuspendLayout();
+            this.receipt_tabPage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel2
+            // checkout_TabControl
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.MintCream;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(150, -1);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(442, 105);
-            this.flowLayoutPanel2.TabIndex = 11;
+            this.checkout_TabControl.Controls.Add(this.cart_tabPage);
+            this.checkout_TabControl.Controls.Add(this.receipt_tabPage);
+            this.checkout_TabControl.Location = new System.Drawing.Point(134, -21);
+            this.checkout_TabControl.Name = "checkout_TabControl";
+            this.checkout_TabControl.SelectedIndex = 0;
+            this.checkout_TabControl.Size = new System.Drawing.Size(458, 655);
+            this.checkout_TabControl.TabIndex = 13;
             // 
-            // tabControl1
+            // cart_tabPage
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(134, -35);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(458, 694);
-            this.tabControl1.TabIndex = 13;
+            this.cart_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.cart_tabPage.Name = "cart_tabPage";
+            this.cart_tabPage.Size = new System.Drawing.Size(450, 629);
+            this.cart_tabPage.TabIndex = 2;
+            this.cart_tabPage.Text = "Cart";
+            this.cart_tabPage.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // receipt_tabPage
             // 
-            this.tabPage2.Controls.Add(this.Name);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel6);
-            this.tabPage2.Controls.Add(this.price);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel4);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel7);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel2);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel5);
-            this.tabPage2.Controls.Add(this.bunifuCustomLabel3);
-            this.tabPage2.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(450, 668);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.receipt_tabPage.Controls.Add(this.Name);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel6);
+            this.receipt_tabPage.Controls.Add(this.price);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel4);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel7);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel2);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel5);
+            this.receipt_tabPage.Controls.Add(this.bunifuCustomLabel3);
+            this.receipt_tabPage.Controls.Add(this.receipt_flowLayoutPanel);
+            this.receipt_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.receipt_tabPage.Name = "receipt_tabPage";
+            this.receipt_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.receipt_tabPage.Size = new System.Drawing.Size(450, 629);
+            this.receipt_tabPage.TabIndex = 1;
+            this.receipt_tabPage.Text = "Receipt";
+            this.receipt_tabPage.UseVisualStyleBackColor = true;
             // 
             // Name
             // 
@@ -105,7 +107,7 @@
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Teal;
             this.bunifuCustomLabel6.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(12, 611);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(12, 597);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Padding = new System.Windows.Forms.Padding(2);
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(111, 25);
@@ -153,7 +155,7 @@
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.Teal;
             this.bunifuCustomLabel7.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(316, 611);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(316, 597);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Padding = new System.Windows.Forms.Padding(2);
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(111, 25);
@@ -210,15 +212,15 @@
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
             // 
-            // flowLayoutPanel1
+            // receipt_flowLayoutPanel
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(-44, 69);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(543, 494);
-            this.flowLayoutPanel1.TabIndex = 11;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            this.receipt_flowLayoutPanel.AutoScroll = true;
+            this.receipt_flowLayoutPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.receipt_flowLayoutPanel.Location = new System.Drawing.Point(0, 69);
+            this.receipt_flowLayoutPanel.Name = "receipt_flowLayoutPanel";
+            this.receipt_flowLayoutPanel.Size = new System.Drawing.Size(450, 494);
+            this.receipt_flowLayoutPanel.TabIndex = 11;
+            this.receipt_flowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ReceiptForm
             // 
@@ -227,24 +229,20 @@
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(735, 632);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.flowLayoutPanel2);
-          //  this.Name = "ReceiptForm";
+            this.Controls.Add(this.checkout_TabControl);
+            //this.Name = "ReceiptForm";
             this.Text = "ReceiptForm";
             this.Load += new System.EventHandler(this.Receipt_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.checkout_TabControl.ResumeLayout(false);
+            this.receipt_tabPage.ResumeLayout(false);
+            this.receipt_tabPage.PerformLayout();
             this.ResumeLayout(false);
-
-
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl checkout_TabControl;
+        private System.Windows.Forms.TabPage receipt_tabPage;
         private Bunifu.Framework.UI.BunifuCustomLabel Name;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuCustomLabel price;
@@ -253,6 +251,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel receipt_flowLayoutPanel;
+        private System.Windows.Forms.TabPage cart_tabPage;
     }
 }
