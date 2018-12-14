@@ -12,7 +12,7 @@ namespace Online_Shopping_Store
     class ItemsDetails
    {
         
-        public List<Bitmap> productImages = new List<Bitmap>();
+        public Image productImages { get; set; }
         public string Product_Name { get; set; }
         public string Product_ID { get; set; }
         public string Price { get; set; }
@@ -24,8 +24,9 @@ namespace Online_Shopping_Store
         public List<string> color { get; set; }
         public int Quantity { get; set; }
 
-        public ItemsDetails(string PRODUCT_ID, string product_name, string price, List<string> size, string description, string Category, string brand, string availible, List<string> color, int quantity)
+        public ItemsDetails(string PRODUCT_ID, string product_name, string price, List<string> size, string description, string Category, string brand, string availible, List<string> color, int quantity,Image picture)
     {
+        this.productImages = picture;
         this.Product_ID = PRODUCT_ID;
         this.Product_Name = product_name;
         this.Price = price;

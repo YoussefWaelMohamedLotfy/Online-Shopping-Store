@@ -26,6 +26,8 @@ namespace Online_Shopping_Store
             string name;
             string price;
             string id;
+            Image pic;
+            string h;
            // save data in file in object mood 
             FileStream product_file_open = new FileStream("Products.txt", FileMode.Open);
             BinaryFormatter Formatter = new BinaryFormatter();
@@ -38,9 +40,12 @@ namespace Online_Shopping_Store
                 name =PP.Product_Name;
                 price = PP.Price;
                 id = PP.Product_ID;
+                pic = PP.productImages;
+               
+                MessageBox.Show("+" + PP.productImages);
                 
               
-                details UC = new details(name, id, price);//user control to send data on it 
+                details UC = new details(name, id, price,pic);//user control to send data on it 
                     flowLayoutPanel1.Controls.Add(UC);
               
                 

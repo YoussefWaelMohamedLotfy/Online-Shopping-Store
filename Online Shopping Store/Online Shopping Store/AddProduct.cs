@@ -31,7 +31,7 @@ namespace Online_Shopping_Store
                 string category = "";
                 string Product_brand = "";
                 string Availibility = "";
-                List<Bitmap> productImages = new List<Bitmap>();
+               Image productImages=pictureBox1.Image;
                 List<string> color = new List<string>();
                 int Quantity = 0;
                 FileStream fs = new FileStream("Products.txt", FileMode.Append);
@@ -60,7 +60,7 @@ namespace Online_Shopping_Store
                     Availibility = AvailableRadioButton.Text;
                 }
                 Quantity = Convert.ToInt32(quantityCount.Value);
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity,productImages);
                 formatter.Serialize(fs, Item);
                 MessageBox.Show("Successfully added ! ");
                 fs.Close();
