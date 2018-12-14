@@ -38,7 +38,7 @@ namespace Online_Shopping_Store
                 name =PP.Product_Name;
                 price = PP.Price;
                 id = PP.Product_ID;
-              
+                
               
                 details UC = new details(name, id, price);
                     flowLayoutPanel1.Controls.Add(UC);
@@ -57,6 +57,17 @@ namespace Online_Shopping_Store
             //private void button1_Click(object sender, EventArgs e)
             //{
 
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void showCart_MenuOption_Click(object sender, EventArgs e)
+        {
+            ReceiptForm cart = new ReceiptForm();
+            cart.Show();
         }
     }
 }
