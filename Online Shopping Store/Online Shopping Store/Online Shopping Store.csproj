@@ -73,6 +73,18 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart_items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cart_items.Designer.cs">
+      <DependentUpon>Cart_items.cs</DependentUpon>
+    </Compile>
     <Compile Include="details.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     </Compile>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart_items.resx">
+      <DependentUpon>Cart_items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.cs</DependentUpon>

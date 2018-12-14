@@ -26,21 +26,21 @@ namespace Online_Shopping_Store
             string name;
             string price;
             string id;
-          
+           // save data in file in object mood 
             FileStream product_file_open = new FileStream("Products.txt", FileMode.Open);
             BinaryFormatter Formatter = new BinaryFormatter();
             LinkedList<ItemsDetails> PR = new LinkedList<ItemsDetails>();
             while (product_file_open.Position != product_file_open.Length)
             {
                 ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(product_file_open);
-                PR.AddFirst(PP);
+                PR.AddFirst(PP);// not important i put it for fun 
                
                 name =PP.Product_Name;
                 price = PP.Price;
                 id = PP.Product_ID;
               
               
-                details UC = new details(name, id, price);
+                details UC = new details(name, id, price);//user control to send data on it 
                     flowLayoutPanel1.Controls.Add(UC);
               
                 
