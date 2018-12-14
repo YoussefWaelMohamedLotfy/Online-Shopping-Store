@@ -81,5 +81,10 @@ namespace Online_Shopping_Store
                 pictureBox1.Image = new Bitmap(open.FileName);
             }
         }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

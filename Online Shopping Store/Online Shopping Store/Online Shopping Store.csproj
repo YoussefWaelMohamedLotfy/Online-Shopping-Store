@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Users\el aqsa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="details.Designer.cs">
+      <DependentUpon>details.cs</DependentUpon>
     </Compile>
     <Compile Include="home_page.cs">
       <SubType>Form</SubType>
@@ -114,12 +120,6 @@
       <DependentUpon>ReceiptForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Shopper.cs" />
-    <Compile Include="ItemDisplayInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ItemDisplayInfo.Designer.cs">
-      <DependentUpon>ItemDisplayInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="details.resx">
+      <DependentUpon>details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_page.resx">
       <DependentUpon>home_page.cs</DependentUpon>
@@ -154,9 +157,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ItemDisplayInfo.resx">
-      <DependentUpon>ItemDisplayInfo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ReceiptForm.resx">
       <DependentUpon>ReceiptForm.cs</DependentUpon>
     </EmbeddedResource>

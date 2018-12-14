@@ -18,7 +18,7 @@ namespace Online_Shopping_Store
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Change the parameter below to the form you want to begin execution at
-            Application.Run(new ReceiptForm());
+            Application.Run(new products_show());
         }
     }
 }

@@ -23,23 +23,40 @@ namespace Online_Shopping_Store
 
         private void products_show_Load(object sender, EventArgs e)
         {
-
-            FileStream product_file_open = new FileStream("Product.txt", FileMode.Open);
+            string name;
+            string price;
+            string id;
+          
+            FileStream product_file_open = new FileStream("Products.txt", FileMode.Open);
             BinaryFormatter Formatter = new BinaryFormatter();
-            LinkedList<Product> PR = new LinkedList<Product>();
+            LinkedList<ItemsDetails> PR = new LinkedList<ItemsDetails>();
             while (product_file_open.Position != product_file_open.Length)
             {
-                Product PP = (Product)Formatter.Deserialize(product_file_open);
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(product_file_open);
                 PR.AddFirst(PP);
-            }
+               
+                name =PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+              
+              
+                details UC = new details(name, id, price);
+                    flowLayoutPanel1.Controls.Add(UC);
+              
+                
+            }  
+           
             product_file_open.Close();
-            MessageBox.Show("num:" + PR.Count);
-            UserControl UC;
-            for (int I = 0; I < 10; I++)
-            {
-                UC = new UserControl();
-                productsDisplay_FlowLayoutPanel.Controls.Add(UC);
-            }
+
+
+            //private void productsDisplay_FlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+            //{
+
+            //}
+
+            //private void button1_Click(object sender, EventArgs e)
+            //{
+
         }
     }
 }

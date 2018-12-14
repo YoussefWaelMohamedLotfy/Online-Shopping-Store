@@ -13,18 +13,18 @@ namespace Online_Shopping_Store
    {
         
         public List<Bitmap> productImages = new List<Bitmap>();
-        public string Product_Name;
-        public string Product_ID;
-        public string Price;
-        public List<string> Size;
-        public string Product_Description;
-        public string category;
-        public string Product_brand;
-        public string Availibility;
-        public List<string> color;
-        public int Quantity;
+        public string Product_Name { get; set; }
+        public string Product_ID { get; set; }
+        public string Price { get; set; }
+        public List<string> Size { get; set; }
+        public string Product_Description { get; set; }
+        public string category { get; set; }
+        public string Product_brand { get; set; }
+        public string Availibility { get; set; }
+        public List<string> color { get; set; }
+        public int Quantity { get; set; }
 
-    public ItemsDetails(string PRODUCT_ID, string product_name, string price, List<string> size, string description, string Category, string brand, string availible, List<string> color, int quantity)
+        public ItemsDetails(string PRODUCT_ID, string product_name, string price, List<string> size, string description, string Category, string brand, string availible, List<string> color, int quantity)
     {
         this.Product_ID = PRODUCT_ID;
         this.Product_Name = product_name;
@@ -35,6 +35,7 @@ namespace Online_Shopping_Store
         this.Product_brand = brand;
         this.Availibility = availible;
         this.color = color;
+        this.Quantity = quantity;
     }
   }
 }
