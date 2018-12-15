@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>C:\Users\el aqsa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>E:\programs\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -67,12 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddProduct.Designer.cs">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,9 +132,6 @@
     <Compile Include="ViewProductDetails.Designer.cs">
       <DependentUpon>ViewProductDetails.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddProduct.resx">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
