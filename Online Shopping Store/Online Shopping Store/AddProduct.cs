@@ -14,6 +14,7 @@ namespace Online_Shopping_Store
 {
     public partial class AddProduct : Form
     {
+        string category = "";
         public AddProduct()
         {
             InitializeComponent();
@@ -23,23 +24,22 @@ namespace Online_Shopping_Store
         {
             if (MessageBox.Show("Are You Sure you want to Add this Product ?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                string Product_Name = "";
-                string Product_ID = "";
-                string Price = "";
+             
+               
+               
+              
+              
+                string Product_Name = ProductNameTB.Text;
+                string  Product_ID = ProductIdTB.Text;
+                string  Price = PriceTB.Text;
                 List<string> Size = new List<string>();
-                string Product_Description = "";
-                string category = "";
-                string Product_brand = "";
-                string Availibility = "";
-               Image productImages=pictureBox1.Image;
                 List<string> color = new List<string>();
-                int Quantity = 0;
-                FileStream fs = new FileStream("Products.txt", FileMode.Append);
-                BinaryFormatter formatter = new BinaryFormatter();
-                Product_Name = ProductNameTB.Text;
-                Product_ID = ProductIdTB.Text;
-                Price = PriceTB.Text;
-
+                string Product_Description = DescriptionTB.Text;
+                // string category ="";
+                string Product_brand = BrandTB.Text;
+                string Availibility = "";
+                Image productImages = pictureBox1.Image;
+                int Quantity =(int)quantityCount.Value;
                 foreach (string item in SizeCheckedListBox.CheckedItems)
                 {
                     Size.Add(item);
@@ -60,11 +60,80 @@ namespace Online_Shopping_Store
                     Availibility = AvailableRadioButton.Text;
                 }
                 Quantity = Convert.ToInt32(quantityCount.Value);
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity,productImages);
-                formatter.Serialize(fs, Item);
+
+
+
+                // Save product according to Category Combobox
+                
+
+                if (CategoryCB.SelectedItem.ToString()== "Smart Phones")
+                {
+                    FileStream smartPhonesFile = new FileStream("Smart Phones.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(smartPhonesFile, Item);
+                    smartPhonesFile.Close();
+                }
+                else if (CategoryCB.SelectedItem.ToString() == "Fashion")
+                {
+                    FileStream FashionFile = new FileStream("Fashion.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(FashionFile, Item);
+                    FashionFile.Close();
+                }
+                else if (CategoryCB.SelectedItem.ToString() == "Electronics")
+                {
+                    FileStream electronicsFile = new FileStream("Electronics.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(electronicsFile, Item);
+                    electronicsFile.Close();
+                }
+                else if (CategoryCB.SelectedItem.ToString() == "Beauty Products")
+                {
+                    FileStream beautyproductsFile = new FileStream("Beauty Products.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(beautyproductsFile, Item);
+                    beautyproductsFile.Close();
+                }
+                else if (CategoryCB.SelectedItem.ToString() == "Appliances")
+                {
+                    FileStream appliancesFile = new FileStream("Appliances.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(appliancesFile, Item);
+                    appliancesFile.Close();
+                }
+                else if (CategoryCB.SelectedItem.ToString() == "Furniture")
+                {
+                    FileStream FurnitureFile = new FileStream("Furniture.txt", FileMode.Append);
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                    formatter.Serialize(FurnitureFile, Item);
+                    FurnitureFile.Close();
+                }
+                //FileStream fs = new FileStream("Products.txt", FileMode.Append);
+                //formatter.Serialize(fs, Item);
+
                 MessageBox.Show("Successfully added ! ");
-                fs.Close();
+                //fs.Close();
+                ProductNameTB.Text = null;
+                ProductIdTB.Text = null;
+                PriceTB.Text = null;
+                Size = null;
+                color = null;
+                DescriptionTB.Text = null;
+                category = null;
+                BrandTB.Text = null;
+                Availibility = null;
+                pictureBox1.Image = null;
+                Quantity = 1;
+
             }
+        
+           
         }
 
         private void BackTB_Click(object sender, EventArgs e)
@@ -83,6 +152,11 @@ namespace Online_Shopping_Store
         }
 
         private void AddProduct_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BrandTB_TextChanged(object sender, EventArgs e)
         {
 
         }

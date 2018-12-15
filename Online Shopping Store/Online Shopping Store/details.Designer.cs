@@ -32,7 +32,6 @@
             this.panel_usercontrol_product = new System.Windows.Forms.Panel();
             this.but_readmore = new System.Windows.Forms.Button();
             this.Buy_Cart = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Rating = new Bunifu.Framework.UI.BunifuRating();
             this.pricelabel = new System.Windows.Forms.Label();
             this.namelabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,9 +46,11 @@
             // 
             this.idllabel.AutoSize = true;
             this.idllabel.BackColor = System.Drawing.Color.Transparent;
-            this.idllabel.Location = new System.Drawing.Point(132, 175);
+            this.idllabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idllabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.idllabel.Location = new System.Drawing.Point(120, 175);
             this.idllabel.Name = "idllabel";
-            this.idllabel.Size = new System.Drawing.Size(35, 13);
+            this.idllabel.Size = new System.Drawing.Size(54, 18);
             this.idllabel.TabIndex = 27;
             this.idllabel.Text = "label6";
             // 
@@ -59,7 +60,6 @@
             this.panel_usercontrol_product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_usercontrol_product.Controls.Add(this.but_readmore);
             this.panel_usercontrol_product.Controls.Add(this.Buy_Cart);
-            this.panel_usercontrol_product.Controls.Add(this.Rating);
             this.panel_usercontrol_product.Controls.Add(this.pricelabel);
             this.panel_usercontrol_product.Controls.Add(this.idllabel);
             this.panel_usercontrol_product.Controls.Add(this.namelabel);
@@ -117,23 +117,15 @@
             this.Buy_Cart.Textcolor = System.Drawing.Color.White;
             this.Buy_Cart.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // Rating
-            // 
-            this.Rating.BackColor = System.Drawing.Color.Transparent;
-            this.Rating.ForeColor = System.Drawing.Color.Gold;
-            this.Rating.Location = new System.Drawing.Point(56, 230);
-            this.Rating.Name = "Rating";
-            this.Rating.Size = new System.Drawing.Size(129, 19);
-            this.Rating.TabIndex = 29;
-            this.Rating.Value = 0;
-            // 
             // pricelabel
             // 
             this.pricelabel.AutoSize = true;
             this.pricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.pricelabel.Location = new System.Drawing.Point(132, 203);
+            this.pricelabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pricelabel.Location = new System.Drawing.Point(120, 203);
             this.pricelabel.Name = "pricelabel";
-            this.pricelabel.Size = new System.Drawing.Size(35, 13);
+            this.pricelabel.Size = new System.Drawing.Size(54, 18);
             this.pricelabel.TabIndex = 28;
             this.pricelabel.Text = "label7";
             // 
@@ -141,9 +133,11 @@
             // 
             this.namelabel.AutoSize = true;
             this.namelabel.BackColor = System.Drawing.Color.Transparent;
-            this.namelabel.Location = new System.Drawing.Point(132, 147);
+            this.namelabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.namelabel.Location = new System.Drawing.Point(120, 147);
             this.namelabel.Name = "namelabel";
-            this.namelabel.Size = new System.Drawing.Size(35, 13);
+            this.namelabel.Size = new System.Drawing.Size(54, 18);
             this.namelabel.TabIndex = 26;
             this.namelabel.Text = "label5";
             // 
@@ -151,9 +145,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(74, 203);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.Location = new System.Drawing.Point(21, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 25;
             this.label3.Text = "Price";
             // 
@@ -161,9 +157,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(74, 175);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(21, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.Size = new System.Drawing.Size(23, 18);
             this.label2.TabIndex = 24;
             this.label2.Text = "ID";
             // 
@@ -171,9 +169,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(74, 147);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label1.Location = new System.Drawing.Point(21, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(54, 18);
             this.label1.TabIndex = 23;
             this.label1.Text = "Name";
             // 
@@ -208,7 +208,6 @@
         private System.Windows.Forms.Panel panel_usercontrol_product;
         private System.Windows.Forms.Button but_readmore;
         private Bunifu.Framework.UI.BunifuFlatButton Buy_Cart;
-        private Bunifu.Framework.UI.BunifuRating Rating;
         private System.Windows.Forms.Label pricelabel;
         private System.Windows.Forms.Label namelabel;
         private System.Windows.Forms.Label label3;

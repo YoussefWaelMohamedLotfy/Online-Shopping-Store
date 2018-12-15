@@ -297,6 +297,7 @@
             this.appliances_btn.TabIndex = 16;
             this.appliances_btn.TabStop = false;
             this.appliances_btn.Zoom = 10;
+            this.appliances_btn.Click += new System.EventHandler(this.appliances_btn_Click);
             // 
             // electronics_btn
             // 
@@ -311,6 +312,7 @@
             this.electronics_btn.TabIndex = 15;
             this.electronics_btn.TabStop = false;
             this.electronics_btn.Zoom = 10;
+            this.electronics_btn.Click += new System.EventHandler(this.electronics_btn_Click);
             // 
             // furniture_btn
             // 
@@ -340,6 +342,7 @@
             this.mobile_btn.TabIndex = 13;
             this.mobile_btn.TabStop = false;
             this.mobile_btn.Zoom = 10;
+            this.mobile_btn.Click += new System.EventHandler(this.mobile_btn_Click);
             // 
             // fashion_btn
             // 
@@ -354,6 +357,7 @@
             this.fashion_btn.TabIndex = 12;
             this.fashion_btn.TabStop = false;
             this.fashion_btn.Zoom = 10;
+            this.fashion_btn.Click += new System.EventHandler(this.fashion_btn_Click);
             // 
             // beauty_btn
             // 
@@ -368,6 +372,7 @@
             this.beauty_btn.TabIndex = 11;
             this.beauty_btn.TabStop = false;
             this.beauty_btn.Zoom = 10;
+            this.beauty_btn.Click += new System.EventHandler(this.beauty_btn_Click);
             // 
             // pictureBox1
             // 
@@ -398,6 +403,7 @@
             this.homePage_menuStrip.Size = new System.Drawing.Size(1258, 24);
             this.homePage_menuStrip.TabIndex = 32;
             this.homePage_menuStrip.Text = "homePage_menuStrip";
+            this.homePage_menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.homePage_menuStrip_ItemClicked);
             // 
             // showCart_MenuOption
             // 

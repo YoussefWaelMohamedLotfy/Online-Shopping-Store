@@ -143,11 +143,11 @@
             this.CategoryCB.FormattingEnabled = true;
             this.CategoryCB.Items.AddRange(new object[] {
             "Smart Phones",
-            "Televisions",
             "Fashion",
-            "Computers",
+            "Electronics",
             "Beauty Products",
-            "Appliances"});
+            "Appliances",
+            "Furniture"});
             this.CategoryCB.Location = new System.Drawing.Point(174, 12);
             this.CategoryCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CategoryCB.Name = "CategoryCB";
@@ -165,6 +165,7 @@
             this.BrandTB.Name = "BrandTB";
             this.BrandTB.Size = new System.Drawing.Size(184, 28);
             this.BrandTB.TabIndex = 39;
+            this.BrandTB.TextChanged += new System.EventHandler(this.BrandTB_TextChanged);
             // 
             // CategoryLabel
             // 
@@ -311,6 +312,7 @@
             this.AddProductButton.ActiveForecolor = System.Drawing.Color.Teal;
             this.AddProductButton.ActiveLineColor = System.Drawing.Color.Teal;
             this.AddProductButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.AddProductButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddProductButton.BackgroundImage")));
             this.AddProductButton.ButtonText = "Add";
             this.AddProductButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddProductButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -336,6 +338,7 @@
             this.BackTB.ActiveForecolor = System.Drawing.Color.Teal;
             this.BackTB.ActiveLineColor = System.Drawing.Color.Teal;
             this.BackTB.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BackTB.BackgroundImage")));
             this.BackTB.ButtonText = "Back";
             this.BackTB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -413,6 +416,7 @@
             this.AddPhoto.ActiveForecolor = System.Drawing.Color.Teal;
             this.AddPhoto.ActiveLineColor = System.Drawing.Color.Teal;
             this.AddPhoto.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.AddPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddPhoto.BackgroundImage")));
             this.AddPhoto.ButtonText = "Add Photo";
             this.AddPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddPhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -435,7 +439,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(571, 61);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(354, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

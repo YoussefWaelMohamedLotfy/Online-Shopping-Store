@@ -12,9 +12,19 @@ namespace Online_Shopping_Store
 {
     public partial class home_page : Form
     {
-        public home_page()
+        products_show ps= new products_show () ;
+        public home_page( )
         {
             InitializeComponent();
+
+
+        }
+        public home_page( products_show p)
+        {
+            InitializeComponent();
+            this.ps = p;
+         
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -24,7 +34,9 @@ namespace Online_Shopping_Store
 
         private void furniture_btn_Click(object sender, EventArgs e)
         {
-
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex =2;
         }
 
         private void search_txt_OnTextChange(object sender, EventArgs e)
@@ -51,6 +63,47 @@ namespace Online_Shopping_Store
         {
             ReceiptForm cart = new ReceiptForm();
             cart.Show();
+        }
+
+        private void beauty_btn_Click(object sender, EventArgs e)
+        {
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex = 5;
+        }
+
+        private void mobile_btn_Click(object sender, EventArgs e)
+        {
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex = 0;
+
+        }
+
+        private void homePage_menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void fashion_btn_Click(object sender, EventArgs e)
+        {
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex = 1;
+        }
+
+        private void electronics_btn_Click(object sender, EventArgs e)
+        {
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex = 3;
+        }
+
+        private void appliances_btn_Click(object sender, EventArgs e)
+        {
+            ps = new products_show();
+            ps.Show();
+            ps.tabControl1.SelectedIndex = 4;
         }
     }
 }

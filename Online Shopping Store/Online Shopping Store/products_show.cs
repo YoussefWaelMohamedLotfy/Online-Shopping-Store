@@ -20,47 +20,126 @@ namespace Online_Shopping_Store
         {
             InitializeComponent();
         }
-
+      
         private void products_show_Load(object sender, EventArgs e)
         {
             string name;
             string price;
             string id;
             Image pic;
-            string h;
-           // save data in file in object mood 
-            FileStream product_file_open = new FileStream("Products.txt", FileMode.Open);
-            BinaryFormatter Formatter = new BinaryFormatter();
             LinkedList<ItemsDetails> PR = new LinkedList<ItemsDetails>();
-            while (product_file_open.Position != product_file_open.Length)
+
+            // Save smart phones product
+            FileStream smartPhoneFile = new FileStream("Smart Phones.txt", FileMode.Open);
+            BinaryFormatter Formatter = new BinaryFormatter();
+           
+            while (smartPhoneFile.Position != smartPhoneFile.Length)
             {
-                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(product_file_open);
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(smartPhoneFile);
                 PR.AddFirst(PP);// not important i put it for fun 
                
                 name =PP.Product_Name;
                 price = PP.Price;
                 id = PP.Product_ID;
                 pic = PP.productImages;
-               
-              
-                
-              
+
                 details UC = new details(name, id, price,pic);//user control to send data on it 
-                    flowLayoutPanel1.Controls.Add(UC);
-              
-                
-            }  
+                    flowLayoutPanel1.Controls.Add(UC); 
+            }
+            smartPhoneFile.Close();
            
-            product_file_open.Close();
+           // Save fashion product
+            FileStream fashionFile = new FileStream("Fashion.txt", FileMode.Open);
+            BinaryFormatter Formatter1 = new BinaryFormatter();
+            PR = new LinkedList<ItemsDetails>();
+            while (fashionFile.Position != fashionFile.Length)
+            {
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(fashionFile);
+                PR.AddFirst(PP);// not important i put it for fun 
+
+                name = PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+                pic = PP.productImages;
+                details UC = new details(name, id, price, pic);//user control to send data on it 
+                flowLayoutPanel2.Controls.Add(UC);
+            }
+            fashionFile.Close();
+
+            // Save electronic product
+            FileStream electronicsFile = new FileStream("Electronics.txt", FileMode.Open);
+            BinaryFormatter Formatter2 = new BinaryFormatter();
+            PR = new LinkedList<ItemsDetails>();
+            while (electronicsFile.Position != electronicsFile.Length)
+            {
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(electronicsFile);
+                PR.AddFirst(PP);// not important i put it for fun 
+
+                name = PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+                pic = PP.productImages;
+                details UC = new details(name, id, price, pic);//user control to send data on it 
+                flowLayoutPanel3.Controls.Add(UC);
+            }
+            electronicsFile.Close();
+
+            // Save beauty Products product
+            FileStream beautyProductsFile = new FileStream("Beauty Products.txt", FileMode.Open);
+            BinaryFormatter Formatter4 = new BinaryFormatter();
+            PR = new LinkedList<ItemsDetails>();
+            while (beautyProductsFile.Position != beautyProductsFile.Length)
+            {
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(beautyProductsFile);
+                PR.AddFirst(PP);// not important i put it for fun 
+
+                name = PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+                pic = PP.productImages;
+                details UC = new details(name, id, price, pic);//user control to send data on it 
+                flowLayoutPanel4.Controls.Add(UC);
+            }
+            beautyProductsFile.Close();
+
+            // Save Appliances product
+            FileStream AppliancesFile = new FileStream("Appliances.txt", FileMode.Open);
+            BinaryFormatter Formatter6 = new BinaryFormatter();
+            PR = new LinkedList<ItemsDetails>();
+            while (AppliancesFile.Position != AppliancesFile.Length)
+            {
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(AppliancesFile);
+                PR.AddFirst(PP);// not important i put it for fun 
+
+                name = PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+                pic = PP.productImages;
+                details UC = new details(name, id, price, pic);//user control to send data on it 
+                flowLayoutPanel5.Controls.Add(UC);
+            }
+            AppliancesFile.Close();
+
+            // Save Appliances product
+            FileStream furnitureFile = new FileStream("Furniture.txt", FileMode.Open);
+            BinaryFormatter Formatter8 = new BinaryFormatter();
+            PR = new LinkedList<ItemsDetails>();
+            while (furnitureFile.Position != furnitureFile.Length)
+            {
+                ItemsDetails PP = (ItemsDetails)Formatter.Deserialize(furnitureFile);
+                PR.AddFirst(PP);// not important i put it for fun 
+
+                name = PP.Product_Name;
+                price = PP.Price;
+                id = PP.Product_ID;
+                pic = PP.productImages;
+                details UC = new details(name, id, price, pic);//user control to send data on it 
+                flowLayoutPanel6.Controls.Add(UC);
+            }
+            furnitureFile.Close();
 
 
-            //private void productsDisplay_FlowLayoutPanel_Paint(object sender, PaintEventArgs e)
-            //{
 
-            //}
-
-            //private void button1_Click(object sender, EventArgs e)
-            //{
 
         }
 
@@ -74,5 +153,7 @@ namespace Online_Shopping_Store
             ReceiptForm cart = new ReceiptForm();
             cart.Show();
         }
+
+      
     }
 }
