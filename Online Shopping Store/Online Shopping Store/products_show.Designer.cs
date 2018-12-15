@@ -37,20 +37,22 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(735, 608);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(841, 608);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // productsShow_menuStrip
             // 
+            this.productsShow_menuStrip.BackColor = System.Drawing.Color.DarkSlateGray;
             this.productsShow_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showCart_MenuOption});
             this.productsShow_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.productsShow_menuStrip.Name = "productsShow_menuStrip";
-            this.productsShow_menuStrip.Size = new System.Drawing.Size(735, 24);
+            this.productsShow_menuStrip.Size = new System.Drawing.Size(841, 24);
             this.productsShow_menuStrip.TabIndex = 1;
             this.productsShow_menuStrip.Text = "menuStrip1";
             // 
@@ -65,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 632);
+            this.ClientSize = new System.Drawing.Size(841, 632);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.productsShow_menuStrip);
             this.Name = "products_show";

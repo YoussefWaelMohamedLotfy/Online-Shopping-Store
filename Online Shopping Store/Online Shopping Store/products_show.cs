@@ -42,7 +42,7 @@ namespace Online_Shopping_Store
                 id = PP.Product_ID;
                 pic = PP.productImages;
                
-                MessageBox.Show("+" + PP.productImages);
+              
                 
               
                 details UC = new details(name, id, price,pic);//user control to send data on it 

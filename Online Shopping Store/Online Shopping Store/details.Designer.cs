@@ -46,6 +46,7 @@
             // idllabel
             // 
             this.idllabel.AutoSize = true;
+            this.idllabel.BackColor = System.Drawing.Color.Transparent;
             this.idllabel.Location = new System.Drawing.Point(132, 175);
             this.idllabel.Name = "idllabel";
             this.idllabel.Size = new System.Drawing.Size(35, 13);
@@ -54,6 +55,7 @@
             // 
             // panel_usercontrol_product
             // 
+            this.panel_usercontrol_product.BackColor = System.Drawing.Color.Transparent;
             this.panel_usercontrol_product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_usercontrol_product.Controls.Add(this.but_readmore);
             this.panel_usercontrol_product.Controls.Add(this.Buy_Cart);
@@ -72,18 +74,19 @@
             // 
             // but_readmore
             // 
+            this.but_readmore.BackColor = System.Drawing.Color.Transparent;
             this.but_readmore.Location = new System.Drawing.Point(193, 256);
             this.but_readmore.Name = "but_readmore";
             this.but_readmore.Size = new System.Drawing.Size(66, 38);
             this.but_readmore.TabIndex = 31;
             this.but_readmore.Text = "Read More";
-            this.but_readmore.UseVisualStyleBackColor = true;
+            this.but_readmore.UseVisualStyleBackColor = false;
             this.but_readmore.Click += new System.EventHandler(this.but_readmore_Click);
             // 
             // Buy_Cart
             // 
             this.Buy_Cart.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.Buy_Cart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.Buy_Cart.BackColor = System.Drawing.Color.Transparent;
             this.Buy_Cart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Buy_Cart.BorderRadius = 0;
             this.Buy_Cart.ButtonText = "Buy Now";
@@ -127,6 +130,7 @@
             // pricelabel
             // 
             this.pricelabel.AutoSize = true;
+            this.pricelabel.BackColor = System.Drawing.Color.Transparent;
             this.pricelabel.Location = new System.Drawing.Point(132, 203);
             this.pricelabel.Name = "pricelabel";
             this.pricelabel.Size = new System.Drawing.Size(35, 13);
@@ -136,6 +140,7 @@
             // namelabel
             // 
             this.namelabel.AutoSize = true;
+            this.namelabel.BackColor = System.Drawing.Color.Transparent;
             this.namelabel.Location = new System.Drawing.Point(132, 147);
             this.namelabel.Name = "namelabel";
             this.namelabel.Size = new System.Drawing.Size(35, 13);
@@ -145,6 +150,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(74, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
@@ -154,6 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(74, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(18, 13);
@@ -163,6 +170,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(74, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
@@ -171,6 +179,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(6, 7);
             this.pictureBox1.Name = "pictureBox1";
