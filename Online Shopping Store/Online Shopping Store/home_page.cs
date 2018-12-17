@@ -69,7 +69,7 @@ namespace Online_Shopping_Store
         {
             ps = new products_show();
             ps.Show();
-            ps.tabControl1.SelectedIndex = 5;
+            ps.tabControl1.SelectedIndex =3;
         }
 
         private void mobile_btn_Click(object sender, EventArgs e)
@@ -89,21 +89,21 @@ namespace Online_Shopping_Store
         {
             ps = new products_show();
             ps.Show();
-            ps.tabControl1.SelectedIndex = 1;
+            ps.tabControl1.SelectedIndex = 4;
         }
 
         private void electronics_btn_Click(object sender, EventArgs e)
         {
             ps = new products_show();
             ps.Show();
-            ps.tabControl1.SelectedIndex = 3;
+            ps.tabControl1.SelectedIndex = 5;
         }
 
         private void appliances_btn_Click(object sender, EventArgs e)
         {
             ps = new products_show();
             ps.Show();
-            ps.tabControl1.SelectedIndex = 4;
+            ps.tabControl1.SelectedIndex = 1;
         }
     }
 }
