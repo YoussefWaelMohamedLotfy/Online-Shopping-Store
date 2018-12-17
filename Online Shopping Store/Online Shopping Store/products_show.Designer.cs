@@ -63,6 +63,7 @@
             this.productsShow_menuStrip.Size = new System.Drawing.Size(841, 24);
             this.productsShow_menuStrip.TabIndex = 1;
             this.productsShow_menuStrip.Text = "menuStrip1";
+            this.productsShow_menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.productsShow_menuStrip_ItemClicked);
             // 
             // showCart_MenuOption
             // 
