@@ -43,6 +43,8 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Beauty_Product_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsShow_menuStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Smart_Phones_tab.SuspendLayout();
@@ -57,7 +59,9 @@
             // 
             this.productsShow_menuStrip.BackColor = System.Drawing.Color.Honeydew;
             this.productsShow_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showCart_MenuOption});
+            this.showCart_MenuOption,
+            this.helpToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.productsShow_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.productsShow_menuStrip.Name = "productsShow_menuStrip";
             this.productsShow_menuStrip.Size = new System.Drawing.Size(841, 24);
@@ -68,8 +72,8 @@
             // showCart_MenuOption
             // 
             this.showCart_MenuOption.Name = "showCart_MenuOption";
-            this.showCart_MenuOption.Size = new System.Drawing.Size(73, 20);
-            this.showCart_MenuOption.Text = "Show Cart";
+            this.showCart_MenuOption.Size = new System.Drawing.Size(52, 20);
+            this.showCart_MenuOption.Text = "Home";
             this.showCart_MenuOption.Click += new System.EventHandler(this.showCart_MenuOption_Click);
             // 
             // tabControl1
@@ -93,7 +97,7 @@
             this.Smart_Phones_tab.Location = new System.Drawing.Point(4, 22);
             this.Smart_Phones_tab.Name = "Smart_Phones_tab";
             this.Smart_Phones_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Smart_Phones_tab.Size = new System.Drawing.Size(821, 326);
+            this.Smart_Phones_tab.Size = new System.Drawing.Size(833, 606);
             this.Smart_Phones_tab.TabIndex = 0;
             this.Smart_Phones_tab.Text = "Smart Phones";
             this.Smart_Phones_tab.UseVisualStyleBackColor = true;
@@ -105,7 +109,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(815, 320);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(827, 600);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Fashion_Tab
@@ -114,7 +118,7 @@
             this.Fashion_Tab.Location = new System.Drawing.Point(4, 22);
             this.Fashion_Tab.Name = "Fashion_Tab";
             this.Fashion_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Fashion_Tab.Size = new System.Drawing.Size(821, 326);
+            this.Fashion_Tab.Size = new System.Drawing.Size(833, 606);
             this.Fashion_Tab.TabIndex = 1;
             this.Fashion_Tab.Text = "Fashion";
             this.Fashion_Tab.UseVisualStyleBackColor = true;
@@ -125,7 +129,7 @@
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(815, 320);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(827, 600);
             this.flowLayoutPanel5.TabIndex = 1;
             // 
             // Furniture_tab
@@ -153,7 +157,7 @@
             this.Electronics_tab.Controls.Add(this.flowLayoutPanel4);
             this.Electronics_tab.Location = new System.Drawing.Point(4, 22);
             this.Electronics_tab.Name = "Electronics_tab";
-            this.Electronics_tab.Size = new System.Drawing.Size(821, 326);
+            this.Electronics_tab.Size = new System.Drawing.Size(833, 606);
             this.Electronics_tab.TabIndex = 3;
             this.Electronics_tab.Text = "Electronics";
             this.Electronics_tab.UseVisualStyleBackColor = true;
@@ -165,7 +169,7 @@
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(821, 326);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(833, 606);
             this.flowLayoutPanel4.TabIndex = 1;
             // 
             // Applieances_tab
@@ -173,7 +177,7 @@
             this.Applieances_tab.Controls.Add(this.flowLayoutPanel2);
             this.Applieances_tab.Location = new System.Drawing.Point(4, 22);
             this.Applieances_tab.Name = "Applieances_tab";
-            this.Applieances_tab.Size = new System.Drawing.Size(821, 326);
+            this.Applieances_tab.Size = new System.Drawing.Size(833, 606);
             this.Applieances_tab.TabIndex = 4;
             this.Applieances_tab.Text = "Applieances";
             this.Applieances_tab.UseVisualStyleBackColor = true;
@@ -185,7 +189,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(821, 326);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(833, 606);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // Beauty_Product_tab
@@ -193,7 +197,7 @@
             this.Beauty_Product_tab.Controls.Add(this.flowLayoutPanel3);
             this.Beauty_Product_tab.Location = new System.Drawing.Point(4, 22);
             this.Beauty_Product_tab.Name = "Beauty_Product_tab";
-            this.Beauty_Product_tab.Size = new System.Drawing.Size(821, 326);
+            this.Beauty_Product_tab.Size = new System.Drawing.Size(833, 606);
             this.Beauty_Product_tab.TabIndex = 5;
             this.Beauty_Product_tab.Text = "Beauty Product";
             this.Beauty_Product_tab.UseVisualStyleBackColor = true;
@@ -205,8 +209,22 @@
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(821, 326);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(833, 606);
             this.flowLayoutPanel3.TabIndex = 1;
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // products_show
             // 
@@ -249,5 +267,7 @@
         public System.Windows.Forms.TabPage Electronics_tab;
         public System.Windows.Forms.TabPage Applieances_tab;
         public System.Windows.Forms.TabPage Beauty_Product_tab;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

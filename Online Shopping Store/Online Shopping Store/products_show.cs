@@ -169,13 +169,25 @@ namespace Online_Shopping_Store
 
         private void showCart_MenuOption_Click(object sender, EventArgs e)
         {
-            ReceiptForm cart = new ReceiptForm();
-            cart.Show();
+            home_page home = new home_page();
+            home.Show();
+            //this.Hide();
         }
 
         private void productsShow_menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filename = "instructions.pdf";
+            System.Diagnostics.Process.Start(filename);
         }
     }
 }

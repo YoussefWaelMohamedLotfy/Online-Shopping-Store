@@ -124,7 +124,7 @@
             this.MyAccountTabControl.Controls.Add(this.UpdateTab);
             this.MyAccountTabControl.Controls.Add(this.RemoveTab);
             this.MyAccountTabControl.Location = new System.Drawing.Point(9, 10);
-            this.MyAccountTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MyAccountTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.MyAccountTabControl.Name = "MyAccountTabControl";
             this.MyAccountTabControl.SelectedIndex = 0;
             this.MyAccountTabControl.Size = new System.Drawing.Size(1021, 502);
@@ -132,6 +132,7 @@
             // 
             // OwnerTab
             // 
+            this.OwnerTab.BackColor = System.Drawing.Color.DarkSlateGray;
             this.OwnerTab.Controls.Add(this.CancelTB);
             this.OwnerTab.Controls.Add(this.bunifuCustomLabel1);
             this.OwnerTab.Controls.Add(this.ViewTB);
@@ -139,12 +140,11 @@
             this.OwnerTab.Controls.Add(this.RemoveTB);
             this.OwnerTab.Controls.Add(this.AddProductTB);
             this.OwnerTab.Location = new System.Drawing.Point(4, 22);
-            this.OwnerTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OwnerTab.Margin = new System.Windows.Forms.Padding(2);
             this.OwnerTab.Name = "OwnerTab";
             this.OwnerTab.Size = new System.Drawing.Size(1013, 476);
             this.OwnerTab.TabIndex = 4;
             this.OwnerTab.Text = "Owner";
-            this.OwnerTab.UseVisualStyleBackColor = true;
             // 
             // CancelTB
             // 
@@ -153,7 +153,7 @@
             this.CancelTB.ActiveFillColor = System.Drawing.Color.Teal;
             this.CancelTB.ActiveForecolor = System.Drawing.Color.White;
             this.CancelTB.ActiveLineColor = System.Drawing.Color.Teal;
-            this.CancelTB.BackColor = System.Drawing.Color.Transparent;
+            this.CancelTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.CancelTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CancelTB.BackgroundImage")));
             this.CancelTB.ButtonText = "Cancel";
             this.CancelTB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -165,7 +165,7 @@
             this.CancelTB.IdleForecolor = System.Drawing.Color.Teal;
             this.CancelTB.IdleLineColor = System.Drawing.Color.Teal;
             this.CancelTB.Location = new System.Drawing.Point(648, 389);
-            this.CancelTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelTB.Margin = new System.Windows.Forms.Padding(4);
             this.CancelTB.Name = "CancelTB";
             this.CancelTB.Size = new System.Drawing.Size(99, 29);
             this.CancelTB.TabIndex = 5;
@@ -190,7 +190,7 @@
             this.ViewTB.ActiveFillColor = System.Drawing.Color.Teal;
             this.ViewTB.ActiveForecolor = System.Drawing.Color.White;
             this.ViewTB.ActiveLineColor = System.Drawing.Color.Teal;
-            this.ViewTB.BackColor = System.Drawing.Color.Transparent;
+            this.ViewTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ViewTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ViewTB.BackgroundImage")));
             this.ViewTB.ButtonText = "View Product";
             this.ViewTB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -202,7 +202,7 @@
             this.ViewTB.IdleForecolor = System.Drawing.Color.Teal;
             this.ViewTB.IdleLineColor = System.Drawing.Color.Teal;
             this.ViewTB.Location = new System.Drawing.Point(38, 385);
-            this.ViewTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewTB.Margin = new System.Windows.Forms.Padding(4);
             this.ViewTB.Name = "ViewTB";
             this.ViewTB.Size = new System.Drawing.Size(136, 33);
             this.ViewTB.TabIndex = 3;
@@ -216,7 +216,7 @@
             this.UpdateTB.ActiveFillColor = System.Drawing.Color.Teal;
             this.UpdateTB.ActiveForecolor = System.Drawing.Color.White;
             this.UpdateTB.ActiveLineColor = System.Drawing.Color.Teal;
-            this.UpdateTB.BackColor = System.Drawing.Color.Transparent;
+            this.UpdateTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.UpdateTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UpdateTB.BackgroundImage")));
             this.UpdateTB.ButtonText = "Update";
             this.UpdateTB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -228,7 +228,7 @@
             this.UpdateTB.IdleForecolor = System.Drawing.Color.Teal;
             this.UpdateTB.IdleLineColor = System.Drawing.Color.Teal;
             this.UpdateTB.Location = new System.Drawing.Point(181, 344);
-            this.UpdateTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UpdateTB.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateTB.Name = "UpdateTB";
             this.UpdateTB.Size = new System.Drawing.Size(136, 33);
             this.UpdateTB.TabIndex = 2;
@@ -242,7 +242,7 @@
             this.RemoveTB.ActiveFillColor = System.Drawing.Color.Teal;
             this.RemoveTB.ActiveForecolor = System.Drawing.Color.White;
             this.RemoveTB.ActiveLineColor = System.Drawing.Color.Teal;
-            this.RemoveTB.BackColor = System.Drawing.Color.Transparent;
+            this.RemoveTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.RemoveTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RemoveTB.BackgroundImage")));
             this.RemoveTB.ButtonText = "Remove Product";
             this.RemoveTB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -254,7 +254,7 @@
             this.RemoveTB.IdleForecolor = System.Drawing.Color.Teal;
             this.RemoveTB.IdleLineColor = System.Drawing.Color.Teal;
             this.RemoveTB.Location = new System.Drawing.Point(181, 385);
-            this.RemoveTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RemoveTB.Margin = new System.Windows.Forms.Padding(4);
             this.RemoveTB.Name = "RemoveTB";
             this.RemoveTB.Size = new System.Drawing.Size(136, 33);
             this.RemoveTB.TabIndex = 1;
@@ -268,7 +268,7 @@
             this.AddProductTB.ActiveFillColor = System.Drawing.Color.Teal;
             this.AddProductTB.ActiveForecolor = System.Drawing.Color.White;
             this.AddProductTB.ActiveLineColor = System.Drawing.Color.Teal;
-            this.AddProductTB.BackColor = System.Drawing.Color.Transparent;
+            this.AddProductTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.AddProductTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddProductTB.BackgroundImage")));
             this.AddProductTB.ButtonText = "Add Product";
             this.AddProductTB.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -280,7 +280,7 @@
             this.AddProductTB.IdleForecolor = System.Drawing.Color.Teal;
             this.AddProductTB.IdleLineColor = System.Drawing.Color.Teal;
             this.AddProductTB.Location = new System.Drawing.Point(38, 344);
-            this.AddProductTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddProductTB.Margin = new System.Windows.Forms.Padding(4);
             this.AddProductTB.Name = "AddProductTB";
             this.AddProductTB.Size = new System.Drawing.Size(136, 33);
             this.AddProductTB.TabIndex = 0;
@@ -291,9 +291,9 @@
             // 
             this.ViewTab.Controls.Add(this.dataGridView1);
             this.ViewTab.Location = new System.Drawing.Point(4, 22);
-            this.ViewTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ViewTab.Margin = new System.Windows.Forms.Padding(2);
             this.ViewTab.Name = "ViewTab";
-            this.ViewTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ViewTab.Padding = new System.Windows.Forms.Padding(2);
             this.ViewTab.Size = new System.Drawing.Size(1013, 476);
             this.ViewTab.TabIndex = 0;
             this.ViewTab.Text = "View products";
@@ -303,15 +303,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1082, 476);
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 476);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // AddTab
             // 
+            this.AddTab.BackColor = System.Drawing.Color.DarkSlateGray;
             this.AddTab.Controls.Add(this.pictureBox1);
             this.AddTab.Controls.Add(this.AddPhoto);
             this.AddTab.Controls.Add(this.ProductIdTB);
@@ -339,20 +341,19 @@
             this.AddTab.Controls.Add(this.ProductNameLabel);
             this.AddTab.Controls.Add(this.ProductNameTB);
             this.AddTab.Location = new System.Drawing.Point(4, 22);
-            this.AddTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddTab.Margin = new System.Windows.Forms.Padding(2);
             this.AddTab.Name = "AddTab";
-            this.AddTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddTab.Padding = new System.Windows.Forms.Padding(2);
             this.AddTab.Size = new System.Drawing.Size(1013, 476);
             this.AddTab.TabIndex = 1;
             this.AddTab.Text = "Add product";
-            this.AddTab.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(645, 88);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(354, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -378,7 +379,7 @@
             this.AddPhoto.IdleForecolor = System.Drawing.Color.Teal;
             this.AddPhoto.IdleLineColor = System.Drawing.Color.Teal;
             this.AddPhoto.Location = new System.Drawing.Point(525, 145);
-            this.AddPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.AddPhoto.Name = "AddPhoto";
             this.AddPhoto.Size = new System.Drawing.Size(113, 46);
             this.AddPhoto.TabIndex = 79;
@@ -456,7 +457,7 @@
             this.AddProductButton.IdleForecolor = System.Drawing.Color.Teal;
             this.AddProductButton.IdleLineColor = System.Drawing.Color.Teal;
             this.AddProductButton.Location = new System.Drawing.Point(377, 398);
-            this.AddProductButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.AddProductButton.Name = "AddProductButton";
             this.AddProductButton.Size = new System.Drawing.Size(169, 46);
             this.AddProductButton.TabIndex = 74;
@@ -482,7 +483,7 @@
             this.BackTB.IdleForecolor = System.Drawing.Color.Teal;
             this.BackTB.IdleLineColor = System.Drawing.Color.Teal;
             this.BackTB.Location = new System.Drawing.Point(572, 396);
-            this.BackTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackTB.Margin = new System.Windows.Forms.Padding(4);
             this.BackTB.Name = "BackTB";
             this.BackTB.Size = new System.Drawing.Size(169, 46);
             this.BackTB.TabIndex = 73;
@@ -724,6 +725,7 @@
             // 
             // UpdateTab
             // 
+            this.UpdateTab.BackColor = System.Drawing.Color.DarkSlateGray;
             this.UpdateTab.Controls.Add(this.FinalUpdate);
             this.UpdateTab.Controls.Add(this.DescriptionUP);
             this.UpdateTab.Controls.Add(this.bunifuCustomLabel12);
@@ -744,12 +746,11 @@
             this.UpdateTab.Controls.Add(this.NameUP);
             this.UpdateTab.Controls.Add(this.dataGridView3);
             this.UpdateTab.Location = new System.Drawing.Point(4, 22);
-            this.UpdateTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UpdateTab.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateTab.Name = "UpdateTab";
             this.UpdateTab.Size = new System.Drawing.Size(1013, 476);
             this.UpdateTab.TabIndex = 2;
             this.UpdateTab.Text = "Update";
-            this.UpdateTab.UseVisualStyleBackColor = true;
             // 
             // FinalUpdate
             // 
@@ -770,7 +771,7 @@
             this.FinalUpdate.IdleForecolor = System.Drawing.Color.Teal;
             this.FinalUpdate.IdleLineColor = System.Drawing.Color.Teal;
             this.FinalUpdate.Location = new System.Drawing.Point(289, 431);
-            this.FinalUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FinalUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.FinalUpdate.Name = "FinalUpdate";
             this.FinalUpdate.Size = new System.Drawing.Size(136, 33);
             this.FinalUpdate.TabIndex = 84;
@@ -1007,7 +1008,7 @@
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(430, 2);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.Size = new System.Drawing.Size(584, 474);
@@ -1016,15 +1017,15 @@
             // 
             // RemoveTab
             // 
+            this.RemoveTab.BackColor = System.Drawing.Color.DarkSlateGray;
             this.RemoveTab.Controls.Add(this.final_remove);
             this.RemoveTab.Controls.Add(this.dataGridView2);
             this.RemoveTab.Location = new System.Drawing.Point(4, 22);
-            this.RemoveTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RemoveTab.Margin = new System.Windows.Forms.Padding(2);
             this.RemoveTab.Name = "RemoveTab";
             this.RemoveTab.Size = new System.Drawing.Size(1013, 476);
             this.RemoveTab.TabIndex = 3;
             this.RemoveTab.Text = "Remove";
-            this.RemoveTab.UseVisualStyleBackColor = true;
             // 
             // final_remove
             // 
@@ -1045,7 +1046,7 @@
             this.final_remove.IdleForecolor = System.Drawing.Color.Teal;
             this.final_remove.IdleLineColor = System.Drawing.Color.Teal;
             this.final_remove.Location = new System.Drawing.Point(827, 391);
-            this.final_remove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.final_remove.Margin = new System.Windows.Forms.Padding(4);
             this.final_remove.Name = "final_remove";
             this.final_remove.Size = new System.Drawing.Size(165, 43);
             this.final_remove.TabIndex = 3;
@@ -1056,7 +1057,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(-3, 0);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(770, 474);
@@ -1068,12 +1069,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1028, 532);
             this.Controls.Add(this.MyAccountTabControl);
             this.Controls.Add(this.MyAcc_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OwnerAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Account";

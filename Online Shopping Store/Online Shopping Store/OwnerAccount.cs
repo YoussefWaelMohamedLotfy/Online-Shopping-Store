@@ -185,26 +185,26 @@ namespace Online_Shopping_Store
                 formatter.Serialize(FurnitureFile, Item);
                 FurnitureFile.Close();
             }
-            //FileStream fs = new FileStream("Products.txt", FileMode.Append);
-            //formatter.Serialize(fs, Item);
+             //FileStream fs = new FileStream("Products.txt", FileMode.Append);
+             //formatter.Serialize(fs, Item);
 
-            MessageBox.Show("Successfully added ! ");
-            //fs.Close();
-            ProductNameTB.Text = null;
-            ProductIdTB.Text = null;
-            PriceTB.Text = null;
-            Size = null;
-            color = null;
-            DescriptionTB.Text = null;
-            category = null;
-            BrandTB.Text = null;
-            Availibility = null;
-            pictureBox1.Image = null;
-            Quantity = 1;
+             MessageBox.Show("Successfully added ! ");
+              //fs.Close();
+             ProductNameTB.Text = null;
+             ProductIdTB.Text = null;
+              PriceTB.Text = null;
+             Size = null;
+             color = null;
+             DescriptionTB.Text = null;
+             category = null;
+             BrandTB.Text = null;
+             Availibility = null;
+             pictureBox1.Image = null;
+             Quantity = 1;
+
+            }
 
         }
-
-    }
 
     private void AddPhoto_Click(object sender, EventArgs e)
         {
@@ -301,6 +301,11 @@ namespace Online_Shopping_Store
             //this.dataGridView2.Rows.RemoveAt(this.dataGridView2.CurrentRow.Index);
             //dataGridView2.Rows.Remove(row_delete);
             //dataGridView2.Rows.RemoveAt(dataGridView2.SelectedRows[indexRow].Index);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

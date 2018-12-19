@@ -34,6 +34,7 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Textbox8_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
             this.Buttsignup = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -56,6 +57,7 @@
             this.butSign_up_tab = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Buttonsignin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.TextBox2_passin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextBox1_emailin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -65,14 +67,16 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(-4, -29);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -112,7 +116,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(417, 21);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(408, 21);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(163, 41);
@@ -137,7 +141,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Transparent;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(209, 21);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(200, 21);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(163, 41);
@@ -148,6 +152,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Controls.Add(this.Textbox8_phone);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.Buttsignup);
@@ -166,10 +171,23 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(211, 69);
+            this.panel1.Location = new System.Drawing.Point(202, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 547);
+            this.panel1.Size = new System.Drawing.Size(375, 587);
             this.panel1.TabIndex = 18;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(144, 52);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 21;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // Textbox8_phone
             // 
@@ -183,7 +201,7 @@
             this.Textbox8_phone.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox8_phone.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox8_phone.LineThickness = 2;
-            this.Textbox8_phone.Location = new System.Drawing.Point(21, 440);
+            this.Textbox8_phone.Location = new System.Drawing.Point(21, 477);
             this.Textbox8_phone.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox8_phone.Name = "Textbox8_phone";
             this.Textbox8_phone.Size = new System.Drawing.Size(336, 25);
@@ -197,7 +215,7 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label10.Location = new System.Drawing.Point(18, 420);
+            this.label10.Location = new System.Drawing.Point(18, 457);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(49, 16);
             this.label10.TabIndex = 18;
@@ -222,7 +240,7 @@
             this.Buttsignup.IdleFillColor = System.Drawing.Color.White;
             this.Buttsignup.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.Buttsignup.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.Buttsignup.Location = new System.Drawing.Point(109, 491);
+            this.Buttsignup.Location = new System.Drawing.Point(109, 528);
             this.Buttsignup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Buttsignup.Name = "Buttsignup";
             this.Buttsignup.Size = new System.Drawing.Size(159, 48);
@@ -242,7 +260,7 @@
             this.Textbox7_address.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox7_address.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox7_address.LineThickness = 2;
-            this.Textbox7_address.Location = new System.Drawing.Point(21, 381);
+            this.Textbox7_address.Location = new System.Drawing.Point(21, 418);
             this.Textbox7_address.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox7_address.Name = "Textbox7_address";
             this.Textbox7_address.Size = new System.Drawing.Size(336, 25);
@@ -261,7 +279,7 @@
             this.Textbox6_city.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox6_city.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox6_city.LineThickness = 2;
-            this.Textbox6_city.Location = new System.Drawing.Point(188, 320);
+            this.Textbox6_city.Location = new System.Drawing.Point(188, 357);
             this.Textbox6_city.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox6_city.Name = "Textbox6_city";
             this.Textbox6_city.Size = new System.Drawing.Size(159, 25);
@@ -280,7 +298,7 @@
             this.Textbox5_country.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox5_country.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox5_country.LineThickness = 2;
-            this.Textbox5_country.Location = new System.Drawing.Point(21, 320);
+            this.Textbox5_country.Location = new System.Drawing.Point(21, 357);
             this.Textbox5_country.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox5_country.Name = "Textbox5_country";
             this.Textbox5_country.Size = new System.Drawing.Size(159, 25);
@@ -299,7 +317,7 @@
             this.Textbox4_pass.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox4_pass.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox4_pass.LineThickness = 2;
-            this.Textbox4_pass.Location = new System.Drawing.Point(21, 253);
+            this.Textbox4_pass.Location = new System.Drawing.Point(21, 290);
             this.Textbox4_pass.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox4_pass.Name = "Textbox4_pass";
             this.Textbox4_pass.Size = new System.Drawing.Size(336, 25);
@@ -318,7 +336,7 @@
             this.Textbox3_email.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox3_email.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox3_email.LineThickness = 2;
-            this.Textbox3_email.Location = new System.Drawing.Point(21, 188);
+            this.Textbox3_email.Location = new System.Drawing.Point(21, 225);
             this.Textbox3_email.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox3_email.Name = "Textbox3_email";
             this.Textbox3_email.Size = new System.Drawing.Size(336, 25);
@@ -337,7 +355,7 @@
             this.Textbox2_lname.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox2_lname.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox2_lname.LineThickness = 2;
-            this.Textbox2_lname.Location = new System.Drawing.Point(193, 116);
+            this.Textbox2_lname.Location = new System.Drawing.Point(193, 153);
             this.Textbox2_lname.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox2_lname.Name = "Textbox2_lname";
             this.Textbox2_lname.Size = new System.Drawing.Size(154, 25);
@@ -356,7 +374,7 @@
             this.Textbox1_fname.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox1_fname.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.Textbox1_fname.LineThickness = 2;
-            this.Textbox1_fname.Location = new System.Drawing.Point(26, 116);
+            this.Textbox1_fname.Location = new System.Drawing.Point(26, 153);
             this.Textbox1_fname.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox1_fname.Name = "Textbox1_fname";
             this.Textbox1_fname.Size = new System.Drawing.Size(159, 25);
@@ -370,7 +388,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label8.Location = new System.Drawing.Point(82, 39);
+            this.label8.Location = new System.Drawing.Point(82, 21);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(201, 28);
             this.label8.TabIndex = 9;
@@ -384,7 +402,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label7.Location = new System.Drawing.Point(18, 361);
+            this.label7.Location = new System.Drawing.Point(18, 398);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 16);
             this.label7.TabIndex = 8;
@@ -398,7 +416,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label6.Location = new System.Drawing.Point(235, 300);
+            this.label6.Location = new System.Drawing.Point(235, 337);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 16);
             this.label6.TabIndex = 7;
@@ -412,7 +430,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(66, 300);
+            this.label5.Location = new System.Drawing.Point(66, 337);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 6;
@@ -426,7 +444,7 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(18, 233);
+            this.label4.Location = new System.Drawing.Point(18, 270);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 5;
@@ -440,7 +458,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(18, 168);
+            this.label3.Location = new System.Drawing.Point(18, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 4;
@@ -454,7 +472,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(235, 96);
+            this.label2.Location = new System.Drawing.Point(235, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 3;
@@ -468,7 +486,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(64, 96);
+            this.label1.Location = new System.Drawing.Point(64, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 2;
@@ -543,6 +561,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bunifuImageButton2);
             this.panel2.Controls.Add(this.Buttonsignin);
             this.panel2.Controls.Add(this.TextBox2_passin);
             this.panel2.Controls.Add(this.TextBox1_emailin);
@@ -551,8 +570,21 @@
             this.panel2.Controls.Add(this.label14);
             this.panel2.Location = new System.Drawing.Point(197, 136);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 350);
+            this.panel2.Size = new System.Drawing.Size(375, 394);
             this.panel2.TabIndex = 20;
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(143, 68);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 22;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
             // 
             // Buttonsignin
             // 
@@ -572,7 +604,7 @@
             this.Buttonsignin.IdleFillColor = System.Drawing.Color.White;
             this.Buttonsignin.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.Buttonsignin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.Location = new System.Drawing.Point(104, 258);
+            this.Buttonsignin.Location = new System.Drawing.Point(104, 318);
             this.Buttonsignin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Buttonsignin.Name = "Buttonsignin";
             this.Buttonsignin.Size = new System.Drawing.Size(162, 59);
@@ -592,7 +624,7 @@
             this.TextBox2_passin.LineIdleColor = System.Drawing.Color.Gray;
             this.TextBox2_passin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.TextBox2_passin.LineThickness = 2;
-            this.TextBox2_passin.Location = new System.Drawing.Point(21, 179);
+            this.TextBox2_passin.Location = new System.Drawing.Point(21, 239);
             this.TextBox2_passin.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox2_passin.Name = "TextBox2_passin";
             this.TextBox2_passin.Size = new System.Drawing.Size(336, 25);
@@ -611,7 +643,7 @@
             this.TextBox1_emailin.LineIdleColor = System.Drawing.Color.Gray;
             this.TextBox1_emailin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
             this.TextBox1_emailin.LineThickness = 2;
-            this.TextBox1_emailin.Location = new System.Drawing.Point(21, 114);
+            this.TextBox1_emailin.Location = new System.Drawing.Point(21, 174);
             this.TextBox1_emailin.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox1_emailin.Name = "TextBox1_emailin";
             this.TextBox1_emailin.Size = new System.Drawing.Size(336, 25);
@@ -625,7 +657,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label9.Location = new System.Drawing.Point(138, 31);
+            this.label9.Location = new System.Drawing.Point(135, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 28);
             this.label9.TabIndex = 9;
@@ -639,7 +671,7 @@
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label13.Location = new System.Drawing.Point(18, 159);
+            this.label13.Location = new System.Drawing.Point(18, 219);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 16);
             this.label13.TabIndex = 5;
@@ -653,7 +685,7 @@
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label14.Location = new System.Drawing.Point(18, 94);
+            this.label14.Location = new System.Drawing.Point(18, 154);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(43, 16);
             this.label14.TabIndex = 4;
@@ -664,17 +696,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 626);
+            this.ClientSize = new System.Drawing.Size(764, 661);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "incs";
             this.Text = "incs";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -714,5 +750,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
     }
 }
