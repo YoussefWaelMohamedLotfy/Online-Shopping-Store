@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel_usercontrol_product = new System.Windows.Forms.Panel();
+            this.brandLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.removeItem_button = new System.Windows.Forms.Button();
+            this.itemsNumberCounter = new System.Windows.Forms.NumericUpDown();
             this.pricelabel = new System.Windows.Forms.Label();
-            this.idllabel = new System.Windows.Forms.Label();
+            this.idlabel = new System.Windows.Forms.Label();
             this.namelabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.Cancel_but = new System.Windows.Forms.Button();
-            this.brandLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel_usercontrol_product.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsNumberCounter)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_usercontrol_product
@@ -48,10 +48,10 @@
             this.panel_usercontrol_product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_usercontrol_product.Controls.Add(this.brandLabel);
             this.panel_usercontrol_product.Controls.Add(this.label5);
-            this.panel_usercontrol_product.Controls.Add(this.Cancel_but);
-            this.panel_usercontrol_product.Controls.Add(this.numericUpDown1);
+            this.panel_usercontrol_product.Controls.Add(this.removeItem_button);
+            this.panel_usercontrol_product.Controls.Add(this.itemsNumberCounter);
             this.panel_usercontrol_product.Controls.Add(this.pricelabel);
-            this.panel_usercontrol_product.Controls.Add(this.idllabel);
+            this.panel_usercontrol_product.Controls.Add(this.idlabel);
             this.panel_usercontrol_product.Controls.Add(this.namelabel);
             this.panel_usercontrol_product.Controls.Add(this.label3);
             this.panel_usercontrol_product.Controls.Add(this.label2);
@@ -61,23 +61,58 @@
             this.panel_usercontrol_product.Size = new System.Drawing.Size(513, 73);
             this.panel_usercontrol_product.TabIndex = 2;
             // 
+            // brandLabel
+            // 
+            this.brandLabel.AutoSize = true;
+            this.brandLabel.Location = new System.Drawing.Point(248, 46);
+            this.brandLabel.Name = "brandLabel";
+            this.brandLabel.Size = new System.Drawing.Size(35, 13);
+            this.brandLabel.TabIndex = 34;
+            this.brandLabel.Text = "label7";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(190, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Brand";
+            // 
+            // removeItem_button
+            // 
+            this.removeItem_button.Location = new System.Drawing.Point(414, 14);
+            this.removeItem_button.Name = "removeItem_button";
+            this.removeItem_button.Size = new System.Drawing.Size(75, 37);
+            this.removeItem_button.TabIndex = 32;
+            this.removeItem_button.Text = "Remove ";
+            this.removeItem_button.UseVisualStyleBackColor = true;
+            this.removeItem_button.Click += new System.EventHandler(this.Cancel_but_Click);
+            // 
+            // itemsNumberCounter
+            // 
+            this.itemsNumberCounter.Location = new System.Drawing.Point(328, 24);
+            this.itemsNumberCounter.Name = "itemsNumberCounter";
+            this.itemsNumberCounter.Size = new System.Drawing.Size(59, 20);
+            this.itemsNumberCounter.TabIndex = 31;
+            // 
             // pricelabel
             // 
             this.pricelabel.AutoSize = true;
-            this.pricelabel.Location = new System.Drawing.Point(206, 9);
+            this.pricelabel.Location = new System.Drawing.Point(248, 9);
             this.pricelabel.Name = "pricelabel";
             this.pricelabel.Size = new System.Drawing.Size(35, 13);
             this.pricelabel.TabIndex = 28;
             this.pricelabel.Text = "label7";
             // 
-            // idllabel
+            // idlabel
             // 
-            this.idllabel.AutoSize = true;
-            this.idllabel.Location = new System.Drawing.Point(89, 46);
-            this.idllabel.Name = "idllabel";
-            this.idllabel.Size = new System.Drawing.Size(35, 13);
-            this.idllabel.TabIndex = 27;
-            this.idllabel.Text = "label6";
+            this.idlabel.AutoSize = true;
+            this.idlabel.Location = new System.Drawing.Point(89, 46);
+            this.idlabel.Name = "idlabel";
+            this.idlabel.Size = new System.Drawing.Size(35, 13);
+            this.idlabel.TabIndex = 27;
+            this.idlabel.Text = "label6";
             // 
             // namelabel
             // 
@@ -91,7 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 9);
+            this.label3.Location = new System.Drawing.Point(190, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 25;
@@ -115,40 +150,6 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Name";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(267, 24);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 31;
-            // 
-            // Cancel_but
-            // 
-            this.Cancel_but.Location = new System.Drawing.Point(414, 14);
-            this.Cancel_but.Name = "Cancel_but";
-            this.Cancel_but.Size = new System.Drawing.Size(75, 37);
-            this.Cancel_but.TabIndex = 32;
-            this.Cancel_but.Text = "Remove ";
-            this.Cancel_but.UseVisualStyleBackColor = true;
-            // 
-            // brandLabel
-            // 
-            this.brandLabel.AutoSize = true;
-            this.brandLabel.Location = new System.Drawing.Point(206, 46);
-            this.brandLabel.Name = "brandLabel";
-            this.brandLabel.Size = new System.Drawing.Size(35, 13);
-            this.brandLabel.TabIndex = 34;
-            this.brandLabel.Text = "label7";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Brand";
-            // 
             // Cart_items
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,7 +159,7 @@
             this.Size = new System.Drawing.Size(520, 80);
             this.panel_usercontrol_product.ResumeLayout(false);
             this.panel_usercontrol_product.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsNumberCounter)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,13 +168,13 @@
 
         private System.Windows.Forms.Panel panel_usercontrol_product;
         private System.Windows.Forms.Label pricelabel;
-        private System.Windows.Forms.Label idllabel;
+        private System.Windows.Forms.Label idlabel;
         private System.Windows.Forms.Label namelabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button Cancel_but;
+        private System.Windows.Forms.NumericUpDown itemsNumberCounter;
+        private System.Windows.Forms.Button removeItem_button;
         private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.Label label5;
     }

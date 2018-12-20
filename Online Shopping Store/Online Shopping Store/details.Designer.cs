@@ -77,7 +77,6 @@
             this.panel_usercontrol_product.Name = "panel_usercontrol_product";
             this.panel_usercontrol_product.Size = new System.Drawing.Size(258, 434);
             this.panel_usercontrol_product.TabIndex = 1;
-            this.panel_usercontrol_product.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_usercontrol_product_Paint);
             // 
             // label6
             // 

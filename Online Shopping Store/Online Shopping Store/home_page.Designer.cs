@@ -48,6 +48,7 @@
             this.homePage_menuStrip = new System.Windows.Forms.MenuStrip();
             this.showCart_MenuOption = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showItem_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appliances_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.electronics_btn)).BeginInit();
@@ -291,6 +292,7 @@
             // homePage_menuStrip
             // 
             this.homePage_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showItem_MenuItem,
             this.showCart_MenuOption,
             this.exitToolStripMenuItem});
             this.homePage_menuStrip.Location = new System.Drawing.Point(0, 0);
@@ -313,6 +315,12 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // showItem_MenuItem
+            // 
+            this.showItem_MenuItem.Name = "showItem_MenuItem";
+            this.showItem_MenuItem.Size = new System.Drawing.Size(73, 20);
+            this.showItem_MenuItem.Text = "Show Cart";
             // 
             // home_page
             // 
@@ -380,5 +388,6 @@
         private System.Windows.Forms.MenuStrip homePage_menuStrip;
         private System.Windows.Forms.ToolStripMenuItem showCart_MenuOption;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showItem_MenuItem;
     }
 }

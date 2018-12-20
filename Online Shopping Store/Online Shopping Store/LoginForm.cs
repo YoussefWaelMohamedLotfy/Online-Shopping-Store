@@ -14,6 +14,8 @@ namespace Online_Shopping_Store
 {
     public partial class LoginForm : Form
     {
+        bool flag;
+
         public LoginForm()
         {
             InitializeComponent();
@@ -71,17 +73,22 @@ namespace Online_Shopping_Store
                 // Check if data entered by user exists in the database
                 if (shopper.email == email_Textbox.Text && shopper.password == password_Textbox.Text)
                 {
-                    // Open the home page and hide the login form
-                    //this.Hide();
-                    home_page homePage = new home_page();
-                    homePage.Show();
-                    //this.Close();
+                    flag = true;
                 }
-                else
-                {
-                    MessageBox.Show("Check your credentials! Enter your data again.", "Wrong Email or password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //email_Textbox.Text = password_Textbox.Text = String.Empty; // Clear textboxes
-                }
+            }
+
+            if (flag)
+            {
+                // Open the home page and hide the login form
+                //this.Hide();
+                home_page homePage = new home_page();
+                homePage.Show();
+                //this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Check your credentials! Enter your data again.", "Wrong Email or password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //email_Textbox.Text = password_Textbox.Text = String.Empty; // Clear textboxes
             }
 
             database.Close();
@@ -126,6 +133,10 @@ namespace Online_Shopping_Store
             }
         }
 
-
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            // Set the flag to false on form load
+            flag = false;
+        }
     }
 }
