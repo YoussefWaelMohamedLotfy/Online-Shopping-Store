@@ -17,8 +17,13 @@ namespace Online_Shopping_Store
 {
     public partial class details : UserControl
     {
+        List<string> CartList = new List<string>();
+        public Cart_items newItem;
+        public LinkedList<Cart_items> cartLinkedList = new LinkedList<Cart_items>();
 
-        public details(String name, String id, String price, Image pic,string description, string brand)
+        products_show ps = new products_show();
+
+        public details(String name, String id, String price, Image pic,string description, string brand, products_show form)
         {
             InitializeComponent();
             namelabel.Text = name;
@@ -27,7 +32,7 @@ namespace Online_Shopping_Store
             pictureBox1.Image = pic;
             Desc_textbox.Text = description;
             brandLabel.Text = brand;
-
+            this.ps = form;
         }
 
         private void but_readmore_Click(object sender, EventArgs e)
@@ -36,22 +41,16 @@ namespace Online_Shopping_Store
             details.Show();
         }
 
-        private void panel_usercontrol_product_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Buy_Cart_Click(object sender, EventArgs e)
         {
-            List<string> CarList = new List<string>();
-            CarList.Add(namelabel.Text);
-            CarList.Add(idllabel.Text);
-            CarList.Add(pricelabel.Text);
-            CarList.Add(brandLabel.Text);
+            CartList.Add(namelabel.Text);
+            CartList.Add(idllabel.Text);
+            CartList.Add(brandLabel.Text);
+            CartList.Add(pricelabel.Text);
 
-            // {
-            MessageBox.Show(CarList[0]);
-            //}
+            newItem = new Cart_items(CartList[0], CartList[1], CartList[2], CartList[3]);
+            cartLinkedList.AddLast(newItem);
+            ps.cart_flowLayoutPanel.Controls.Add(newItem);
         }
     }
 }

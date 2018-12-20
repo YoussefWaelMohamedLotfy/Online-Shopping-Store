@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(products_show));
             this.productsShow_menuStrip = new System.Windows.Forms.MenuStrip();
             this.showCart_MenuOption = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Smart_Phones_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -39,20 +42,25 @@
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.Electronics_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Applieances_tab = new System.Windows.Forms.TabPage();
+            this.Appliances_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Beauty_Product_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showCart_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cart_tab = new System.Windows.Forms.TabPage();
+            this.cart_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.confirmPurchase_button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.productsShow_menuStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Smart_Phones_tab.SuspendLayout();
             this.Fashion_Tab.SuspendLayout();
             this.Furniture_tab.SuspendLayout();
             this.Electronics_tab.SuspendLayout();
-            this.Applieances_tab.SuspendLayout();
+            this.Appliances_tab.SuspendLayout();
             this.Beauty_Product_tab.SuspendLayout();
+            this.cart_tab.SuspendLayout();
             this.SuspendLayout();
             // 
             // productsShow_menuStrip
@@ -60,6 +68,7 @@
             this.productsShow_menuStrip.BackColor = System.Drawing.Color.Honeydew;
             this.productsShow_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showCart_MenuOption,
+            this.showCart_MenuItem,
             this.helpToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.productsShow_menuStrip.Location = new System.Drawing.Point(0, 0);
@@ -76,14 +85,29 @@
             this.showCart_MenuOption.Text = "Home";
             this.showCart_MenuOption.Click += new System.EventHandler(this.showCart_MenuOption_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.Smart_Phones_tab);
             this.tabControl1.Controls.Add(this.Fashion_Tab);
             this.tabControl1.Controls.Add(this.Furniture_tab);
             this.tabControl1.Controls.Add(this.Electronics_tab);
-            this.tabControl1.Controls.Add(this.Applieances_tab);
+            this.tabControl1.Controls.Add(this.Appliances_tab);
             this.tabControl1.Controls.Add(this.Beauty_Product_tab);
+            this.tabControl1.Controls.Add(this.cart_tab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -172,15 +196,15 @@
             this.flowLayoutPanel4.Size = new System.Drawing.Size(833, 606);
             this.flowLayoutPanel4.TabIndex = 1;
             // 
-            // Applieances_tab
+            // Appliances_tab
             // 
-            this.Applieances_tab.Controls.Add(this.flowLayoutPanel2);
-            this.Applieances_tab.Location = new System.Drawing.Point(4, 22);
-            this.Applieances_tab.Name = "Applieances_tab";
-            this.Applieances_tab.Size = new System.Drawing.Size(833, 606);
-            this.Applieances_tab.TabIndex = 4;
-            this.Applieances_tab.Text = "Applieances";
-            this.Applieances_tab.UseVisualStyleBackColor = true;
+            this.Appliances_tab.Controls.Add(this.flowLayoutPanel2);
+            this.Appliances_tab.Location = new System.Drawing.Point(4, 22);
+            this.Appliances_tab.Name = "Appliances_tab";
+            this.Appliances_tab.Size = new System.Drawing.Size(833, 606);
+            this.Appliances_tab.TabIndex = 4;
+            this.Appliances_tab.Text = "Appliances";
+            this.Appliances_tab.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
@@ -212,19 +236,102 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(833, 606);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
-            // helpToolStripMenuItem
+            // showCart_MenuItem
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            this.showCart_MenuItem.Name = "showCart_MenuItem";
+            this.showCart_MenuItem.Size = new System.Drawing.Size(73, 20);
+            this.showCart_MenuItem.Text = "Show Cart";
+            this.showCart_MenuItem.Click += new System.EventHandler(this.showCart_MenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // cart_tab
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.cart_tab.BackColor = System.Drawing.Color.Transparent;
+            this.cart_tab.Controls.Add(this.bunifuThinButton21);
+            this.cart_tab.Controls.Add(this.label1);
+            this.cart_tab.Controls.Add(this.confirmPurchase_button);
+            this.cart_tab.Controls.Add(this.cart_flowLayoutPanel);
+            this.cart_tab.Location = new System.Drawing.Point(4, 22);
+            this.cart_tab.Name = "cart_tab";
+            this.cart_tab.Size = new System.Drawing.Size(833, 606);
+            this.cart_tab.TabIndex = 6;
+            this.cart_tab.Text = "Cart";
+            // 
+            // cart_flowLayoutPanel
+            // 
+            this.cart_flowLayoutPanel.Location = new System.Drawing.Point(-4, 49);
+            this.cart_flowLayoutPanel.Name = "cart_flowLayoutPanel";
+            this.cart_flowLayoutPanel.Size = new System.Drawing.Size(841, 495);
+            this.cart_flowLayoutPanel.TabIndex = 0;
+            // 
+            // confirmPurchase_button
+            // 
+            this.confirmPurchase_button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.confirmPurchase_button.BorderRadius = 0;
+            this.confirmPurchase_button.ButtonText = "Confirm Purchase";
+            this.confirmPurchase_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmPurchase_button.DisabledColor = System.Drawing.Color.Gray;
+            this.confirmPurchase_button.Iconcolor = System.Drawing.Color.Transparent;
+            this.confirmPurchase_button.Iconimage = ((System.Drawing.Image)(resources.GetObject("confirmPurchase_button.Iconimage")));
+            this.confirmPurchase_button.Iconimage_right = null;
+            this.confirmPurchase_button.Iconimage_right_Selected = null;
+            this.confirmPurchase_button.Iconimage_Selected = null;
+            this.confirmPurchase_button.IconMarginLeft = 0;
+            this.confirmPurchase_button.IconMarginRight = 0;
+            this.confirmPurchase_button.IconRightVisible = true;
+            this.confirmPurchase_button.IconRightZoom = 0D;
+            this.confirmPurchase_button.IconVisible = true;
+            this.confirmPurchase_button.IconZoom = 90D;
+            this.confirmPurchase_button.IsTab = false;
+            this.confirmPurchase_button.Location = new System.Drawing.Point(257, 550);
+            this.confirmPurchase_button.Name = "confirmPurchase_button";
+            this.confirmPurchase_button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.confirmPurchase_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.confirmPurchase_button.selected = false;
+            this.confirmPurchase_button.Size = new System.Drawing.Size(241, 48);
+            this.confirmPurchase_button.TabIndex = 1;
+            this.confirmPurchase_button.Text = "Confirm Purchase";
+            this.confirmPurchase_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.confirmPurchase_button.Textcolor = System.Drawing.Color.White;
+            this.confirmPurchase_button.TextFont = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Location = new System.Drawing.Point(369, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Cart";
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Back";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 7);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(106, 34);
+            this.bunifuThinButton21.TabIndex = 3;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // products_show
             // 
@@ -244,8 +351,10 @@
             this.Fashion_Tab.ResumeLayout(false);
             this.Furniture_tab.ResumeLayout(false);
             this.Electronics_tab.ResumeLayout(false);
-            this.Applieances_tab.ResumeLayout(false);
+            this.Appliances_tab.ResumeLayout(false);
             this.Beauty_Product_tab.ResumeLayout(false);
+            this.cart_tab.ResumeLayout(false);
+            this.cart_tab.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,9 +374,15 @@
         public System.Windows.Forms.TabPage Fashion_Tab;
         public System.Windows.Forms.TabPage Furniture_tab;
         public System.Windows.Forms.TabPage Electronics_tab;
-        public System.Windows.Forms.TabPage Applieances_tab;
+        public System.Windows.Forms.TabPage Appliances_tab;
         public System.Windows.Forms.TabPage Beauty_Product_tab;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showCart_MenuItem;
+        private System.Windows.Forms.TabPage cart_tab;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuFlatButton confirmPurchase_button;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        public System.Windows.Forms.FlowLayoutPanel cart_flowLayoutPanel;
     }
 }

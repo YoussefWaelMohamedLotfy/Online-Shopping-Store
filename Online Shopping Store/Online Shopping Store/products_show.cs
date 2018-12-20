@@ -47,7 +47,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price,pic,description, brand);//user control to send data on it 
+                details UC = new details(name, id, price,pic,description, brand, this);//user control to send data on it 
                     flowLayoutPanel1.Controls.Add(UC); 
             }
             smartPhoneFile.Close();
@@ -68,7 +68,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price, pic, description, brand);//user control to send data on it 
+                details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel2.Controls.Add(UC);
             }
             fashionFile.Close();
@@ -89,7 +89,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price, pic, description, brand);//user control to send data on it 
+                details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel3.Controls.Add(UC);
             }
             electronicsFile.Close();
@@ -110,7 +110,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price, pic, description, brand);//user control to send data on it 
+                details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel4.Controls.Add(UC);
             }
             beautyProductsFile.Close();
@@ -131,7 +131,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price, pic, description, brand);//user control to send data on it 
+                details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel5.Controls.Add(UC);
             }
             AppliancesFile.Close();
@@ -152,7 +152,7 @@ namespace Online_Shopping_Store
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
 
-                details UC = new details(name, id, price, pic, description, brand);//user control to send data on it 
+                details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel6.Controls.Add(UC);
             }
             furnitureFile.Close();
@@ -187,6 +187,11 @@ namespace Online_Shopping_Store
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void showCart_MenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = cart_tab;
         }
     }
 }
