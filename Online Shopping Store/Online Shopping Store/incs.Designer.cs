@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(incs));
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.butSign_up_tab = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Buttonsignin = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TextBox2_passin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TextBox1_emailin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -53,24 +64,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.butSign_up_tab = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Buttonsignin = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.TextBox2_passin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.TextBox1_emailin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -82,6 +82,205 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(795, 699);
             this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tabPage2.Controls.Add(this.butSign_up_tab);
+            this.tabPage2.Controls.Add(this.bunifuThinButton22);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.ForeColor = System.Drawing.Color.Coral;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(787, 673);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Login In";
+            // 
+            // butSign_up_tab
+            // 
+            this.butSign_up_tab.ActiveBorderThickness = 1;
+            this.butSign_up_tab.ActiveCornerRadius = 20;
+            this.butSign_up_tab.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.butSign_up_tab.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.butSign_up_tab.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.butSign_up_tab.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.butSign_up_tab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butSign_up_tab.BackgroundImage")));
+            this.butSign_up_tab.ButtonText = "Sign Up";
+            this.butSign_up_tab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butSign_up_tab.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSign_up_tab.ForeColor = System.Drawing.Color.SeaGreen;
+            this.butSign_up_tab.IdleBorderThickness = 1;
+            this.butSign_up_tab.IdleCornerRadius = 20;
+            this.butSign_up_tab.IdleFillColor = System.Drawing.Color.Transparent;
+            this.butSign_up_tab.IdleForecolor = System.Drawing.Color.Transparent;
+            this.butSign_up_tab.IdleLineColor = System.Drawing.Color.Transparent;
+            this.butSign_up_tab.Location = new System.Drawing.Point(409, 73);
+            this.butSign_up_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butSign_up_tab.Name = "butSign_up_tab";
+            this.butSign_up_tab.Size = new System.Drawing.Size(163, 41);
+            this.butSign_up_tab.TabIndex = 22;
+            this.butSign_up_tab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.butSign_up_tab.Click += new System.EventHandler(this.butSign_up_tab_Click);
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Gainsboro;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Sign In";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(197, 73);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(163, 41);
+            this.bunifuThinButton22.TabIndex = 21;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bunifuImageButton2);
+            this.panel2.Controls.Add(this.Buttonsignin);
+            this.panel2.Controls.Add(this.TextBox2_passin);
+            this.panel2.Controls.Add(this.TextBox1_emailin);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Location = new System.Drawing.Point(197, 136);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(375, 394);
+            this.panel2.TabIndex = 20;
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(143, 68);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 22;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            // 
+            // Buttonsignin
+            // 
+            this.Buttonsignin.ActiveBorderThickness = 1;
+            this.Buttonsignin.ActiveCornerRadius = 20;
+            this.Buttonsignin.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.Buttonsignin.ActiveForecolor = System.Drawing.Color.White;
+            this.Buttonsignin.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Buttonsignin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Buttonsignin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Buttonsignin.BackgroundImage")));
+            this.Buttonsignin.ButtonText = "Sign In";
+            this.Buttonsignin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buttonsignin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buttonsignin.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Buttonsignin.IdleBorderThickness = 1;
+            this.Buttonsignin.IdleCornerRadius = 20;
+            this.Buttonsignin.IdleFillColor = System.Drawing.Color.White;
+            this.Buttonsignin.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.Buttonsignin.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.Buttonsignin.Location = new System.Drawing.Point(104, 318);
+            this.Buttonsignin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Buttonsignin.Name = "Buttonsignin";
+            this.Buttonsignin.Size = new System.Drawing.Size(162, 59);
+            this.Buttonsignin.TabIndex = 14;
+            this.Buttonsignin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Buttonsignin.Click += new System.EventHandler(this.Buttonsignin_Click_1);
+            // 
+            // TextBox2_passin
+            // 
+            this.TextBox2_passin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox2_passin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextBox2_passin.ForeColor = System.Drawing.Color.Black;
+            this.TextBox2_passin.HintForeColor = System.Drawing.Color.Empty;
+            this.TextBox2_passin.HintText = "";
+            this.TextBox2_passin.isPassword = false;
+            this.TextBox2_passin.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.TextBox2_passin.LineIdleColor = System.Drawing.Color.Gray;
+            this.TextBox2_passin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
+            this.TextBox2_passin.LineThickness = 2;
+            this.TextBox2_passin.Location = new System.Drawing.Point(21, 239);
+            this.TextBox2_passin.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox2_passin.Name = "TextBox2_passin";
+            this.TextBox2_passin.Size = new System.Drawing.Size(336, 25);
+            this.TextBox2_passin.TabIndex = 13;
+            this.TextBox2_passin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // TextBox1_emailin
+            // 
+            this.TextBox1_emailin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox1_emailin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextBox1_emailin.ForeColor = System.Drawing.Color.Black;
+            this.TextBox1_emailin.HintForeColor = System.Drawing.Color.Empty;
+            this.TextBox1_emailin.HintText = "";
+            this.TextBox1_emailin.isPassword = false;
+            this.TextBox1_emailin.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.TextBox1_emailin.LineIdleColor = System.Drawing.Color.Gray;
+            this.TextBox1_emailin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
+            this.TextBox1_emailin.LineThickness = 2;
+            this.TextBox1_emailin.Location = new System.Drawing.Point(21, 174);
+            this.TextBox1_emailin.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox1_emailin.Name = "TextBox1_emailin";
+            this.TextBox1_emailin.Size = new System.Drawing.Size(336, 25);
+            this.TextBox1_emailin.TabIndex = 12;
+            this.TextBox1_emailin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label9.Location = new System.Drawing.Point(135, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 28);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Sign In";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label13.Location = new System.Drawing.Point(18, 219);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 16);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Password";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label14.Location = new System.Drawing.Point(18, 154);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 16);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Email";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage1
             // 
@@ -175,6 +374,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 587);
             this.panel1.TabIndex = 18;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bunifuImageButton1
             // 
@@ -493,205 +693,6 @@
             this.label1.Text = "First Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.tabPage2.Controls.Add(this.butSign_up_tab);
-            this.tabPage2.Controls.Add(this.bunifuThinButton22);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.ForeColor = System.Drawing.Color.Coral;
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(787, 673);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Login In";
-            // 
-            // butSign_up_tab
-            // 
-            this.butSign_up_tab.ActiveBorderThickness = 1;
-            this.butSign_up_tab.ActiveCornerRadius = 20;
-            this.butSign_up_tab.ActiveFillColor = System.Drawing.Color.Gainsboro;
-            this.butSign_up_tab.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.butSign_up_tab.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butSign_up_tab.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.butSign_up_tab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butSign_up_tab.BackgroundImage")));
-            this.butSign_up_tab.ButtonText = "Sign Up";
-            this.butSign_up_tab.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butSign_up_tab.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butSign_up_tab.ForeColor = System.Drawing.Color.SeaGreen;
-            this.butSign_up_tab.IdleBorderThickness = 1;
-            this.butSign_up_tab.IdleCornerRadius = 20;
-            this.butSign_up_tab.IdleFillColor = System.Drawing.Color.Transparent;
-            this.butSign_up_tab.IdleForecolor = System.Drawing.Color.Transparent;
-            this.butSign_up_tab.IdleLineColor = System.Drawing.Color.Transparent;
-            this.butSign_up_tab.Location = new System.Drawing.Point(409, 73);
-            this.butSign_up_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butSign_up_tab.Name = "butSign_up_tab";
-            this.butSign_up_tab.Size = new System.Drawing.Size(163, 41);
-            this.butSign_up_tab.TabIndex = 22;
-            this.butSign_up_tab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.butSign_up_tab.Click += new System.EventHandler(this.butSign_up_tab_Click);
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Gainsboro;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Sign In";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(197, 73);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(163, 41);
-            this.bunifuThinButton22.TabIndex = 21;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.bunifuImageButton2);
-            this.panel2.Controls.Add(this.Buttonsignin);
-            this.panel2.Controls.Add(this.TextBox2_passin);
-            this.panel2.Controls.Add(this.TextBox1_emailin);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(197, 136);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 394);
-            this.panel2.TabIndex = 20;
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(143, 68);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 22;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            // 
-            // Buttonsignin
-            // 
-            this.Buttonsignin.ActiveBorderThickness = 1;
-            this.Buttonsignin.ActiveCornerRadius = 20;
-            this.Buttonsignin.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.ActiveForecolor = System.Drawing.Color.White;
-            this.Buttonsignin.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Buttonsignin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Buttonsignin.BackgroundImage")));
-            this.Buttonsignin.ButtonText = "Sign In";
-            this.Buttonsignin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Buttonsignin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buttonsignin.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.IdleBorderThickness = 1;
-            this.Buttonsignin.IdleCornerRadius = 20;
-            this.Buttonsignin.IdleFillColor = System.Drawing.Color.White;
-            this.Buttonsignin.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.Buttonsignin.Location = new System.Drawing.Point(104, 318);
-            this.Buttonsignin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Buttonsignin.Name = "Buttonsignin";
-            this.Buttonsignin.Size = new System.Drawing.Size(162, 59);
-            this.Buttonsignin.TabIndex = 14;
-            this.Buttonsignin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Buttonsignin.Click += new System.EventHandler(this.Buttonsignin_Click_1);
-            // 
-            // TextBox2_passin
-            // 
-            this.TextBox2_passin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox2_passin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextBox2_passin.ForeColor = System.Drawing.Color.Black;
-            this.TextBox2_passin.HintForeColor = System.Drawing.Color.Empty;
-            this.TextBox2_passin.HintText = "";
-            this.TextBox2_passin.isPassword = false;
-            this.TextBox2_passin.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.TextBox2_passin.LineIdleColor = System.Drawing.Color.Gray;
-            this.TextBox2_passin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
-            this.TextBox2_passin.LineThickness = 2;
-            this.TextBox2_passin.Location = new System.Drawing.Point(21, 239);
-            this.TextBox2_passin.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox2_passin.Name = "TextBox2_passin";
-            this.TextBox2_passin.Size = new System.Drawing.Size(336, 25);
-            this.TextBox2_passin.TabIndex = 13;
-            this.TextBox2_passin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // TextBox1_emailin
-            // 
-            this.TextBox1_emailin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox1_emailin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextBox1_emailin.ForeColor = System.Drawing.Color.Black;
-            this.TextBox1_emailin.HintForeColor = System.Drawing.Color.Empty;
-            this.TextBox1_emailin.HintText = "";
-            this.TextBox1_emailin.isPassword = false;
-            this.TextBox1_emailin.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.TextBox1_emailin.LineIdleColor = System.Drawing.Color.Gray;
-            this.TextBox1_emailin.LineMouseHoverColor = System.Drawing.Color.SlateGray;
-            this.TextBox1_emailin.LineThickness = 2;
-            this.TextBox1_emailin.Location = new System.Drawing.Point(21, 174);
-            this.TextBox1_emailin.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox1_emailin.Name = "TextBox1_emailin";
-            this.TextBox1_emailin.Size = new System.Drawing.Size(336, 25);
-            this.TextBox1_emailin.TabIndex = 12;
-            this.TextBox1_emailin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label9.Location = new System.Drawing.Point(135, 23);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 28);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Sign In";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label13.Location = new System.Drawing.Point(18, 219);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 16);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Password";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label14.Location = new System.Drawing.Point(18, 154);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 16);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Email";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // incs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -703,14 +704,14 @@
             this.Name = "incs";
             this.Text = "incs";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }

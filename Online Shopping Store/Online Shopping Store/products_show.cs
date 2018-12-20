@@ -186,8 +186,7 @@ namespace Online_Shopping_Store
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string filename = "instructions.pdf";
-            System.Diagnostics.Process.Start(filename);
+
         }
     }
 }

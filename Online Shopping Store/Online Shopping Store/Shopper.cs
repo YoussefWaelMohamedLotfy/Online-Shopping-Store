@@ -31,6 +31,7 @@ namespace Online_Shopping_Store
             this.country = country;
             this.phone = phone;
             this.email = email;
+           
             this.password = password;
         }
 

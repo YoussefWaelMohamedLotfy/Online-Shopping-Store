@@ -136,7 +136,10 @@ namespace Online_Shopping_Store
 
         }
 
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
    

@@ -83,7 +83,7 @@ namespace Online_Shopping_Store
         private void UpdateTB_Click(object sender, EventArgs e)
         {
             MyAccountTabControl.SelectedTab = UpdateTab;
-            FileStream fs = new FileStream("Products.txt", FileMode.Open);
+            FileStream fs = new FileStream("Appliances.txt", FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
             List<ItemsDetails> Items_Details = new List<ItemsDetails>();
             while (fs.Position != fs.Length)
