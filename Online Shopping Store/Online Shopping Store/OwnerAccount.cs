@@ -83,23 +83,29 @@ namespace Online_Shopping_Store
         private void UpdateTB_Click(object sender, EventArgs e)
         {
             MyAccountTabControl.SelectedTab = UpdateTab;
-            FileStream fs = new FileStream("Appliances.txt", FileMode.Open);
-            BinaryFormatter bf = new BinaryFormatter();
-            List<ItemsDetails> Items_Details = new List<ItemsDetails>();
-            while (fs.Position != fs.Length)
-            {
-                ItemsDetails its = (ItemsDetails)bf.Deserialize(fs);
-                Items_Details.Add(its);
-            }
-            dataGridView3.DataSource = Items_Details;
+            //FileStream fs = new FileStream("Appliances.txt", FileMode.Open);
+            //BinaryFormatter bf = new BinaryFormatter();
+            //List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+            //while (fs.Position != fs.Length)
+            //{
+            //    ItemsDetails its = (ItemsDetails)bf.Deserialize(fs);
+            //    Items_Details.Add(its);
+            //}
+            //dataGridView3.DataSource = Items_Details;
 
-            fs.Close();
+            //fs.Close();
+
 
         }
 
         private void CancelTB_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            incs log = new incs();
+            //OwnerAccount oa = new OwnerAccount();
+            //oa.Hide();
+            // this.Close();
+            log.Show();
+            this.Hide();
         }
 
         private void AddProductButton_Click(object sender, EventArgs e)
@@ -137,11 +143,11 @@ namespace Online_Shopping_Store
                     Availibility = AvailableRadioButton.Text;
                 }
                 Quantity = Convert.ToInt32(quantityCount.Value);
-                if (CategoryCB.SelectedItem.ToString() == "Smart Phones")
+            if (CategoryCB.SelectedItem.ToString() == "Smart Phones")
             {
                 FileStream smartPhonesFile = new FileStream("Smart Phones.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Product_Description, category, Product_brand, Availibility,  Quantity, productImages);
                 formatter.Serialize(smartPhonesFile, Item);
                 smartPhonesFile.Close();
             }
@@ -149,7 +155,7 @@ namespace Online_Shopping_Store
             {
                 FileStream FashionFile = new FileStream("Fashion.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Product_Description, category, Product_brand, Availibility,  Quantity, productImages);
                 formatter.Serialize(FashionFile, Item);
                 FashionFile.Close();
             }
@@ -157,7 +163,7 @@ namespace Online_Shopping_Store
             {
                 FileStream electronicsFile = new FileStream("Electronics.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Product_Description, category, Product_brand, Availibility,  Quantity, productImages);
                 formatter.Serialize(electronicsFile, Item);
                 electronicsFile.Close();
             }
@@ -165,7 +171,7 @@ namespace Online_Shopping_Store
             {
                 FileStream beautyproductsFile = new FileStream("Beauty Products.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Product_Description, category, Product_brand, Availibility, Quantity, productImages);
                 formatter.Serialize(beautyproductsFile, Item);
                 beautyproductsFile.Close();
             }
@@ -173,7 +179,7 @@ namespace Online_Shopping_Store
             {
                 FileStream appliancesFile = new FileStream("Appliances.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Product_Description, category, Product_brand, Availibility,  Quantity, productImages);
                 formatter.Serialize(appliancesFile, Item);
                 appliancesFile.Close();
             }
@@ -181,7 +187,7 @@ namespace Online_Shopping_Store
             {
                 FileStream FurnitureFile = new FileStream("Furniture.txt", FileMode.Append);
                 BinaryFormatter formatter = new BinaryFormatter();
-                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price,Product_Description, category, Product_brand, Availibility,Quantity, productImages);
                 formatter.Serialize(FurnitureFile, Item);
                 FurnitureFile.Close();
             }
@@ -218,7 +224,8 @@ namespace Online_Shopping_Store
 
         private void BackTB_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MyAccountTabControl.SelectedTab = OwnerTab;
+            //this.Close();
         }
 
         private void bunifuCustomTextbox4_TextChanged(object sender, EventArgs e)
@@ -301,11 +308,128 @@ namespace Online_Shopping_Store
             //this.dataGridView2.Rows.RemoveAt(this.dataGridView2.CurrentRow.Index);
             //dataGridView2.Rows.Remove(row_delete);
             //dataGridView2.Rows.RemoveAt(dataGridView2.SelectedRows[indexRow].Index);
+            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void back_up_Click(object sender, EventArgs e)
+        {
+            MyAccountTabControl.SelectedTab = OwnerTab;
+        }
+
+        private void back_rem_Click(object sender, EventArgs e)
+        {
+            MyAccountTabControl.SelectedTab = OwnerTab;
+        }
+
+        private void back_view_Click(object sender, EventArgs e)
+        {
+            MyAccountTabControl.SelectedTab = OwnerTab;
+        }
+
+        private void choose_CB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+     
+        private void Load_Cat_Click(object sender, EventArgs e)
+        {
+            if (choose_CB.SelectedItem.ToString() == "Smart Phones")
+            {
+                FileStream smartPhonesFile = new FileStream("Smart Phones.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                //ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                // formatter.Serialize(smartPhonesFile, Item);
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (smartPhonesFile.Position != smartPhonesFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(smartPhonesFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                smartPhonesFile.Close();
+            }
+            else if (choose_CB.SelectedItem.ToString() == "Fashion")
+            {
+                FileStream FashionFile = new FileStream("Fashion.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                //ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                //formatter.Serialize(FashionFile, Item);
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (FashionFile.Position != FashionFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(FashionFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                FashionFile.Close();
+            }
+            else if (choose_CB.SelectedItem.ToString() == "electronics")
+            {
+                FileStream electronicsFile = new FileStream("Electronics.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (electronicsFile.Position != electronicsFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(electronicsFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                electronicsFile.Close();
+            }
+            else if (choose_CB.SelectedItem.ToString() == "Beauty Products")
+            {
+                FileStream beautyproductsFile = new FileStream("Beauty Products.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                //ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                //formatter.Serialize(beautyproductsFile, Item);
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (beautyproductsFile.Position != beautyproductsFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(beautyproductsFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                beautyproductsFile.Close();
+            }
+            else if (choose_CB.SelectedItem.ToString() == "Appliances")
+            {
+                FileStream appliancesFile = new FileStream("Appliances.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                //ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                //formatter.Serialize(appliancesFile, Item);
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (appliancesFile.Position != appliancesFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(appliancesFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                appliancesFile.Close();
+            }
+            else if (choose_CB.SelectedItem.ToString() == "Furniture")
+            {
+                FileStream FurnitureFile = new FileStream("Furniture.txt", FileMode.Append);
+                BinaryFormatter formatter = new BinaryFormatter();
+                //ItemsDetails Item = new ItemsDetails(Product_ID, Product_Name, Price, Size, Product_Description, category, Product_brand, Availibility, color, Quantity, productImages);
+                //formatter.Serialize(FurnitureFile, Item);
+                List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+                while (FurnitureFile.Position != FurnitureFile.Length)
+                {
+                    ItemsDetails its = (ItemsDetails)formatter.Deserialize(FurnitureFile);
+                    Items_Details.Add(its);
+                }
+                dataGridView3.DataSource = Items_Details;
+                FurnitureFile.Close();
+            }
+        }
     }
+    
 }
