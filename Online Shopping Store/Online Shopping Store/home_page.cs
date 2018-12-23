@@ -128,5 +128,10 @@ namespace Online_Shopping_Store
         {
             this.Close();
         }
+
+        private void showItem_MenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
