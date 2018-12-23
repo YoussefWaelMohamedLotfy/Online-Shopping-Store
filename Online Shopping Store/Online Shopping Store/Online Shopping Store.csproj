@@ -119,6 +119,12 @@
     <Compile Include="ReceiptForm.Designer.cs">
       <DependentUpon>ReceiptForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReceiptItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiptItem.Designer.cs">
+      <DependentUpon>ReceiptItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shopper.cs" />
     <Compile Include="ViewProductDetails.cs">
       <SubType>Form</SubType>
@@ -159,6 +165,9 @@
     </Compile>
     <EmbeddedResource Include="ReceiptForm.resx">
       <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptItem.resx">
+      <DependentUpon>ReceiptItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewProductDetails.resx">
       <DependentUpon>ViewProductDetails.cs</DependentUpon>

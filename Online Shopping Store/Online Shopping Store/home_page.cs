@@ -12,54 +12,25 @@ namespace Online_Shopping_Store
 {
     public partial class home_page : Form
     {
-        products_show ps= new products_show () ;
+        public products_show ps;
    
-        public home_page( )
+        public home_page()
         {
             InitializeComponent();
-
-
         }
+
         //public home_page( products_show p)
         //{
         //    InitializeComponent();
         //    this.ps = p;
-         
-
         //}
-     
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void furniture_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
+            ps = new products_show(this);
            
             ps.tabControl1.SelectedIndex =2;
             ps.Show();
-        }
-
-        private void search_txt_OnTextChange(object sender, EventArgs e)
-        {
-
-        }
-
-        private void search_txt_MouseClick(object sender, MouseEventArgs e)
-        {
-           
-        }
-
-        private void home_page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void showCart_MenuOption_Click(object sender, EventArgs e)
@@ -70,45 +41,77 @@ namespace Online_Shopping_Store
 
         private void beauty_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
+            ps = new products_show(this);
   
-            ps.tabControl1.SelectedIndex =3;
+            ps.tabControl1.SelectedIndex = 3;
             ps.Show();
         }
 
         private void mobile_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
- 
-            ps.tabControl1.SelectedIndex = 0;
-          ps.Show();
-        }
+            ps = new products_show(this);
 
-        private void homePage_menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+            Form fc = Application.OpenForms["products_show"];
 
+            if (fc != null)
+            {
+                ps.tabControl1.SelectedIndex = 0;
+                ps.Refresh();
+            }
+            else
+            {
+                ps.tabControl1.SelectedIndex = 0;
+                ps.Show();
+            }
+
+            //ps.tabControl1.SelectedIndex = 0;
+            //ps.Show();
         }
 
         private void fashion_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
+            ps = new products_show(this);
 
-            ps.tabControl1.SelectedIndex = 4;
-            ps.Show();
+            Form fc = Application.OpenForms["products_show"];
+
+            if (fc != null)
+            {
+                ps.tabControl1.SelectedIndex = 4;
+                ps.Activate();
+            }
+            else
+            {
+                ps.tabControl1.SelectedIndex = 4;
+                ps.Show();
+            }
+
+            //if (ps == null || ps.IsOpen == false)
+            //{
+            //    ps = new products_show(this);
+            //    ps.Show();
+            //    ps.IsOpen = true;
+            //}
+            //else
+            //{
+            //    ps.Activate();
+            //    ps.WindowState = FormWindowState.Normal;
+            //}
 
 
+            //ps.tabControl1.SelectedIndex = 4;
+            //ps.Show();
         }
 
         private void electronics_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
-                 ps.tabControl1.SelectedIndex = 5;
+            ps = new products_show(this);
+            ps.tabControl1.SelectedIndex = 5;
             ps.Show();
         }
 
         private void appliances_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show();
+            ps = new products_show(this);
            
             ps.tabControl1.SelectedIndex = 1;
             ps.Show();
@@ -116,12 +119,10 @@ namespace Online_Shopping_Store
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-
             incs log = new incs();
-          
-            log.Show();
-           
-           
+            this.Hide();
+            log.ShowDialog();
+            this.Close();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,7 +132,11 @@ namespace Online_Shopping_Store
 
         private void showItem_MenuItem_Click(object sender, EventArgs e)
         {
-
+            products_show cart = new products_show(this);
+            //this.Hide();
+            cart.tabControl1.SelectedTab = cart.cart_tab;
+            cart.ShowDialog();
+            //this.Close();
         }
     }
 }

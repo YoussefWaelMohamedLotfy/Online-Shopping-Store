@@ -58,13 +58,13 @@
             this.panel_usercontrol_product.Controls.Add(this.label1);
             this.panel_usercontrol_product.Location = new System.Drawing.Point(3, 3);
             this.panel_usercontrol_product.Name = "panel_usercontrol_product";
-            this.panel_usercontrol_product.Size = new System.Drawing.Size(513, 73);
+            this.panel_usercontrol_product.Size = new System.Drawing.Size(641, 73);
             this.panel_usercontrol_product.TabIndex = 2;
             // 
             // brandLabel
             // 
             this.brandLabel.AutoSize = true;
-            this.brandLabel.Location = new System.Drawing.Point(248, 46);
+            this.brandLabel.Location = new System.Drawing.Point(359, 46);
             this.brandLabel.Name = "brandLabel";
             this.brandLabel.Size = new System.Drawing.Size(35, 13);
             this.brandLabel.TabIndex = 34;
@@ -73,7 +73,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(190, 46);
+            this.label5.Location = new System.Drawing.Point(301, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 33;
@@ -81,7 +81,7 @@
             // 
             // removeItem_button
             // 
-            this.removeItem_button.Location = new System.Drawing.Point(414, 14);
+            this.removeItem_button.Location = new System.Drawing.Point(561, 14);
             this.removeItem_button.Name = "removeItem_button";
             this.removeItem_button.Size = new System.Drawing.Size(75, 37);
             this.removeItem_button.TabIndex = 32;
@@ -91,15 +91,20 @@
             // 
             // itemsNumberCounter
             // 
-            this.itemsNumberCounter.Location = new System.Drawing.Point(328, 24);
+            this.itemsNumberCounter.Location = new System.Drawing.Point(485, 24);
             this.itemsNumberCounter.Name = "itemsNumberCounter";
             this.itemsNumberCounter.Size = new System.Drawing.Size(59, 20);
             this.itemsNumberCounter.TabIndex = 31;
+            this.itemsNumberCounter.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // pricelabel
             // 
             this.pricelabel.AutoSize = true;
-            this.pricelabel.Location = new System.Drawing.Point(248, 9);
+            this.pricelabel.Location = new System.Drawing.Point(359, 9);
             this.pricelabel.Name = "pricelabel";
             this.pricelabel.Size = new System.Drawing.Size(35, 13);
             this.pricelabel.TabIndex = 28;
@@ -126,7 +131,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 9);
+            this.label3.Location = new System.Drawing.Point(301, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 25;
@@ -156,7 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_usercontrol_product);
             this.Name = "Cart_items";
-            this.Size = new System.Drawing.Size(520, 80);
+            this.Size = new System.Drawing.Size(647, 80);
             this.panel_usercontrol_product.ResumeLayout(false);
             this.panel_usercontrol_product.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemsNumberCounter)).EndInit();

@@ -299,7 +299,6 @@
             this.homePage_menuStrip.Size = new System.Drawing.Size(1677, 28);
             this.homePage_menuStrip.TabIndex = 32;
             this.homePage_menuStrip.Text = "homePage_menuStrip";
-            this.homePage_menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.homePage_menuStrip_ItemClicked);
             // 
             // showItem_MenuItem
             // 
@@ -351,7 +350,6 @@
             this.Name = "home_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home_page";
-            this.Load += new System.EventHandler(this.home_page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appliances_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.electronics_btn)).EndInit();

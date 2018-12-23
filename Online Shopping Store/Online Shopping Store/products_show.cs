@@ -16,13 +16,22 @@ namespace Online_Shopping_Store
 {
     public partial class products_show : Form
     {
-        public products_show()
+        home_page home;
+        public bool IsOpen;
+
+        public products_show(home_page f)
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(products_show_FormClosing);
+            home = f;
         }
       
         private void products_show_Load(object sender, EventArgs e)
         {
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1);
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+
             string name;
             string price;
             string id;
@@ -170,7 +179,15 @@ namespace Online_Shopping_Store
         private void showCart_MenuOption_Click(object sender, EventArgs e)
         {
             home_page home = new home_page();
-            home.Show();
+
+            if (home != null)
+            {
+                Application.OpenForms[home.Name].Activate();
+                home.TopMost = true;
+                home.Focus();
+            }
+
+            //home.Show();
             //this.Hide();
         }
 
@@ -193,5 +210,41 @@ namespace Online_Shopping_Store
         {
             tabControl1.SelectedTab = cart_tab;
         }
+
+        private void products_show_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            IsOpen = false;
+        }
+
+        private void beautyProducts_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Beauty_Product_tab;
+        }
+
+        private void fashion_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Fashion_Tab;
+        }
+
+        private void mobilePhones_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Smart_Phones_tab;
+        }
+
+        private void appliances_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Appliances_tab;
+        }
+
+        private void electronics_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Electronics_tab;
+        }
+
+        private void furniture_SwitchToTab_button_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Furniture_tab;
+        }
+
     }
 }

@@ -12,6 +12,7 @@ namespace Online_Shopping_Store
 {
     public partial class ReceiptForm : Form
     {
+
         public ReceiptForm()
         {
             InitializeComponent();
@@ -22,49 +23,5 @@ namespace Online_Shopping_Store
 
         }
 
-        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
