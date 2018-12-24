@@ -35,8 +35,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cart_tab = new System.Windows.Forms.TabPage();
-            this.cart_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
+            this.confirmPurchase_button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cart_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Beauty_Product_tab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.Appliances_tab = new System.Windows.Forms.TabPage();
@@ -56,8 +58,6 @@
             this.furniture_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.electronics_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.appliances_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.confirmPurchase_button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.productsShow_menuStrip.SuspendLayout();
             this.cart_tab.SuspendLayout();
             this.Beauty_Product_tab.SuspendLayout();
@@ -82,7 +82,6 @@
             this.productsShow_menuStrip.Size = new System.Drawing.Size(841, 24);
             this.productsShow_menuStrip.TabIndex = 1;
             this.productsShow_menuStrip.Text = "menuStrip1";
-            this.productsShow_menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.productsShow_menuStrip_ItemClicked);
             // 
             // showCart_MenuOption
             // 
@@ -103,7 +102,6 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -125,14 +123,30 @@
             this.cart_tab.TabIndex = 6;
             this.cart_tab.Text = "Cart";
             // 
-            // cart_flowLayoutPanel
+            // bunifuThinButton21
             // 
-            this.cart_flowLayoutPanel.AutoScroll = true;
-            this.cart_flowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cart_flowLayoutPanel.Location = new System.Drawing.Point(3, 49);
-            this.cart_flowLayoutPanel.Name = "cart_flowLayoutPanel";
-            this.cart_flowLayoutPanel.Size = new System.Drawing.Size(827, 440);
-            this.cart_flowLayoutPanel.TabIndex = 0;
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Back";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 7);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(106, 34);
+            this.bunifuThinButton21.TabIndex = 3;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -144,6 +158,50 @@
             this.label1.Size = new System.Drawing.Size(69, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cart";
+            // 
+            // confirmPurchase_button
+            // 
+            this.confirmPurchase_button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.confirmPurchase_button.BorderRadius = 0;
+            this.confirmPurchase_button.ButtonText = "Confirm Purchase";
+            this.confirmPurchase_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmPurchase_button.DisabledColor = System.Drawing.Color.Gray;
+            this.confirmPurchase_button.Iconcolor = System.Drawing.Color.Transparent;
+            this.confirmPurchase_button.Iconimage = ((System.Drawing.Image)(resources.GetObject("confirmPurchase_button.Iconimage")));
+            this.confirmPurchase_button.Iconimage_right = null;
+            this.confirmPurchase_button.Iconimage_right_Selected = null;
+            this.confirmPurchase_button.Iconimage_Selected = null;
+            this.confirmPurchase_button.IconMarginLeft = 0;
+            this.confirmPurchase_button.IconMarginRight = 0;
+            this.confirmPurchase_button.IconRightVisible = false;
+            this.confirmPurchase_button.IconRightZoom = 0D;
+            this.confirmPurchase_button.IconVisible = false;
+            this.confirmPurchase_button.IconZoom = 90D;
+            this.confirmPurchase_button.IsTab = false;
+            this.confirmPurchase_button.Location = new System.Drawing.Point(257, 492);
+            this.confirmPurchase_button.Name = "confirmPurchase_button";
+            this.confirmPurchase_button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.confirmPurchase_button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.confirmPurchase_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.confirmPurchase_button.selected = false;
+            this.confirmPurchase_button.Size = new System.Drawing.Size(241, 48);
+            this.confirmPurchase_button.TabIndex = 1;
+            this.confirmPurchase_button.Text = "Confirm Purchase";
+            this.confirmPurchase_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.confirmPurchase_button.Textcolor = System.Drawing.Color.White;
+            this.confirmPurchase_button.TextFont = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPurchase_button.Click += new System.EventHandler(this.confirmPurchase_button_Click);
+            // 
+            // cart_flowLayoutPanel
+            // 
+            this.cart_flowLayoutPanel.AutoScroll = true;
+            this.cart_flowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cart_flowLayoutPanel.Location = new System.Drawing.Point(3, 49);
+            this.cart_flowLayoutPanel.Name = "cart_flowLayoutPanel";
+            this.cart_flowLayoutPanel.Size = new System.Drawing.Size(827, 440);
+            this.cart_flowLayoutPanel.TabIndex = 0;
             // 
             // Beauty_Product_tab
             // 
@@ -438,65 +496,6 @@
             this.appliances_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.appliances_SwitchToTab_button.Click += new System.EventHandler(this.appliances_SwitchToTab_button_Click);
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Back";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 7);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(106, 34);
-            this.bunifuThinButton21.TabIndex = 3;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // confirmPurchase_button
-            // 
-            this.confirmPurchase_button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.confirmPurchase_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.confirmPurchase_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.confirmPurchase_button.BorderRadius = 0;
-            this.confirmPurchase_button.ButtonText = "Confirm Purchase";
-            this.confirmPurchase_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.confirmPurchase_button.DisabledColor = System.Drawing.Color.Gray;
-            this.confirmPurchase_button.Iconcolor = System.Drawing.Color.Transparent;
-            this.confirmPurchase_button.Iconimage = ((System.Drawing.Image)(resources.GetObject("confirmPurchase_button.Iconimage")));
-            this.confirmPurchase_button.Iconimage_right = null;
-            this.confirmPurchase_button.Iconimage_right_Selected = null;
-            this.confirmPurchase_button.Iconimage_Selected = null;
-            this.confirmPurchase_button.IconMarginLeft = 0;
-            this.confirmPurchase_button.IconMarginRight = 0;
-            this.confirmPurchase_button.IconRightVisible = false;
-            this.confirmPurchase_button.IconRightZoom = 0D;
-            this.confirmPurchase_button.IconVisible = false;
-            this.confirmPurchase_button.IconZoom = 90D;
-            this.confirmPurchase_button.IsTab = false;
-            this.confirmPurchase_button.Location = new System.Drawing.Point(257, 492);
-            this.confirmPurchase_button.Name = "confirmPurchase_button";
-            this.confirmPurchase_button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.confirmPurchase_button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.confirmPurchase_button.OnHoverTextColor = System.Drawing.Color.White;
-            this.confirmPurchase_button.selected = false;
-            this.confirmPurchase_button.Size = new System.Drawing.Size(241, 48);
-            this.confirmPurchase_button.TabIndex = 1;
-            this.confirmPurchase_button.Text = "Confirm Purchase";
-            this.confirmPurchase_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.confirmPurchase_button.Textcolor = System.Drawing.Color.White;
-            this.confirmPurchase_button.TextFont = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // products_show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -514,7 +513,6 @@
             this.Name = "products_show";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "products_show";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.products_show_FormClosing);
             this.Load += new System.EventHandler(this.products_show_Load);
             this.productsShow_menuStrip.ResumeLayout(false);
             this.productsShow_menuStrip.PerformLayout();

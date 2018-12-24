@@ -16,18 +16,14 @@ namespace Online_Shopping_Store
 {
     public partial class products_show : Form
     {
-        home_page home;
-        public bool IsOpen;
-
-        public products_show(home_page f)
+        public products_show()
         {
             InitializeComponent();
-            this.FormClosing += new FormClosingEventHandler(products_show_FormClosing);
-            home = f;
         }
       
         private void products_show_Load(object sender, EventArgs e)
         {
+            // Hide tabs
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
@@ -171,11 +167,6 @@ namespace Online_Shopping_Store
 
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void showCart_MenuOption_Click(object sender, EventArgs e)
         {
             home_page home = new home_page();
@@ -191,29 +182,14 @@ namespace Online_Shopping_Store
             //this.Hide();
         }
 
-        private void productsShow_menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            //this.Close();
         }
 
         private void showCart_MenuItem_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = cart_tab;
-        }
-
-        private void products_show_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            IsOpen = false;
         }
 
         private void beautyProducts_SwitchToTab_button_Click(object sender, EventArgs e)
@@ -246,5 +222,16 @@ namespace Online_Shopping_Store
             tabControl1.SelectedTab = Furniture_tab;
         }
 
+        private void confirmPurchase_button_Click(object sender, EventArgs e)
+        {
+            // Show receipt if user confirms the purchase
+            if (MessageBox.Show("Are you sure you want to confirm your purchase?\nCheck again if you want anything else.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ReceiptForm receipt = new ReceiptForm();
+                this.Hide();
+                receipt.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

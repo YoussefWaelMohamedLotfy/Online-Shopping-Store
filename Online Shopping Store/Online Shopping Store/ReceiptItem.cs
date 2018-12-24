@@ -12,25 +12,19 @@ namespace Online_Shopping_Store
 {
     public partial class ReceiptItem : UserControl
     {
-        static home_page home = new home_page();
-        products_show ps = new products_show(home);
-        details item;
+        //static home_page home = new home_page();
+        products_show ps = new products_show();
+        details item = new details();
+        Cart_items cart = new Cart_items();
 
-        //string name = item
-
-        public ReceiptItem(string name, int price, int number, string id, string desc, string brand, Image picture, products_show form)
+        public ReceiptItem()
         {
             InitializeComponent();
 
-            item = new details(name, id, price.ToString(), picture, desc, brand, form);
-
-            name_receiptLabel.Text = name;
-            price_receiptLabel.Text = price.ToString();
-            number_receiptLabel.Text = number.ToString();
-
-            int totalOfItem = price * number;
-            totalItemsPrice_receiptLabel.Text = totalOfItem.ToString();
-
+            name_receiptLabel.Text = item.CartList[0];
+            price_receiptLabel.Text = item.CartList[3];
+            number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
+            totalItemsPrice_receiptLabel.Text = (cart.itemsNumberCounter.Value * Convert.ToInt32(price_receiptLabel.Text)).ToString();
         }
     }
 }

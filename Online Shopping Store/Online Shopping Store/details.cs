@@ -21,8 +21,8 @@ namespace Online_Shopping_Store
         public Cart_items newItem;
         public LinkedList<Cart_items> cartLinkedList = new LinkedList<Cart_items>();
         public LinkedListNode<Cart_items> itemNode;
-        public static home_page home = new home_page();
-        products_show ps = new products_show(home);
+        //public static home_page home = new home_page();
+        products_show ps = new products_show();
 
         public details(String name, String id, String price, Image pic,string description, string brand, products_show form)
         {
@@ -34,6 +34,11 @@ namespace Online_Shopping_Store
             Desc_textbox.Text = description;
             brandLabel.Text = brand;
             this.ps = form;
+        }
+
+        public details()
+        {
+            InitializeComponent();
         }
 
         private void but_readmore_Click(object sender, EventArgs e)

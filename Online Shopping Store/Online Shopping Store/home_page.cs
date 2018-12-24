@@ -27,7 +27,7 @@ namespace Online_Shopping_Store
 
         private void furniture_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
            
             ps.tabControl1.SelectedIndex =2;
             ps.Show();
@@ -41,7 +41,7 @@ namespace Online_Shopping_Store
 
         private void beauty_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
   
             ps.tabControl1.SelectedIndex = 3;
             ps.Show();
@@ -49,7 +49,7 @@ namespace Online_Shopping_Store
 
         private void mobile_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
 
             Form fc = Application.OpenForms["products_show"];
 
@@ -70,7 +70,7 @@ namespace Online_Shopping_Store
 
         private void fashion_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
 
             Form fc = Application.OpenForms["products_show"];
 
@@ -104,14 +104,14 @@ namespace Online_Shopping_Store
 
         private void electronics_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
             ps.tabControl1.SelectedIndex = 5;
             ps.Show();
         }
 
         private void appliances_btn_Click(object sender, EventArgs e)
         {
-            ps = new products_show(this);
+            ps = new products_show();
            
             ps.tabControl1.SelectedIndex = 1;
             ps.Show();
@@ -132,7 +132,7 @@ namespace Online_Shopping_Store
 
         private void showItem_MenuItem_Click(object sender, EventArgs e)
         {
-            products_show cart = new products_show(this);
+            products_show cart = new products_show();
             //this.Hide();
             cart.tabControl1.SelectedTab = cart.cart_tab;
             cart.ShowDialog();

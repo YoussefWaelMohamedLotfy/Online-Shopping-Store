@@ -178,9 +178,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown itemsNumberCounter;
         private System.Windows.Forms.Button removeItem_button;
         private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.NumericUpDown itemsNumberCounter;
     }
 }
