@@ -146,5 +146,11 @@ namespace Online_Shopping_Store
         {
            
         }
+
+        private void Services_but_Click(object sender, EventArgs e)
+        {
+            Email E = new Email();
+            E.Show();
+        }
     }
 }
