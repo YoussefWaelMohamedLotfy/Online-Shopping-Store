@@ -49,9 +49,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Downloads\Online-Shopping-Store-master\Online-Shopping-Store-master\Online Shopping Store\Online Shopping Store\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Users\el aqsa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="S22.Imap">
+      <HintPath>C:\Users\el aqsa\Downloads\S22.Imap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -78,6 +81,12 @@
     </Compile>
     <Compile Include="details.Designer.cs">
       <DependentUpon>details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
     </Compile>
     <Compile Include="home_page.cs">
       <SubType>Form</SubType>
@@ -137,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_page.resx">
       <DependentUpon>home_page.cs</DependentUpon>

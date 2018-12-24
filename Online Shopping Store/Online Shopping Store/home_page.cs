@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+
+using System.Net.Mail;
 
 namespace Online_Shopping_Store
 {
@@ -137,6 +140,11 @@ namespace Online_Shopping_Store
             cart.tabControl1.SelectedTab = cart.cart_tab;
             cart.ShowDialog();
             //this.Close();
+        }
+
+        private void emailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
