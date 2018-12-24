@@ -99,6 +99,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel name_receiptLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel price_receiptLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel number_receiptLabel;
-        private Bunifu.Framework.UI.BunifuCustomLabel totalItemsPrice_receiptLabel;
+        public Bunifu.Framework.UI.BunifuCustomLabel totalItemsPrice_receiptLabel;
     }
 }

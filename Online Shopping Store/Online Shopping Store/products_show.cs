@@ -16,11 +16,18 @@ namespace Online_Shopping_Store
 {
     public partial class products_show : Form
     {
+        Random rand = new Random();
+        //details Cart = new details();
+        int orderTotal;
+
         public products_show()
         {
             InitializeComponent();
+
+            orderTotal = 0;
+            shippingFees_label.Text = rand.Next(15, 60).ToString();
         }
-      
+
         private void products_show_Load(object sender, EventArgs e)
         {
             // Hide tabs
@@ -189,36 +196,43 @@ namespace Online_Shopping_Store
 
         private void showCart_MenuItem_Click(object sender, EventArgs e)
         {
+            // Switch to Cart tab
             tabControl1.SelectedTab = cart_tab;
         }
 
         private void beautyProducts_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to Beauty products tab
             tabControl1.SelectedTab = Beauty_Product_tab;
         }
 
         private void fashion_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to Fashion tab
             tabControl1.SelectedTab = Fashion_Tab;
         }
 
         private void mobilePhones_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to smart phones tab
             tabControl1.SelectedTab = Smart_Phones_tab;
         }
 
         private void appliances_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to Appliances tab
             tabControl1.SelectedTab = Appliances_tab;
         }
 
         private void electronics_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to Electronics tab
             tabControl1.SelectedTab = Electronics_tab;
         }
 
         private void furniture_SwitchToTab_button_Click(object sender, EventArgs e)
         {
+            // Switch to Furniture tab
             tabControl1.SelectedTab = Furniture_tab;
         }
 
@@ -227,11 +241,23 @@ namespace Online_Shopping_Store
             // Show receipt if user confirms the purchase
             if (MessageBox.Show("Are you sure you want to confirm your purchase?\nCheck again if you want anything else.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                ReceiptForm receipt = new ReceiptForm();
-                this.Hide();
-                receipt.ShowDialog();
-                this.Close();
+                // Switch to Receipt tab
+                tabControl1.SelectedTab = receipt_tab;
+                details Cart = new details();
+                ReceiptItem receiptItem = new ReceiptItem();
+
+                for (int i = 0; i < Cart.cartLinkedList.Count; i++)
+                {
+                    receiptItem = new ReceiptItem();
+                    receipt_flowLayoutPanel.Controls.Add(receiptItem);
+                    orderTotal += Convert.ToInt32(receiptItem.totalItemsPrice_receiptLabel.ToString());
+                }
+
+                receiptItem.totalItemsPrice_receiptLabel.Text = orderTotal.ToString();
+
             }
         }
+
+
     }
 }

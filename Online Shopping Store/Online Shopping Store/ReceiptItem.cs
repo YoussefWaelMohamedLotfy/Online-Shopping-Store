@@ -20,7 +20,7 @@ namespace Online_Shopping_Store
         public ReceiptItem()
         {
             InitializeComponent();
-
+            
             name_receiptLabel.Text = item.CartList[0];
             price_receiptLabel.Text = item.CartList[3];
             number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
