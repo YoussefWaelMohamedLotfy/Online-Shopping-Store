@@ -49,5 +49,10 @@ namespace Online_Shopping_Store
             this.Controls.Clear();
             item.cartLinkedList.Remove(item.itemNode);
         }
+
+        private void panel_usercontrol_product_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

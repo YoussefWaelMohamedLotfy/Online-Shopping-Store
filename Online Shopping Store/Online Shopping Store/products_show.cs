@@ -213,6 +213,7 @@ namespace Online_Shopping_Store
             tabControl1.SelectedTab = Fashion_Tab;
         }
 
+
         private void mobilePhones_SwitchToTab_button_Click(object sender, EventArgs e)
         {
             // Switch to smart phones tab
@@ -262,6 +263,16 @@ namespace Online_Shopping_Store
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -60,6 +60,7 @@
             this.panel_usercontrol_product.Name = "panel_usercontrol_product";
             this.panel_usercontrol_product.Size = new System.Drawing.Size(641, 73);
             this.panel_usercontrol_product.TabIndex = 2;
+            this.panel_usercontrol_product.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_usercontrol_product_Paint);
             // 
             // brandLabel
             // 
@@ -133,7 +134,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(301, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = "Price";
             // 
@@ -151,7 +152,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 23;
             this.label1.Text = "Name";
             // 
