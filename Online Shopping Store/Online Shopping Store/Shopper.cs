@@ -34,7 +34,11 @@ namespace Online_Shopping_Store
            
             this.password = password;
         }
-
+        public Shopper(string email, string password)
+        {
+            this.email = email;
+            this.password = password;
+        }
         public string name { get; set; }
         public string address { get; set; }
         public string city { get; set; }

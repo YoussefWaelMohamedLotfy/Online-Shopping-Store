@@ -53,6 +53,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.receipt_tab = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.price = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Name = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.shippingFees_label = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.receipt_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -66,12 +72,6 @@
             this.furniture_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.electronics_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.appliances_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Name = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.price = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.productsShow_menuStrip.SuspendLayout();
             this.cart_tab.SuspendLayout();
             this.Beauty_Product_tab.SuspendLayout();
@@ -88,6 +88,7 @@
             // productsShow_menuStrip
             // 
             this.productsShow_menuStrip.BackColor = System.Drawing.Color.Honeydew;
+            this.productsShow_menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.productsShow_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showCart_MenuOption,
             this.showCart_MenuItem,
@@ -95,34 +96,35 @@
             this.exitToolStripMenuItem});
             this.productsShow_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.productsShow_menuStrip.Name = "productsShow_menuStrip";
-            this.productsShow_menuStrip.Size = new System.Drawing.Size(841, 24);
+            this.productsShow_menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.productsShow_menuStrip.Size = new System.Drawing.Size(1121, 28);
             this.productsShow_menuStrip.TabIndex = 1;
             this.productsShow_menuStrip.Text = "menuStrip1";
             // 
             // showCart_MenuOption
             // 
             this.showCart_MenuOption.Name = "showCart_MenuOption";
-            this.showCart_MenuOption.Size = new System.Drawing.Size(52, 20);
+            this.showCart_MenuOption.Size = new System.Drawing.Size(62, 24);
             this.showCart_MenuOption.Text = "Home";
             this.showCart_MenuOption.Click += new System.EventHandler(this.showCart_MenuOption_Click);
             // 
             // showCart_MenuItem
             // 
             this.showCart_MenuItem.Name = "showCart_MenuItem";
-            this.showCart_MenuItem.Size = new System.Drawing.Size(73, 20);
+            this.showCart_MenuItem.Size = new System.Drawing.Size(88, 24);
             this.showCart_MenuItem.Text = "Show Cart";
             this.showCart_MenuItem.Click += new System.EventHandler(this.showCart_MenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -133,9 +135,10 @@
             this.cart_tab.Controls.Add(this.label1);
             this.cart_tab.Controls.Add(this.confirmPurchase_button);
             this.cart_tab.Controls.Add(this.cart_flowLayoutPanel);
-            this.cart_tab.Location = new System.Drawing.Point(4, 22);
+            this.cart_tab.Location = new System.Drawing.Point(4, 25);
+            this.cart_tab.Margin = new System.Windows.Forms.Padding(4);
             this.cart_tab.Name = "cart_tab";
-            this.cart_tab.Size = new System.Drawing.Size(833, 543);
+            this.cart_tab.Size = new System.Drawing.Size(1113, 671);
             this.cart_tab.TabIndex = 6;
             this.cart_tab.Text = "Cart";
             // 
@@ -157,10 +160,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 7);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(13, 9);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(106, 34);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(141, 42);
             this.bunifuThinButton21.TabIndex = 3;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -170,9 +173,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(369, 12);
+            this.label1.Location = new System.Drawing.Point(492, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 34);
+            this.label1.Size = new System.Drawing.Size(86, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cart";
             // 
@@ -197,13 +201,14 @@
             this.confirmPurchase_button.IconVisible = false;
             this.confirmPurchase_button.IconZoom = 90D;
             this.confirmPurchase_button.IsTab = false;
-            this.confirmPurchase_button.Location = new System.Drawing.Point(257, 492);
+            this.confirmPurchase_button.Location = new System.Drawing.Point(343, 606);
+            this.confirmPurchase_button.Margin = new System.Windows.Forms.Padding(5);
             this.confirmPurchase_button.Name = "confirmPurchase_button";
             this.confirmPurchase_button.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.confirmPurchase_button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.confirmPurchase_button.OnHoverTextColor = System.Drawing.Color.White;
             this.confirmPurchase_button.selected = false;
-            this.confirmPurchase_button.Size = new System.Drawing.Size(241, 48);
+            this.confirmPurchase_button.Size = new System.Drawing.Size(321, 59);
             this.confirmPurchase_button.TabIndex = 1;
             this.confirmPurchase_button.Text = "Confirm Purchase";
             this.confirmPurchase_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -215,17 +220,19 @@
             // 
             this.cart_flowLayoutPanel.AutoScroll = true;
             this.cart_flowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cart_flowLayoutPanel.Location = new System.Drawing.Point(3, 49);
+            this.cart_flowLayoutPanel.Location = new System.Drawing.Point(4, 60);
+            this.cart_flowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.cart_flowLayoutPanel.Name = "cart_flowLayoutPanel";
-            this.cart_flowLayoutPanel.Size = new System.Drawing.Size(827, 440);
+            this.cart_flowLayoutPanel.Size = new System.Drawing.Size(1102, 541);
             this.cart_flowLayoutPanel.TabIndex = 0;
             // 
             // Beauty_Product_tab
             // 
             this.Beauty_Product_tab.Controls.Add(this.flowLayoutPanel3);
-            this.Beauty_Product_tab.Location = new System.Drawing.Point(4, 22);
+            this.Beauty_Product_tab.Location = new System.Drawing.Point(4, 25);
+            this.Beauty_Product_tab.Margin = new System.Windows.Forms.Padding(4);
             this.Beauty_Product_tab.Name = "Beauty_Product_tab";
-            this.Beauty_Product_tab.Size = new System.Drawing.Size(833, 543);
+            this.Beauty_Product_tab.Size = new System.Drawing.Size(1113, 671);
             this.Beauty_Product_tab.TabIndex = 5;
             this.Beauty_Product_tab.Text = "Beauty Product";
             this.Beauty_Product_tab.UseVisualStyleBackColor = true;
@@ -236,16 +243,18 @@
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(833, 543);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1113, 671);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
             // Appliances_tab
             // 
             this.Appliances_tab.Controls.Add(this.flowLayoutPanel2);
-            this.Appliances_tab.Location = new System.Drawing.Point(4, 22);
+            this.Appliances_tab.Location = new System.Drawing.Point(4, 25);
+            this.Appliances_tab.Margin = new System.Windows.Forms.Padding(4);
             this.Appliances_tab.Name = "Appliances_tab";
-            this.Appliances_tab.Size = new System.Drawing.Size(833, 543);
+            this.Appliances_tab.Size = new System.Drawing.Size(1113, 671);
             this.Appliances_tab.TabIndex = 4;
             this.Appliances_tab.Text = "Appliances";
             this.Appliances_tab.UseVisualStyleBackColor = true;
@@ -256,17 +265,19 @@
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(833, 543);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1113, 671);
             this.flowLayoutPanel2.TabIndex = 1;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // Electronics_tab
             // 
             this.Electronics_tab.Controls.Add(this.flowLayoutPanel4);
-            this.Electronics_tab.Location = new System.Drawing.Point(4, 22);
+            this.Electronics_tab.Location = new System.Drawing.Point(4, 25);
+            this.Electronics_tab.Margin = new System.Windows.Forms.Padding(4);
             this.Electronics_tab.Name = "Electronics_tab";
-            this.Electronics_tab.Size = new System.Drawing.Size(833, 543);
+            this.Electronics_tab.Size = new System.Drawing.Size(1113, 671);
             this.Electronics_tab.TabIndex = 3;
             this.Electronics_tab.Text = "Electronics";
             this.Electronics_tab.UseVisualStyleBackColor = true;
@@ -277,16 +288,18 @@
             this.flowLayoutPanel4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(833, 543);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1113, 671);
             this.flowLayoutPanel4.TabIndex = 1;
             // 
             // Furniture_tab
             // 
             this.Furniture_tab.Controls.Add(this.flowLayoutPanel6);
-            this.Furniture_tab.Location = new System.Drawing.Point(4, 22);
+            this.Furniture_tab.Location = new System.Drawing.Point(4, 25);
+            this.Furniture_tab.Margin = new System.Windows.Forms.Padding(4);
             this.Furniture_tab.Name = "Furniture_tab";
-            this.Furniture_tab.Size = new System.Drawing.Size(833, 543);
+            this.Furniture_tab.Size = new System.Drawing.Size(1113, 671);
             this.Furniture_tab.TabIndex = 2;
             this.Furniture_tab.Text = "Furniture";
             this.Furniture_tab.UseVisualStyleBackColor = true;
@@ -297,17 +310,19 @@
             this.flowLayoutPanel6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(833, 543);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1113, 671);
             this.flowLayoutPanel6.TabIndex = 1;
             // 
             // Fashion_Tab
             // 
             this.Fashion_Tab.Controls.Add(this.flowLayoutPanel5);
-            this.Fashion_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Fashion_Tab.Location = new System.Drawing.Point(4, 25);
+            this.Fashion_Tab.Margin = new System.Windows.Forms.Padding(4);
             this.Fashion_Tab.Name = "Fashion_Tab";
-            this.Fashion_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Fashion_Tab.Size = new System.Drawing.Size(833, 543);
+            this.Fashion_Tab.Padding = new System.Windows.Forms.Padding(4);
+            this.Fashion_Tab.Size = new System.Drawing.Size(1113, 671);
             this.Fashion_Tab.TabIndex = 1;
             this.Fashion_Tab.Text = "Fashion";
             this.Fashion_Tab.UseVisualStyleBackColor = true;
@@ -316,18 +331,20 @@
             // 
             this.flowLayoutPanel5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(4, 4);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(827, 537);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1105, 663);
             this.flowLayoutPanel5.TabIndex = 1;
             // 
             // Smart_Phones_tab
             // 
             this.Smart_Phones_tab.Controls.Add(this.flowLayoutPanel1);
-            this.Smart_Phones_tab.Location = new System.Drawing.Point(4, 22);
+            this.Smart_Phones_tab.Location = new System.Drawing.Point(4, 25);
+            this.Smart_Phones_tab.Margin = new System.Windows.Forms.Padding(4);
             this.Smart_Phones_tab.Name = "Smart_Phones_tab";
-            this.Smart_Phones_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Smart_Phones_tab.Size = new System.Drawing.Size(833, 543);
+            this.Smart_Phones_tab.Padding = new System.Windows.Forms.Padding(4);
+            this.Smart_Phones_tab.Size = new System.Drawing.Size(1113, 671);
             this.Smart_Phones_tab.TabIndex = 0;
             this.Smart_Phones_tab.Text = "Smart Phones";
             this.Smart_Phones_tab.UseVisualStyleBackColor = true;
@@ -337,9 +354,10 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(827, 537);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1105, 663);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // tabControl1
@@ -353,10 +371,11 @@
             this.tabControl1.Controls.Add(this.cart_tab);
             this.tabControl1.Controls.Add(this.receipt_tab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(0, 63);
+            this.tabControl1.Location = new System.Drawing.Point(0, 78);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(841, 569);
+            this.tabControl1.Size = new System.Drawing.Size(1121, 700);
             this.tabControl1.TabIndex = 2;
             // 
             // receipt_tab
@@ -370,11 +389,106 @@
             this.receipt_tab.Controls.Add(this.receiptNumber);
             this.receipt_tab.Controls.Add(this.orderTotal_label);
             this.receipt_tab.Controls.Add(this.bunifuCustomLabel5);
-            this.receipt_tab.Location = new System.Drawing.Point(4, 22);
+            this.receipt_tab.Location = new System.Drawing.Point(4, 25);
+            this.receipt_tab.Margin = new System.Windows.Forms.Padding(4);
             this.receipt_tab.Name = "receipt_tab";
-            this.receipt_tab.Size = new System.Drawing.Size(833, 543);
+            this.receipt_tab.Size = new System.Drawing.Size(1113, 671);
             this.receipt_tab.TabIndex = 7;
             this.receipt_tab.Text = "Receipt";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuCustomLabel1);
+            this.panel1.Controls.Add(this.price);
+            this.panel1.Controls.Add(this.Name);
+            this.panel1.Controls.Add(this.bunifuCustomLabel2);
+            this.panel1.Controls.Add(this.bunifuCustomLabel3);
+            this.panel1.Location = new System.Drawing.Point(11, 34);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 71);
+            this.panel1.TabIndex = 16;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel1.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(332, 6);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(103, 57);
+            this.bunifuCustomLabel1.TabIndex = 10;
+            this.bunifuCustomLabel1.Text = "Total";
+            this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // price
+            // 
+            this.price.AutoSize = true;
+            this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.price.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.ForeColor = System.Drawing.Color.Teal;
+            this.price.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.price.Location = new System.Drawing.Point(673, 6);
+            this.price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.price.Name = "price";
+            this.price.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.price.Size = new System.Drawing.Size(104, 57);
+            this.price.TabIndex = 7;
+            this.price.Text = "Price";
+            this.price.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Name
+            // 
+            this.Name.AutoSize = true;
+            this.Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Name.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.ForeColor = System.Drawing.Color.Teal;
+            this.Name.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.Name.Location = new System.Drawing.Point(5, 9);
+            this.Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Name.Name = "Name";
+            this.Name.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.Name.Size = new System.Drawing.Size(112, 57);
+            this.Name.TabIndex = 6;
+            this.Name.Text = "Name";
+            this.Name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel2.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(477, 6);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(143, 57);
+            this.bunifuCustomLabel2.TabIndex = 8;
+            this.bunifuCustomLabel2.Text = "Number";
+            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel3.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(173, 6);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(103, 57);
+            this.bunifuCustomLabel3.TabIndex = 9;
+            this.bunifuCustomLabel3.Text = "Total";
+            this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // bunifuThinButton22
             // 
@@ -394,10 +508,10 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Magenta;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Magenta;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(629, 160);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(839, 197);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(181, 41);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(241, 50);
             this.bunifuThinButton22.TabIndex = 15;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -409,10 +523,11 @@
             this.shippingFees_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shippingFees_label.ForeColor = System.Drawing.Color.Teal;
             this.shippingFees_label.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.shippingFees_label.Location = new System.Drawing.Point(714, 430);
+            this.shippingFees_label.Location = new System.Drawing.Point(952, 529);
+            this.shippingFees_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.shippingFees_label.Name = "shippingFees_label";
-            this.shippingFees_label.Padding = new System.Windows.Forms.Padding(2);
-            this.shippingFees_label.Size = new System.Drawing.Size(111, 25);
+            this.shippingFees_label.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.shippingFees_label.Size = new System.Drawing.Size(147, 30);
             this.shippingFees_label.TabIndex = 14;
             this.shippingFees_label.Text = "                        ";
             this.shippingFees_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -421,9 +536,10 @@
             // 
             this.receipt_flowLayoutPanel.AutoScroll = true;
             this.receipt_flowLayoutPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.receipt_flowLayoutPanel.Location = new System.Drawing.Point(8, 83);
+            this.receipt_flowLayoutPanel.Location = new System.Drawing.Point(11, 102);
+            this.receipt_flowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.receipt_flowLayoutPanel.Name = "receipt_flowLayoutPanel";
-            this.receipt_flowLayoutPanel.Size = new System.Drawing.Size(602, 457);
+            this.receipt_flowLayoutPanel.Size = new System.Drawing.Size(803, 562);
             this.receipt_flowLayoutPanel.TabIndex = 1;
             // 
             // bunifuCustomLabel4
@@ -434,10 +550,11 @@
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Teal;
             this.bunifuCustomLabel4.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(717, 471);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(956, 580);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Padding = new System.Windows.Forms.Padding(2);
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(93, 25);
+            this.bunifuCustomLabel4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(118, 29);
             this.bunifuCustomLabel4.TabIndex = 11;
             this.bunifuCustomLabel4.Text = "Order Total";
             this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -446,9 +563,10 @@
             // 
             this.receiptNumber.AutoSize = true;
             this.receiptNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptNumber.Location = new System.Drawing.Point(3, 0);
+            this.receiptNumber.Location = new System.Drawing.Point(4, 0);
+            this.receiptNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptNumber.Name = "receiptNumber";
-            this.receiptNumber.Size = new System.Drawing.Size(98, 25);
+            this.receiptNumber.Size = new System.Drawing.Size(122, 31);
             this.receiptNumber.TabIndex = 0;
             this.receiptNumber.Text = "Receipt #";
             // 
@@ -459,10 +577,11 @@
             this.orderTotal_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderTotal_label.ForeColor = System.Drawing.Color.Teal;
             this.orderTotal_label.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.orderTotal_label.Location = new System.Drawing.Point(714, 513);
+            this.orderTotal_label.Location = new System.Drawing.Point(952, 631);
+            this.orderTotal_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.orderTotal_label.Name = "orderTotal_label";
-            this.orderTotal_label.Padding = new System.Windows.Forms.Padding(2);
-            this.orderTotal_label.Size = new System.Drawing.Size(111, 25);
+            this.orderTotal_label.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.orderTotal_label.Size = new System.Drawing.Size(147, 30);
             this.orderTotal_label.TabIndex = 13;
             this.orderTotal_label.Text = "                        ";
             this.orderTotal_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -475,10 +594,11 @@
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Teal;
             this.bunifuCustomLabel5.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(713, 388);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(951, 478);
+            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Padding = new System.Windows.Forms.Padding(2);
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(112, 25);
+            this.bunifuCustomLabel5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(138, 29);
             this.bunifuCustomLabel5.TabIndex = 12;
             this.bunifuCustomLabel5.Text = "Shipping Fees ";
             this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -501,10 +621,10 @@
             this.mobilePhones_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.mobilePhones_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.mobilePhones_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.mobilePhones_SwitchToTab_button.Location = new System.Drawing.Point(261, 29);
-            this.mobilePhones_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.mobilePhones_SwitchToTab_button.Location = new System.Drawing.Point(392, 36);
+            this.mobilePhones_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.mobilePhones_SwitchToTab_button.Name = "mobilePhones_SwitchToTab_button";
-            this.mobilePhones_SwitchToTab_button.Size = new System.Drawing.Size(134, 34);
+            this.mobilePhones_SwitchToTab_button.Size = new System.Drawing.Size(179, 42);
             this.mobilePhones_SwitchToTab_button.TabIndex = 3;
             this.mobilePhones_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mobilePhones_SwitchToTab_button.Click += new System.EventHandler(this.mobilePhones_SwitchToTab_button_Click);
@@ -518,7 +638,7 @@
             this.beautyProducts_SwitchToTab_button.ActiveLineColor = System.Drawing.Color.DodgerBlue;
             this.beautyProducts_SwitchToTab_button.BackColor = System.Drawing.SystemColors.Control;
             this.beautyProducts_SwitchToTab_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("beautyProducts_SwitchToTab_button.BackgroundImage")));
-            this.beautyProducts_SwitchToTab_button.ButtonText = "Beauty Products";
+            this.beautyProducts_SwitchToTab_button.ButtonText = "Electronics";
             this.beautyProducts_SwitchToTab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.beautyProducts_SwitchToTab_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beautyProducts_SwitchToTab_button.ForeColor = System.Drawing.Color.SeaGreen;
@@ -527,10 +647,10 @@
             this.beautyProducts_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.beautyProducts_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.beautyProducts_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.beautyProducts_SwitchToTab_button.Location = new System.Drawing.Point(10, 29);
-            this.beautyProducts_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.beautyProducts_SwitchToTab_button.Location = new System.Drawing.Point(13, 36);
+            this.beautyProducts_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.beautyProducts_SwitchToTab_button.Name = "beautyProducts_SwitchToTab_button";
-            this.beautyProducts_SwitchToTab_button.Size = new System.Drawing.Size(145, 34);
+            this.beautyProducts_SwitchToTab_button.Size = new System.Drawing.Size(178, 42);
             this.beautyProducts_SwitchToTab_button.TabIndex = 1;
             this.beautyProducts_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.beautyProducts_SwitchToTab_button.Click += new System.EventHandler(this.beautyProducts_SwitchToTab_button_Click);
@@ -544,7 +664,7 @@
             this.fashion_SwitchToTab_button.ActiveLineColor = System.Drawing.Color.DodgerBlue;
             this.fashion_SwitchToTab_button.BackColor = System.Drawing.SystemColors.Control;
             this.fashion_SwitchToTab_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fashion_SwitchToTab_button.BackgroundImage")));
-            this.fashion_SwitchToTab_button.ButtonText = "Fashion";
+            this.fashion_SwitchToTab_button.ButtonText = "Appliances";
             this.fashion_SwitchToTab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fashion_SwitchToTab_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fashion_SwitchToTab_button.ForeColor = System.Drawing.Color.SeaGreen;
@@ -553,10 +673,10 @@
             this.fashion_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.fashion_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.fashion_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.fashion_SwitchToTab_button.Location = new System.Drawing.Point(165, 29);
-            this.fashion_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.fashion_SwitchToTab_button.Location = new System.Drawing.Point(205, 36);
+            this.fashion_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.fashion_SwitchToTab_button.Name = "fashion_SwitchToTab_button";
-            this.fashion_SwitchToTab_button.Size = new System.Drawing.Size(86, 34);
+            this.fashion_SwitchToTab_button.Size = new System.Drawing.Size(147, 42);
             this.fashion_SwitchToTab_button.TabIndex = 2;
             this.fashion_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fashion_SwitchToTab_button.Click += new System.EventHandler(this.fashion_SwitchToTab_button_Click);
@@ -579,10 +699,10 @@
             this.furniture_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.furniture_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.furniture_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.furniture_SwitchToTab_button.Location = new System.Drawing.Point(693, 29);
-            this.furniture_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.furniture_SwitchToTab_button.Location = new System.Drawing.Point(940, 36);
+            this.furniture_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.furniture_SwitchToTab_button.Name = "furniture_SwitchToTab_button";
-            this.furniture_SwitchToTab_button.Size = new System.Drawing.Size(134, 34);
+            this.furniture_SwitchToTab_button.Size = new System.Drawing.Size(163, 42);
             this.furniture_SwitchToTab_button.TabIndex = 6;
             this.furniture_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.furniture_SwitchToTab_button.Click += new System.EventHandler(this.furniture_SwitchToTab_button_Click);
@@ -596,7 +716,7 @@
             this.electronics_SwitchToTab_button.ActiveLineColor = System.Drawing.Color.DodgerBlue;
             this.electronics_SwitchToTab_button.BackColor = System.Drawing.SystemColors.Control;
             this.electronics_SwitchToTab_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("electronics_SwitchToTab_button.BackgroundImage")));
-            this.electronics_SwitchToTab_button.ButtonText = "Electronics";
+            this.electronics_SwitchToTab_button.ButtonText = "beauty products";
             this.electronics_SwitchToTab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.electronics_SwitchToTab_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.electronics_SwitchToTab_button.ForeColor = System.Drawing.Color.SeaGreen;
@@ -605,10 +725,10 @@
             this.electronics_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.electronics_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.electronics_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.electronics_SwitchToTab_button.Location = new System.Drawing.Point(549, 29);
-            this.electronics_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.electronics_SwitchToTab_button.Location = new System.Drawing.Point(744, 36);
+            this.electronics_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.electronics_SwitchToTab_button.Name = "electronics_SwitchToTab_button";
-            this.electronics_SwitchToTab_button.Size = new System.Drawing.Size(134, 34);
+            this.electronics_SwitchToTab_button.Size = new System.Drawing.Size(194, 42);
             this.electronics_SwitchToTab_button.TabIndex = 5;
             this.electronics_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.electronics_SwitchToTab_button.Click += new System.EventHandler(this.electronics_SwitchToTab_button_Click);
@@ -622,7 +742,7 @@
             this.appliances_SwitchToTab_button.ActiveLineColor = System.Drawing.Color.DodgerBlue;
             this.appliances_SwitchToTab_button.BackColor = System.Drawing.SystemColors.Control;
             this.appliances_SwitchToTab_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("appliances_SwitchToTab_button.BackgroundImage")));
-            this.appliances_SwitchToTab_button.ButtonText = "Appliances";
+            this.appliances_SwitchToTab_button.ButtonText = "Fashion";
             this.appliances_SwitchToTab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.appliances_SwitchToTab_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appliances_SwitchToTab_button.ForeColor = System.Drawing.Color.SeaGreen;
@@ -631,107 +751,19 @@
             this.appliances_SwitchToTab_button.IdleFillColor = System.Drawing.Color.White;
             this.appliances_SwitchToTab_button.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.appliances_SwitchToTab_button.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.appliances_SwitchToTab_button.Location = new System.Drawing.Point(405, 29);
-            this.appliances_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(5);
+            this.appliances_SwitchToTab_button.Location = new System.Drawing.Point(585, 36);
+            this.appliances_SwitchToTab_button.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.appliances_SwitchToTab_button.Name = "appliances_SwitchToTab_button";
-            this.appliances_SwitchToTab_button.Size = new System.Drawing.Size(134, 34);
+            this.appliances_SwitchToTab_button.Size = new System.Drawing.Size(145, 42);
             this.appliances_SwitchToTab_button.TabIndex = 4;
             this.appliances_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.appliances_SwitchToTab_button.Click += new System.EventHandler(this.appliances_SwitchToTab_button_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bunifuCustomLabel1);
-            this.panel1.Controls.Add(this.price);
-            this.panel1.Controls.Add(this.Name);
-            this.panel1.Controls.Add(this.bunifuCustomLabel2);
-            this.panel1.Controls.Add(this.bunifuCustomLabel3);
-            this.panel1.Location = new System.Drawing.Point(8, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 58);
-            this.panel1.TabIndex = 16;
-            // 
-            // Name
-            // 
-            this.Name.AutoSize = true;
-            this.Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Name.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.ForeColor = System.Drawing.Color.Teal;
-            this.Name.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.Name.Location = new System.Drawing.Point(4, 7);
-            this.Name.Name = "Name";
-            this.Name.Padding = new System.Windows.Forms.Padding(8);
-            this.Name.Size = new System.Drawing.Size(89, 44);
-            this.Name.TabIndex = 6;
-            this.Name.Text = "Name";
-            this.Name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // price
-            // 
-            this.price.AutoSize = true;
-            this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.price.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price.ForeColor = System.Drawing.Color.Teal;
-            this.price.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.price.Location = new System.Drawing.Point(505, 5);
-            this.price.Name = "price";
-            this.price.Padding = new System.Windows.Forms.Padding(8);
-            this.price.Size = new System.Drawing.Size(85, 44);
-            this.price.TabIndex = 7;
-            this.price.Text = "Price";
-            this.price.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Teal;
-            this.bunifuCustomLabel2.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(358, 5);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Padding = new System.Windows.Forms.Padding(8);
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(114, 44);
-            this.bunifuCustomLabel2.TabIndex = 8;
-            this.bunifuCustomLabel2.Text = "Number";
-            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Teal;
-            this.bunifuCustomLabel3.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(130, 5);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Padding = new System.Windows.Forms.Padding(8);
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(82, 44);
-            this.bunifuCustomLabel3.TabIndex = 9;
-            this.bunifuCustomLabel3.Text = "Total";
-            this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.bunifuCustomLabel1.Image = global::Online_Shopping_Store.Properties.Resources.white;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(249, 5);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(8);
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(82, 44);
-            this.bunifuCustomLabel1.TabIndex = 10;
-            this.bunifuCustomLabel1.Text = "Total";
-            this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // products_show
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 632);
+            this.ClientSize = new System.Drawing.Size(1121, 778);
             this.Controls.Add(this.mobilePhones_SwitchToTab_button);
             this.Controls.Add(this.beautyProducts_SwitchToTab_button);
             this.Controls.Add(this.fashion_SwitchToTab_button);
@@ -741,7 +773,8 @@
             this.Controls.Add(this.appliances_SwitchToTab_button);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-         //   this.Name = "products_show";
+            this.Margin = new System.Windows.Forms.Padding(4);
+           // this.Name = "products_show";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "products_show";
             this.Load += new System.EventHandler(this.products_show_Load);

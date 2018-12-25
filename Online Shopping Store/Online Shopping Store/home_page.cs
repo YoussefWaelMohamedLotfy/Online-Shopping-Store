@@ -16,11 +16,12 @@ namespace Online_Shopping_Store
     public partial class home_page : Form
     {
         public products_show ps;
-   
+      
         public home_page()
         {
             InitializeComponent();
         }
+        
 
         //public home_page( products_show p)
         //{
@@ -157,6 +158,15 @@ namespace Online_Shopping_Store
         {
             Search SP = new Search();
             SP.Show();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            Edit E = new Edit();
+            E.Show();
+            
+
         }
     }
 }

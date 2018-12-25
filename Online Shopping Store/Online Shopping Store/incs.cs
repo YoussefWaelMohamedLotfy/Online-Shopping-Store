@@ -40,27 +40,27 @@ namespace Online_Shopping_Store
                 FileStream shoper_file_open = new FileStream("shoper.txt", FileMode.Open);
                 BinaryFormatter Formatter = new BinaryFormatter();
                 ///
-                                                        //attention//
-                                 // dont remove this   it will work if you put data in the file //
-                //while (shoper_file_open.Position != shoper_file_open.Length)
-                //{
-                //    Shopper S1 = (Shopper)Formatter.Deserialize(shoper_file_open);
-                //    Dictionary<string, string> Check_repet = new Dictionary<string, string>();
-                //    Check_repet.Add(S1.email, S1.password);
-                //    if(Check_repet.ContainsKey(Textbox3_email.Text))
-                //    {
+                //attention//
+                // dont remove this   it will work if you put data in the file //
+                while (shoper_file_open.Position != shoper_file_open.Length)
+                {
+                    Shopper S1 = (Shopper)Formatter.Deserialize(shoper_file_open);
+                    Dictionary<string, string> Check_repet = new Dictionary<string, string>();
+                    Check_repet.Add(S1.email, S1.password);
+                    if (Check_repet.ContainsKey(Textbox3_email.Text))
+                    {
 
-                //        MessageBox.Show("Hi " + S1.name);
-                //        tabPage1.Hide();
+                        MessageBox.Show("Hi " + S1.name);
+                        tabPage1.Hide();
 
-                //        tabPage2.Show();
+                        tabPage2.Show();
 
-                //        TextBox1_emailin.Text = S1.email;
-                //        check=true;
-                        
-                //    }
-                //}
-                //shoper_file_open.Close();
+                        TextBox1_emailin.Text = S1.email;
+                        check = true;
+
+                    }
+                }
+                shoper_file_open.Close();
 
                 if (check == false)
                 {
@@ -107,8 +107,16 @@ namespace Online_Shopping_Store
                     {
                         home_page fr = new home_page();
                         fr.Show();
-                        //this.Hide();
+                        this.Hide();
                         check = true;
+                       // home_page home = new home_page(S.email, S.password);
+                        linker.email = S.email;
+                        linker.pass = S.password;
+                        // MessageBox.Show(S.email);
+                        //MessageBox.Show(S.password);
+                        // Edit edit= new  Edit(S.email, S.password);
+                        //this.Close();
+
                     }
 
 

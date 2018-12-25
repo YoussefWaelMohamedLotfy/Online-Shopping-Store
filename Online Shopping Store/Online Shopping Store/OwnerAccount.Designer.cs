@@ -39,6 +39,9 @@
             this.RemoveTB = new Bunifu.Framework.UI.BunifuThinButton2();
             this.AddProductTB = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ViewTab = new System.Windows.Forms.TabPage();
+            this.load_view = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.choose_cat_viewcb = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.back_view = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.AddTab = new System.Windows.Forms.TabPage();
@@ -50,16 +53,12 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AddProductButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BackTB = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.colorCheckedListBox = new System.Windows.Forms.CheckedListBox();
-            this.SizeCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.NotAvailableRadioButton = new System.Windows.Forms.RadioButton();
             this.AvailableRadioButton = new System.Windows.Forms.RadioButton();
             this.CategoryCB = new System.Windows.Forms.ComboBox();
             this.BrandTB = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.BrandLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.QuantityLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.ColorLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.SizeLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AvailabilityLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DescriptionTB = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.DescriptionLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -81,10 +80,6 @@
             this.NotAvailableUP = new System.Windows.Forms.RadioButton();
             this.AvailableUP = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.ColorUP = new System.Windows.Forms.CheckedListBox();
-            this.SizeUP = new System.Windows.Forms.CheckedListBox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.BrandUP = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PriceUP = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -93,15 +88,13 @@
             this.NameUP = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.RemoveTab = new System.Windows.Forms.TabPage();
-            this.back_rem = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.final_remove = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.load_view = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.choose_cat_viewcb = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.load_removebtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.choose_cat_removecb = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.back_rem = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.final_remove = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MyAccountTabControl.SuspendLayout();
             this.OwnerTab.SuspendLayout();
             this.ViewTab.SuspendLayout();
@@ -135,11 +128,11 @@
             this.MyAccountTabControl.Controls.Add(this.AddTab);
             this.MyAccountTabControl.Controls.Add(this.UpdateTab);
             this.MyAccountTabControl.Controls.Add(this.RemoveTab);
-            this.MyAccountTabControl.Location = new System.Drawing.Point(11, 12);
+            this.MyAccountTabControl.Location = new System.Drawing.Point(2, 11);
             this.MyAccountTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.MyAccountTabControl.Name = "MyAccountTabControl";
             this.MyAccountTabControl.SelectedIndex = 0;
-            this.MyAccountTabControl.Size = new System.Drawing.Size(1362, 632);
+            this.MyAccountTabControl.Size = new System.Drawing.Size(1384, 618);
             this.MyAccountTabControl.TabIndex = 32;
             // 
             // OwnerTab
@@ -310,11 +303,62 @@
             this.ViewTab.Margin = new System.Windows.Forms.Padding(2);
             this.ViewTab.Name = "ViewTab";
             this.ViewTab.Padding = new System.Windows.Forms.Padding(2);
-            this.ViewTab.Size = new System.Drawing.Size(1354, 603);
+            this.ViewTab.Size = new System.Drawing.Size(1376, 564);
             this.ViewTab.TabIndex = 0;
             this.ViewTab.Text = "View products";
             this.ViewTab.UseVisualStyleBackColor = true;
             this.ViewTab.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // load_view
+            // 
+            this.load_view.ActiveBorderThickness = 1;
+            this.load_view.ActiveCornerRadius = 20;
+            this.load_view.ActiveFillColor = System.Drawing.Color.Teal;
+            this.load_view.ActiveForecolor = System.Drawing.Color.White;
+            this.load_view.ActiveLineColor = System.Drawing.Color.Teal;
+            this.load_view.BackColor = System.Drawing.Color.Transparent;
+            this.load_view.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("load_view.BackgroundImage")));
+            this.load_view.ButtonText = "Load";
+            this.load_view.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.load_view.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.load_view.ForeColor = System.Drawing.Color.Teal;
+            this.load_view.IdleBorderThickness = 1;
+            this.load_view.IdleCornerRadius = 20;
+            this.load_view.IdleFillColor = System.Drawing.Color.White;
+            this.load_view.IdleForecolor = System.Drawing.Color.Teal;
+            this.load_view.IdleLineColor = System.Drawing.Color.Teal;
+            this.load_view.Location = new System.Drawing.Point(404, 50);
+            this.load_view.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.load_view.Name = "load_view";
+            this.load_view.Size = new System.Drawing.Size(142, 37);
+            this.load_view.TabIndex = 91;
+            this.load_view.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.load_view.Click += new System.EventHandler(this.load_view_Click);
+            // 
+            // choose_cat_viewcb
+            // 
+            this.choose_cat_viewcb.FormattingEnabled = true;
+            this.choose_cat_viewcb.Items.AddRange(new object[] {
+            "Smart Phones",
+            "Electronics",
+            "Beauty Products",
+            "Appliances",
+            "Fashion",
+            "Furniture"});
+            this.choose_cat_viewcb.Location = new System.Drawing.Point(286, 18);
+            this.choose_cat_viewcb.Name = "choose_cat_viewcb";
+            this.choose_cat_viewcb.Size = new System.Drawing.Size(259, 24);
+            this.choose_cat_viewcb.TabIndex = 90;
+            // 
+            // bunifuCustomLabel14
+            // 
+            this.bunifuCustomLabel14.AutoSize = true;
+            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(51, 18);
+            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(208, 54);
+            this.bunifuCustomLabel14.TabIndex = 89;
+            this.bunifuCustomLabel14.Text = "Choose Category:\r\n\r\n";
             // 
             // back_view
             // 
@@ -364,16 +408,12 @@
             this.AddTab.Controls.Add(this.bunifuCustomLabel3);
             this.AddTab.Controls.Add(this.AddProductButton);
             this.AddTab.Controls.Add(this.BackTB);
-            this.AddTab.Controls.Add(this.colorCheckedListBox);
-            this.AddTab.Controls.Add(this.SizeCheckedListBox);
             this.AddTab.Controls.Add(this.NotAvailableRadioButton);
             this.AddTab.Controls.Add(this.AvailableRadioButton);
             this.AddTab.Controls.Add(this.CategoryCB);
             this.AddTab.Controls.Add(this.BrandTB);
             this.AddTab.Controls.Add(this.BrandLabel);
             this.AddTab.Controls.Add(this.QuantityLabel);
-            this.AddTab.Controls.Add(this.ColorLabel);
-            this.AddTab.Controls.Add(this.SizeLabel);
             this.AddTab.Controls.Add(this.AvailabilityLabel);
             this.AddTab.Controls.Add(this.DescriptionTB);
             this.AddTab.Controls.Add(this.DescriptionLabel);
@@ -386,7 +426,7 @@
             this.AddTab.Margin = new System.Windows.Forms.Padding(2);
             this.AddTab.Name = "AddTab";
             this.AddTab.Padding = new System.Windows.Forms.Padding(2);
-            this.AddTab.Size = new System.Drawing.Size(1354, 603);
+            this.AddTab.Size = new System.Drawing.Size(1376, 564);
             this.AddTab.TabIndex = 1;
             this.AddTab.Text = "Add product";
             // 
@@ -453,7 +493,7 @@
             // quantityCount
             // 
             this.quantityCount.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.quantityCount.Location = new System.Drawing.Point(270, 497);
+            this.quantityCount.Location = new System.Drawing.Point(294, 402);
             this.quantityCount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.quantityCount.Minimum = new decimal(new int[] {
             1,
@@ -499,7 +539,7 @@
             this.AddProductButton.IdleFillColor = System.Drawing.Color.White;
             this.AddProductButton.IdleForecolor = System.Drawing.Color.Teal;
             this.AddProductButton.IdleLineColor = System.Drawing.Color.Teal;
-            this.AddProductButton.Location = new System.Drawing.Point(503, 490);
+            this.AddProductButton.Location = new System.Drawing.Point(503, 546);
             this.AddProductButton.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.AddProductButton.Name = "AddProductButton";
             this.AddProductButton.Size = new System.Drawing.Size(225, 57);
@@ -525,7 +565,7 @@
             this.BackTB.IdleFillColor = System.Drawing.Color.White;
             this.BackTB.IdleForecolor = System.Drawing.Color.Teal;
             this.BackTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.BackTB.Location = new System.Drawing.Point(762, 487);
+            this.BackTB.Location = new System.Drawing.Point(760, 546);
             this.BackTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.BackTB.Name = "BackTB";
             this.BackTB.Size = new System.Drawing.Size(225, 57);
@@ -533,61 +573,11 @@
             this.BackTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BackTB.Click += new System.EventHandler(this.BackTB_Click);
             // 
-            // colorCheckedListBox
-            // 
-            this.colorCheckedListBox.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.colorCheckedListBox.FormattingEnabled = true;
-            this.colorCheckedListBox.Items.AddRange(new object[] {
-            "White",
-            "Black",
-            "Yellow",
-            "Salmon",
-            "Brown",
-            "Red ",
-            "Orange",
-            "Grey",
-            "Blue",
-            "StateBlue",
-            "SkyBlue",
-            "Navy",
-            "Green",
-            "Dark Green",
-            "Purple",
-            "violet",
-            "Maroon",
-            "Beige",
-            "Peach",
-            "Gold",
-            "Pink"});
-            this.colorCheckedListBox.Location = new System.Drawing.Point(354, 362);
-            this.colorCheckedListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorCheckedListBox.Name = "colorCheckedListBox";
-            this.colorCheckedListBox.Size = new System.Drawing.Size(135, 21);
-            this.colorCheckedListBox.TabIndex = 72;
-            // 
-            // SizeCheckedListBox
-            // 
-            this.SizeCheckedListBox.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.SizeCheckedListBox.FormattingEnabled = true;
-            this.SizeCheckedListBox.Items.AddRange(new object[] {
-            "FS",
-            "XS",
-            "Medium",
-            "Large",
-            "XL",
-            "XXL",
-            "XXXL"});
-            this.SizeCheckedListBox.Location = new System.Drawing.Point(112, 362);
-            this.SizeCheckedListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SizeCheckedListBox.Name = "SizeCheckedListBox";
-            this.SizeCheckedListBox.Size = new System.Drawing.Size(135, 21);
-            this.SizeCheckedListBox.TabIndex = 71;
-            // 
             // NotAvailableRadioButton
             // 
             this.NotAvailableRadioButton.AutoSize = true;
             this.NotAvailableRadioButton.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.NotAvailableRadioButton.Location = new System.Drawing.Point(550, 396);
+            this.NotAvailableRadioButton.Location = new System.Drawing.Point(503, 325);
             this.NotAvailableRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NotAvailableRadioButton.Name = "NotAvailableRadioButton";
             this.NotAvailableRadioButton.Size = new System.Drawing.Size(129, 25);
@@ -600,7 +590,7 @@
             // 
             this.AvailableRadioButton.AutoSize = true;
             this.AvailableRadioButton.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AvailableRadioButton.Location = new System.Drawing.Point(550, 362);
+            this.AvailableRadioButton.Location = new System.Drawing.Point(310, 325);
             this.AvailableRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AvailableRadioButton.Name = "AvailableRadioButton";
             this.AvailableRadioButton.Size = new System.Drawing.Size(98, 25);
@@ -653,38 +643,17 @@
             // 
             this.QuantityLabel.AutoSize = true;
             this.QuantityLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.QuantityLabel.Location = new System.Drawing.Point(112, 492);
+            this.QuantityLabel.Location = new System.Drawing.Point(122, 395);
             this.QuantityLabel.Name = "QuantityLabel";
             this.QuantityLabel.Size = new System.Drawing.Size(116, 54);
             this.QuantityLabel.TabIndex = 65;
             this.QuantityLabel.Text = "Quantity:\r\n\r\n";
             // 
-            // ColorLabel
-            // 
-            this.ColorLabel.AutoSize = true;
-            this.ColorLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.ColorLabel.Location = new System.Drawing.Point(375, 306);
-            this.ColorLabel.Name = "ColorLabel";
-            this.ColorLabel.Size = new System.Drawing.Size(80, 54);
-            this.ColorLabel.TabIndex = 64;
-            this.ColorLabel.Text = "Color:\r\n\r\n";
-            // 
-            // SizeLabel
-            // 
-            this.SizeLabel.AutoSize = true;
-            this.SizeLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.SizeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.SizeLabel.Location = new System.Drawing.Point(154, 306);
-            this.SizeLabel.Name = "SizeLabel";
-            this.SizeLabel.Size = new System.Drawing.Size(66, 54);
-            this.SizeLabel.TabIndex = 63;
-            this.SizeLabel.Text = "Size:\r\n\r\n";
-            // 
             // AvailabilityLabel
             // 
             this.AvailabilityLabel.AutoSize = true;
             this.AvailabilityLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.AvailabilityLabel.Location = new System.Drawing.Point(528, 306);
+            this.AvailabilityLabel.Location = new System.Drawing.Point(114, 322);
             this.AvailabilityLabel.Name = "AvailabilityLabel";
             this.AvailabilityLabel.Size = new System.Drawing.Size(145, 54);
             this.AvailabilityLabel.TabIndex = 62;
@@ -695,11 +664,11 @@
             this.DescriptionTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.DescriptionTB.BorderColor = System.Drawing.Color.Teal;
             this.DescriptionTB.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.DescriptionTB.Location = new System.Drawing.Point(1094, 379);
+            this.DescriptionTB.Location = new System.Drawing.Point(1026, 379);
             this.DescriptionTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DescriptionTB.Multiline = true;
             this.DescriptionTB.Name = "DescriptionTB";
-            this.DescriptionTB.Size = new System.Drawing.Size(247, 165);
+            this.DescriptionTB.Size = new System.Drawing.Size(315, 165);
             this.DescriptionTB.TabIndex = 61;
             // 
             // DescriptionLabel
@@ -781,10 +750,6 @@
             this.UpdateTab.Controls.Add(this.NotAvailableUP);
             this.UpdateTab.Controls.Add(this.AvailableUP);
             this.UpdateTab.Controls.Add(this.bunifuCustomLabel10);
-            this.UpdateTab.Controls.Add(this.ColorUP);
-            this.UpdateTab.Controls.Add(this.SizeUP);
-            this.UpdateTab.Controls.Add(this.bunifuCustomLabel8);
-            this.UpdateTab.Controls.Add(this.bunifuCustomLabel9);
             this.UpdateTab.Controls.Add(this.BrandUP);
             this.UpdateTab.Controls.Add(this.bunifuCustomLabel6);
             this.UpdateTab.Controls.Add(this.PriceUP);
@@ -795,7 +760,7 @@
             this.UpdateTab.Location = new System.Drawing.Point(4, 25);
             this.UpdateTab.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateTab.Name = "UpdateTab";
-            this.UpdateTab.Size = new System.Drawing.Size(1353, 594);
+            this.UpdateTab.Size = new System.Drawing.Size(1376, 564);
             this.UpdateTab.TabIndex = 2;
             this.UpdateTab.Text = "Update";
             // 
@@ -908,11 +873,11 @@
             this.DescriptionUP.BackColor = System.Drawing.Color.DarkSlateGray;
             this.DescriptionUP.BorderColor = System.Drawing.Color.Teal;
             this.DescriptionUP.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.DescriptionUP.Location = new System.Drawing.Point(10, 446);
+            this.DescriptionUP.Location = new System.Drawing.Point(10, 430);
             this.DescriptionUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DescriptionUP.Multiline = true;
             this.DescriptionUP.Name = "DescriptionUP";
-            this.DescriptionUP.Size = new System.Drawing.Size(357, 126);
+            this.DescriptionUP.Size = new System.Drawing.Size(357, 171);
             this.DescriptionUP.TabIndex = 83;
             this.DescriptionUP.TextChanged += new System.EventHandler(this.bunifuCustomTextbox4_TextChanged);
             // 
@@ -920,7 +885,7 @@
             // 
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(8, 415);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(8, 390);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(148, 54);
             this.bunifuCustomLabel12.TabIndex = 82;
@@ -961,7 +926,7 @@
             // 
             this.NotAvailableUP.AutoSize = true;
             this.NotAvailableUP.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.NotAvailableUP.Location = new System.Drawing.Point(419, 424);
+            this.NotAvailableUP.Location = new System.Drawing.Point(339, 340);
             this.NotAvailableUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NotAvailableUP.Name = "NotAvailableUP";
             this.NotAvailableUP.Size = new System.Drawing.Size(129, 25);
@@ -974,7 +939,7 @@
             // 
             this.AvailableUP.AutoSize = true;
             this.AvailableUP.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AvailableUP.Location = new System.Drawing.Point(419, 390);
+            this.AvailableUP.Location = new System.Drawing.Point(196, 340);
             this.AvailableUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AvailableUP.Name = "AvailableUP";
             this.AvailableUP.Size = new System.Drawing.Size(98, 25);
@@ -987,82 +952,11 @@
             // 
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(397, 334);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(8, 337);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(145, 54);
             this.bunifuCustomLabel10.TabIndex = 77;
             this.bunifuCustomLabel10.Text = "Availability:\r\n\r\n";
-            // 
-            // ColorUP
-            // 
-            this.ColorUP.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ColorUP.FormattingEnabled = true;
-            this.ColorUP.Items.AddRange(new object[] {
-            "White",
-            "Black",
-            "Yellow",
-            "Salmon",
-            "Brown",
-            "Red ",
-            "Orange",
-            "Grey",
-            "Blue",
-            "StateBlue",
-            "SkyBlue",
-            "Navy",
-            "Green",
-            "Dark Green",
-            "Purple",
-            "violet",
-            "Maroon",
-            "Beige",
-            "Peach",
-            "Gold",
-            "Pink"});
-            this.ColorUP.Location = new System.Drawing.Point(209, 390);
-            this.ColorUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ColorUP.Name = "ColorUP";
-            this.ColorUP.Size = new System.Drawing.Size(135, 21);
-            this.ColorUP.TabIndex = 76;
-            // 
-            // SizeUP
-            // 
-            this.SizeUP.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.SizeUP.FormattingEnabled = true;
-            this.SizeUP.Items.AddRange(new object[] {
-            "FS",
-            "XS",
-            "Medium",
-            "Large",
-            "XL",
-            "XXL",
-            "XXXL"});
-            this.SizeUP.Location = new System.Drawing.Point(18, 390);
-            this.SizeUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SizeUP.Name = "SizeUP";
-            this.SizeUP.Size = new System.Drawing.Size(135, 21);
-            this.SizeUP.TabIndex = 75;
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(235, 334);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(80, 54);
-            this.bunifuCustomLabel8.TabIndex = 74;
-            this.bunifuCustomLabel8.Text = "Color:\r\n\r\n";
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(61, 334);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(66, 54);
-            this.bunifuCustomLabel9.TabIndex = 73;
-            this.bunifuCustomLabel9.Text = "Size:\r\n\r\n";
             // 
             // BrandUP
             // 
@@ -1153,9 +1047,60 @@
             this.RemoveTab.Location = new System.Drawing.Point(4, 25);
             this.RemoveTab.Margin = new System.Windows.Forms.Padding(2);
             this.RemoveTab.Name = "RemoveTab";
-            this.RemoveTab.Size = new System.Drawing.Size(1354, 603);
+            this.RemoveTab.Size = new System.Drawing.Size(1376, 589);
             this.RemoveTab.TabIndex = 3;
             this.RemoveTab.Text = "Remove";
+            // 
+            // load_removebtn
+            // 
+            this.load_removebtn.ActiveBorderThickness = 1;
+            this.load_removebtn.ActiveCornerRadius = 20;
+            this.load_removebtn.ActiveFillColor = System.Drawing.Color.Teal;
+            this.load_removebtn.ActiveForecolor = System.Drawing.Color.White;
+            this.load_removebtn.ActiveLineColor = System.Drawing.Color.Teal;
+            this.load_removebtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.load_removebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("load_removebtn.BackgroundImage")));
+            this.load_removebtn.ButtonText = "Load";
+            this.load_removebtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.load_removebtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.load_removebtn.ForeColor = System.Drawing.Color.Teal;
+            this.load_removebtn.IdleBorderThickness = 1;
+            this.load_removebtn.IdleCornerRadius = 20;
+            this.load_removebtn.IdleFillColor = System.Drawing.Color.White;
+            this.load_removebtn.IdleForecolor = System.Drawing.Color.Teal;
+            this.load_removebtn.IdleLineColor = System.Drawing.Color.Teal;
+            this.load_removebtn.Location = new System.Drawing.Point(1180, 135);
+            this.load_removebtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.load_removebtn.Name = "load_removebtn";
+            this.load_removebtn.Size = new System.Drawing.Size(142, 37);
+            this.load_removebtn.TabIndex = 94;
+            this.load_removebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.load_removebtn.Click += new System.EventHandler(this.load_removebtn_Click);
+            // 
+            // choose_cat_removecb
+            // 
+            this.choose_cat_removecb.FormattingEnabled = true;
+            this.choose_cat_removecb.Items.AddRange(new object[] {
+            "Smart Phones",
+            "Electronics",
+            "Beauty Products",
+            "Appliances",
+            "Fashion",
+            "Furniture"});
+            this.choose_cat_removecb.Location = new System.Drawing.Point(1069, 86);
+            this.choose_cat_removecb.Name = "choose_cat_removecb";
+            this.choose_cat_removecb.Size = new System.Drawing.Size(259, 24);
+            this.choose_cat_removecb.TabIndex = 93;
+            // 
+            // bunifuCustomLabel15
+            // 
+            this.bunifuCustomLabel15.AutoSize = true;
+            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(1064, 29);
+            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(208, 54);
+            this.bunifuCustomLabel15.TabIndex = 92;
+            this.bunifuCustomLabel15.Text = "Choose Category:\r\n\r\n";
             // 
             // back_rem
             // 
@@ -1212,7 +1157,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(-3, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(-4, 0);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
@@ -1221,114 +1166,12 @@
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // load_view
-            // 
-            this.load_view.ActiveBorderThickness = 1;
-            this.load_view.ActiveCornerRadius = 20;
-            this.load_view.ActiveFillColor = System.Drawing.Color.Teal;
-            this.load_view.ActiveForecolor = System.Drawing.Color.White;
-            this.load_view.ActiveLineColor = System.Drawing.Color.Teal;
-            this.load_view.BackColor = System.Drawing.Color.Transparent;
-            this.load_view.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("load_view.BackgroundImage")));
-            this.load_view.ButtonText = "Load";
-            this.load_view.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.load_view.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.load_view.ForeColor = System.Drawing.Color.Teal;
-            this.load_view.IdleBorderThickness = 1;
-            this.load_view.IdleCornerRadius = 20;
-            this.load_view.IdleFillColor = System.Drawing.Color.White;
-            this.load_view.IdleForecolor = System.Drawing.Color.Teal;
-            this.load_view.IdleLineColor = System.Drawing.Color.Teal;
-            this.load_view.Location = new System.Drawing.Point(404, 50);
-            this.load_view.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.load_view.Name = "load_view";
-            this.load_view.Size = new System.Drawing.Size(142, 37);
-            this.load_view.TabIndex = 91;
-            this.load_view.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.load_view.Click += new System.EventHandler(this.load_view_Click);
-            // 
-            // choose_cat_viewcb
-            // 
-            this.choose_cat_viewcb.FormattingEnabled = true;
-            this.choose_cat_viewcb.Items.AddRange(new object[] {
-            "Smart Phones",
-            "Electronics",
-            "Beauty Products",
-            "Appliances",
-            "Fashion",
-            "Furniture"});
-            this.choose_cat_viewcb.Location = new System.Drawing.Point(286, 18);
-            this.choose_cat_viewcb.Name = "choose_cat_viewcb";
-            this.choose_cat_viewcb.Size = new System.Drawing.Size(259, 24);
-            this.choose_cat_viewcb.TabIndex = 90;
-            // 
-            // bunifuCustomLabel14
-            // 
-            this.bunifuCustomLabel14.AutoSize = true;
-            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(51, 18);
-            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            this.bunifuCustomLabel14.Size = new System.Drawing.Size(208, 54);
-            this.bunifuCustomLabel14.TabIndex = 89;
-            this.bunifuCustomLabel14.Text = "Choose Category:\r\n\r\n";
-            // 
-            // load_removebtn
-            // 
-            this.load_removebtn.ActiveBorderThickness = 1;
-            this.load_removebtn.ActiveCornerRadius = 20;
-            this.load_removebtn.ActiveFillColor = System.Drawing.Color.Teal;
-            this.load_removebtn.ActiveForecolor = System.Drawing.Color.White;
-            this.load_removebtn.ActiveLineColor = System.Drawing.Color.Teal;
-            this.load_removebtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.load_removebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("load_removebtn.BackgroundImage")));
-            this.load_removebtn.ButtonText = "Load";
-            this.load_removebtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.load_removebtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.load_removebtn.ForeColor = System.Drawing.Color.Teal;
-            this.load_removebtn.IdleBorderThickness = 1;
-            this.load_removebtn.IdleCornerRadius = 20;
-            this.load_removebtn.IdleFillColor = System.Drawing.Color.White;
-            this.load_removebtn.IdleForecolor = System.Drawing.Color.Teal;
-            this.load_removebtn.IdleLineColor = System.Drawing.Color.Teal;
-            this.load_removebtn.Location = new System.Drawing.Point(1180, 135);
-            this.load_removebtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.load_removebtn.Name = "load_removebtn";
-            this.load_removebtn.Size = new System.Drawing.Size(142, 37);
-            this.load_removebtn.TabIndex = 94;
-            this.load_removebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.load_removebtn.Click += new System.EventHandler(this.load_removebtn_Click);
-            // 
-            // choose_cat_removecb
-            // 
-            this.choose_cat_removecb.FormattingEnabled = true;
-            this.choose_cat_removecb.Items.AddRange(new object[] {
-            "Smart Phones",
-            "Electronics",
-            "Beauty Products",
-            "Appliances",
-            "Fashion",
-            "Furniture"});
-            this.choose_cat_removecb.Location = new System.Drawing.Point(1069, 86);
-            this.choose_cat_removecb.Name = "choose_cat_removecb";
-            this.choose_cat_removecb.Size = new System.Drawing.Size(259, 24);
-            this.choose_cat_removecb.TabIndex = 93;
-            // 
-            // bunifuCustomLabel15
-            // 
-            this.bunifuCustomLabel15.AutoSize = true;
-            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(1064, 29);
-            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(208, 54);
-            this.bunifuCustomLabel15.TabIndex = 92;
-            this.bunifuCustomLabel15.Text = "Choose Category:\r\n\r\n";
-            // 
             // OwnerAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1406, 655);
+            this.ClientSize = new System.Drawing.Size(1431, 655);
             this.Controls.Add(this.MyAccountTabControl);
             this.Controls.Add(this.MyAcc_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1381,16 +1224,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuThinButton2 AddProductButton;
         private Bunifu.Framework.UI.BunifuThinButton2 BackTB;
-        private System.Windows.Forms.CheckedListBox colorCheckedListBox;
-        private System.Windows.Forms.CheckedListBox SizeCheckedListBox;
         private System.Windows.Forms.RadioButton NotAvailableRadioButton;
         private System.Windows.Forms.RadioButton AvailableRadioButton;
         private System.Windows.Forms.ComboBox CategoryCB;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox BrandTB;
         private Bunifu.Framework.UI.BunifuCustomLabel BrandLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel QuantityLabel;
-        private Bunifu.Framework.UI.BunifuCustomLabel ColorLabel;
-        private Bunifu.Framework.UI.BunifuCustomLabel SizeLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel AvailabilityLabel;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox DescriptionTB;
         private Bunifu.Framework.UI.BunifuCustomLabel DescriptionLabel;
@@ -1409,10 +1248,6 @@
         private System.Windows.Forms.RadioButton NotAvailableUP;
         private System.Windows.Forms.RadioButton AvailableUP;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private System.Windows.Forms.CheckedListBox ColorUP;
-        private System.Windows.Forms.CheckedListBox SizeUP;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox BrandUP;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox PriceUP;
@@ -1433,5 +1268,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 load_removebtn;
         private System.Windows.Forms.ComboBox choose_cat_removecb;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

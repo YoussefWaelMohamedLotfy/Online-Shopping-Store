@@ -273,7 +273,7 @@ namespace Online_Shopping_Store
                     else
                     {
                         // total_int = Convert.ToInt32(Bn.product_num);
-                        total_int = Convert.ToInt32(Bn.product_num) * Convert.ToInt32(Bn.price);
+                        total_int = total_int+ Convert.ToInt32(Bn.product_num) * Convert.ToInt32(Bn.price);
                         Receipt REC = new Receipt(id_rec, name_rec, brand_res, price_rec, pro_num_rec);//user control to send data on it 
                         receipt_flowLayoutPanel.Controls.Add(REC);
                     }

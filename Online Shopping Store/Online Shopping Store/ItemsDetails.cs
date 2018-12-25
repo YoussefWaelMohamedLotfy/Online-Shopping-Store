@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Online_Shopping_Store
 {
@@ -23,7 +25,7 @@ namespace Online_Shopping_Store
         public int Quantity { get; set; }
 
         public ItemsDetails(string PRODUCT_ID, string product_name, string price, string description, string Category, string brand, string availible, int quantity,Image picture)
-    {
+        {
         this.productImages = picture;
         this.Product_ID = PRODUCT_ID;
         this.Product_Name = product_name;
@@ -33,6 +35,25 @@ namespace Online_Shopping_Store
         this.Product_brand = brand;
         this.Availibility = availible;
         this.Quantity = quantity;
+        }
+        public ItemsDetails()
+        {
+
+        }
+        public List<ItemsDetails> load(string filename)
+        {
+            FileStream File = new FileStream(filename, FileMode.Open);
+            BinaryFormatter formatter = new BinaryFormatter();
+            List<ItemsDetails> Items_Details = new List<ItemsDetails>();
+            while (File.Position != File.Length)
+            {
+                ItemsDetails its = (ItemsDetails)formatter.Deserialize(File);
+                Items_Details.Add(its);
+            }
+            
+            File.Close();
+
+            return Items_Details;
+        }
     }
-  }
 }
