@@ -41,8 +41,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel_usercontrol_product.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // idllabel
@@ -61,6 +64,8 @@
             // 
             this.panel_usercontrol_product.BackColor = System.Drawing.Color.Transparent;
             this.panel_usercontrol_product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_usercontrol_product.Controls.Add(this.numericUpDown1);
+            this.panel_usercontrol_product.Controls.Add(this.label4);
             this.panel_usercontrol_product.Controls.Add(this.label6);
             this.panel_usercontrol_product.Controls.Add(this.brandLabel);
             this.panel_usercontrol_product.Controls.Add(this.label5);
@@ -75,8 +80,9 @@
             this.panel_usercontrol_product.Controls.Add(this.pictureBox1);
             this.panel_usercontrol_product.Location = new System.Drawing.Point(3, 3);
             this.panel_usercontrol_product.Name = "panel_usercontrol_product";
-            this.panel_usercontrol_product.Size = new System.Drawing.Size(258, 434);
+            this.panel_usercontrol_product.Size = new System.Drawing.Size(258, 467);
             this.panel_usercontrol_product.TabIndex = 1;
+            this.panel_usercontrol_product.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_usercontrol_product_Paint);
             // 
             // label6
             // 
@@ -84,7 +90,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label6.Location = new System.Drawing.Point(14, 269);
+            this.label6.Location = new System.Drawing.Point(14, 298);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 18);
             this.label6.TabIndex = 35;
@@ -117,7 +123,7 @@
             // Desc_textbox
             // 
             this.Desc_textbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Desc_textbox.Location = new System.Drawing.Point(6, 290);
+            this.Desc_textbox.Location = new System.Drawing.Point(6, 330);
             this.Desc_textbox.Name = "Desc_textbox";
             this.Desc_textbox.ReadOnly = true;
             this.Desc_textbox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -146,7 +152,7 @@
             this.Buy_Cart.IconVisible = true;
             this.Buy_Cart.IconZoom = 90D;
             this.Buy_Cart.IsTab = false;
-            this.Buy_Cart.Location = new System.Drawing.Point(17, 378);
+            this.Buy_Cart.Location = new System.Drawing.Point(17, 418);
             this.Buy_Cart.Name = "Buy_Cart";
             this.Buy_Cart.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.Buy_Cart.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -231,16 +237,36 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label4.Location = new System.Drawing.Point(19, 267);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 18);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Price";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(103, 269);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 37;
+            // 
             // details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_usercontrol_product);
             this.Name = "details";
-            this.Size = new System.Drawing.Size(265, 443);
+            this.Size = new System.Drawing.Size(265, 473);
             this.panel_usercontrol_product.ResumeLayout(false);
             this.panel_usercontrol_product.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,5 +286,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label brandLabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label4;
     }
 }

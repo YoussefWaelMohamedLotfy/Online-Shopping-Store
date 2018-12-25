@@ -66,6 +66,12 @@
             this.furniture_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.electronics_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.appliances_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Name = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.price = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.productsShow_menuStrip.SuspendLayout();
             this.cart_tab.SuspendLayout();
             this.Beauty_Product_tab.SuspendLayout();
@@ -76,6 +82,7 @@
             this.Smart_Phones_tab.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.receipt_tab.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // productsShow_menuStrip
@@ -355,6 +362,7 @@
             // receipt_tab
             // 
             this.receipt_tab.BackColor = System.Drawing.Color.Transparent;
+            this.receipt_tab.Controls.Add(this.panel1);
             this.receipt_tab.Controls.Add(this.bunifuThinButton22);
             this.receipt_tab.Controls.Add(this.shippingFees_label);
             this.receipt_tab.Controls.Add(this.receipt_flowLayoutPanel);
@@ -413,9 +421,9 @@
             // 
             this.receipt_flowLayoutPanel.AutoScroll = true;
             this.receipt_flowLayoutPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.receipt_flowLayoutPanel.Location = new System.Drawing.Point(8, 28);
+            this.receipt_flowLayoutPanel.Location = new System.Drawing.Point(8, 83);
             this.receipt_flowLayoutPanel.Name = "receipt_flowLayoutPanel";
-            this.receipt_flowLayoutPanel.Size = new System.Drawing.Size(527, 512);
+            this.receipt_flowLayoutPanel.Size = new System.Drawing.Size(602, 457);
             this.receipt_flowLayoutPanel.TabIndex = 1;
             // 
             // bunifuCustomLabel4
@@ -631,6 +639,94 @@
             this.appliances_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.appliances_SwitchToTab_button.Click += new System.EventHandler(this.appliances_SwitchToTab_button_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuCustomLabel1);
+            this.panel1.Controls.Add(this.price);
+            this.panel1.Controls.Add(this.Name);
+            this.panel1.Controls.Add(this.bunifuCustomLabel2);
+            this.panel1.Controls.Add(this.bunifuCustomLabel3);
+            this.panel1.Location = new System.Drawing.Point(8, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(602, 58);
+            this.panel1.TabIndex = 16;
+            // 
+            // Name
+            // 
+            this.Name.AutoSize = true;
+            this.Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Name.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.ForeColor = System.Drawing.Color.Teal;
+            this.Name.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.Name.Location = new System.Drawing.Point(4, 7);
+            this.Name.Name = "Name";
+            this.Name.Padding = new System.Windows.Forms.Padding(8);
+            this.Name.Size = new System.Drawing.Size(89, 44);
+            this.Name.TabIndex = 6;
+            this.Name.Text = "Name";
+            this.Name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // price
+            // 
+            this.price.AutoSize = true;
+            this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.price.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.ForeColor = System.Drawing.Color.Teal;
+            this.price.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.price.Location = new System.Drawing.Point(505, 5);
+            this.price.Name = "price";
+            this.price.Padding = new System.Windows.Forms.Padding(8);
+            this.price.Size = new System.Drawing.Size(85, 44);
+            this.price.TabIndex = 7;
+            this.price.Text = "Price";
+            this.price.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel2.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(358, 5);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Padding = new System.Windows.Forms.Padding(8);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(114, 44);
+            this.bunifuCustomLabel2.TabIndex = 8;
+            this.bunifuCustomLabel2.Text = "Number";
+            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel3.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(130, 5);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Padding = new System.Windows.Forms.Padding(8);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(82, 44);
+            this.bunifuCustomLabel3.TabIndex = 9;
+            this.bunifuCustomLabel3.Text = "Total";
+            this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Teal;
+            this.bunifuCustomLabel1.Image = global::Online_Shopping_Store.Properties.Resources.white;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(249, 5);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(8);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(82, 44);
+            this.bunifuCustomLabel1.TabIndex = 10;
+            this.bunifuCustomLabel1.Text = "Total";
+            this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // products_show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -645,7 +741,7 @@
             this.Controls.Add(this.appliances_SwitchToTab_button);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "products_show";
+         //   this.Name = "products_show";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "products_show";
             this.Load += new System.EventHandler(this.products_show_Load);
@@ -662,6 +758,8 @@
             this.tabControl1.ResumeLayout(false);
             this.receipt_tab.ResumeLayout(false);
             this.receipt_tab.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,5 +803,11 @@
         public System.Windows.Forms.TabPage receipt_tab;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         public System.Windows.Forms.FlowLayoutPanel receipt_flowLayoutPanel;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel price;
+        private Bunifu.Framework.UI.BunifuCustomLabel Name;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
     }
 }

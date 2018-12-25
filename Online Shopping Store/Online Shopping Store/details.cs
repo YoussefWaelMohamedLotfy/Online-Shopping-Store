@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Windows.Media.Imaging.BitmapImage;
-
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
@@ -43,15 +41,36 @@ namespace Online_Shopping_Store
 
         private void Buy_Cart_Click(object sender, EventArgs e)
         {
-            CartList.Add(namelabel.Text);
             CartList.Add(idllabel.Text);
+            CartList.Add(namelabel.Text);
             CartList.Add(brandLabel.Text);
             CartList.Add(pricelabel.Text);
+            CartList.Add(numericUpDown1.Value.ToString());
+                
 
             newItem = new Cart_items(CartList[0], CartList[1], CartList[2], CartList[3]);
             //itemNode = new LinkedListNode<Cart_items>(newItem);
             cartLinkedList.AddLast(newItem);
             ps.cart_flowLayoutPanel.Controls.Add(newItem);
+            //my code to save in file then recipet
+            string name=CartList[1];
+            string id=CartList[0];
+            string brand=CartList[2];
+            string price=CartList[3];
+            string pro_num=CartList[4];
+            FileStream put_BuyNow = new FileStream("BuyNow.txt", FileMode.Append);
+            BinaryFormatter formatter = new BinaryFormatter();
+            BuyNow BN = new BuyNow(id, name, brand, price, pro_num);
+            formatter.Serialize(put_BuyNow, BN);
+            put_BuyNow.Close();
+
+
+
+        }
+
+        private void panel_usercontrol_product_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>C:\Users\wafa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Users\el aqsa\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="S22.Imap">
@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyNow.cs" />
     <Compile Include="Cart_items.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +123,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReceiptForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +182,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReceiptForm.resx">
       <DependentUpon>ReceiptForm.cs</DependentUpon>
     </EmbeddedResource>

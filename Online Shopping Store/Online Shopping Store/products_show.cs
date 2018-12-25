@@ -164,6 +164,7 @@ namespace Online_Shopping_Store
                 pic = PP.productImages;
                 description = PP.Product_Description;
                 brand = PP.Product_brand;
+              
 
                 details UC = new details(name, id, price, pic, description, brand, this);//user control to send data on it 
                 flowLayoutPanel6.Controls.Add(UC);
@@ -240,24 +241,46 @@ namespace Online_Shopping_Store
 
         private void confirmPurchase_button_Click(object sender, EventArgs e)
         {
-            // Show receipt if user confirms the purchase
-            if (MessageBox.Show("Are you sure you want to confirm your purchase?\nCheck again if you want anything else.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //temp var
+            string name_rec="";
+            string id_rec="";
+            string brand_res="";
+            string pro_num_rec="";
+            string price_rec="";
+            FileStream readBuynow = new FileStream("BuyNow.txt", FileMode.Open);
+            BinaryFormatter Formatter = new BinaryFormatter();
+            while (readBuynow.Position != readBuynow.Length)
             {
-                // Switch to Receipt tab
-                tabControl1.SelectedTab = receipt_tab;
-                details Cart = new details();
-                ReceiptItem receiptItem = new ReceiptItem();
-
-                for (int i = 0; i < Cart.cartLinkedList.Count; i++)
-                {
-                    receiptItem = new ReceiptItem();
-                    receipt_flowLayoutPanel.Controls.Add(receiptItem);
-                    orderTotal += Convert.ToInt32(receiptItem.totalItemsPrice_receiptLabel.ToString());
-                }
-
-                receiptItem.totalItemsPrice_receiptLabel.Text = orderTotal.ToString();
-
+               BuyNow Bn= (BuyNow)Formatter.Deserialize(readBuynow);
+                name_rec = Bn.name;
+                id_rec = Bn.id;
+                brand_res = Bn.brand;
+                pro_num_rec = Bn.product_num;
+                price_rec = Bn.price;
+                Receipt REC = new Receipt(id_rec,name_rec,brand_res,price_rec,pro_num_rec);//user control to send data on it 
+                receipt_flowLayoutPanel.Controls.Add(REC);
             }
+            readBuynow.Close();
+            tabControl1.SelectedTab = receipt_tab;
+
+            // Show receipt if user confirms the purchase
+            //if (MessageBox.Show("Are you sure you want to confirm your purchase?\nCheck again if you want anything else.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //{
+            //    // Switch to Receipt tab
+            //    tabControl1.SelectedTab = receipt_tab;
+            //    details Cart = new details();
+            //    ReceiptItem receiptItem = new ReceiptItem();
+
+            //    for (int i = 0; i < Cart.cartLinkedList.Count; i++)
+            //    {
+            //        receiptItem = new ReceiptItem();
+            //        receipt_flowLayoutPanel.Controls.Add(receiptItem);
+            //        orderTotal += Convert.ToInt32(receiptItem.totalItemsPrice_receiptLabel.ToString());
+            //    }
+
+            //    receiptItem.totalItemsPrice_receiptLabel.Text = orderTotal.ToString();
+
+            //}
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
