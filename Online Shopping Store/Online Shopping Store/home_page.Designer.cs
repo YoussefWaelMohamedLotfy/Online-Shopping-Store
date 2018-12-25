@@ -37,6 +37,7 @@
             this.furniture_lbl = new System.Windows.Forms.Label();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.homePage_menuStrip = new System.Windows.Forms.MenuStrip();
+            this.showItem_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCart_MenuOption = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,6 @@
             this.mobile_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.fashion_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.beauty_btn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.showItem_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Services_but = new Bunifu.Framework.UI.BunifuFlatButton();
             this.homePage_menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -156,7 +156,7 @@
             this.bunifuFlatButton4.IconZoom = 90D;
             this.bunifuFlatButton4.IsTab = false;
             this.bunifuFlatButton4.Location = new System.Drawing.Point(625, 27);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Teal;
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.DarkCyan;
@@ -179,9 +179,16 @@
             this.exitToolStripMenuItem});
             this.homePage_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.homePage_menuStrip.Name = "homePage_menuStrip";
-            this.homePage_menuStrip.Size = new System.Drawing.Size(1028, 24);
+            this.homePage_menuStrip.Size = new System.Drawing.Size(1261, 24);
             this.homePage_menuStrip.TabIndex = 32;
             this.homePage_menuStrip.Text = "homePage_menuStrip";
+            // 
+            // showItem_MenuItem
+            // 
+            this.showItem_MenuItem.Name = "showItem_MenuItem";
+            this.showItem_MenuItem.Size = new System.Drawing.Size(73, 20);
+            this.showItem_MenuItem.Text = "Show Cart";
+            this.showItem_MenuItem.Click += new System.EventHandler(this.showItem_MenuItem_Click);
             // 
             // showCart_MenuOption
             // 
@@ -317,13 +324,6 @@
             this.beauty_btn.Zoom = 10;
             this.beauty_btn.Click += new System.EventHandler(this.beauty_btn_Click);
             // 
-            // showItem_MenuItem
-            // 
-            this.showItem_MenuItem.Name = "showItem_MenuItem";
-            this.showItem_MenuItem.Size = new System.Drawing.Size(73, 20);
-            this.showItem_MenuItem.Text = "Show Cart";
-            this.showItem_MenuItem.Click += new System.EventHandler(this.showItem_MenuItem_Click);
-            // 
             // Services_but
             // 
             this.Services_but.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -365,7 +365,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1028, 453);
+            this.ClientSize = new System.Drawing.Size(1261, 453);
             this.Controls.Add(this.Services_but);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -386,7 +386,7 @@
             this.Controls.Add(this.homePage_menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.homePage_menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "home_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home_page";

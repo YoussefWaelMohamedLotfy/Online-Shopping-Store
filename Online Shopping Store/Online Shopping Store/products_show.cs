@@ -26,6 +26,7 @@ namespace Online_Shopping_Store
 
             orderTotal = 0;
             shippingFees_label.Text = rand.Next(15, 60).ToString();
+            receiptNumber.Text = "Receipt #" + rand.Next(321561453, 575443321).ToString();
         }
 
         private void products_show_Load(object sender, EventArgs e)
@@ -258,6 +259,9 @@ namespace Online_Shopping_Store
             }
         }
 
-
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

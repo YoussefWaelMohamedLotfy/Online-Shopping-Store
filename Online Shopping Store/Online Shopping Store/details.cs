@@ -24,7 +24,7 @@ namespace Online_Shopping_Store
         //public static home_page home = new home_page();
         products_show ps = new products_show();
 
-        public details(String name, String id, String price, Image pic,string description, string brand, products_show form)
+        public details(string name, string id, string price, Image pic,string description, string brand, products_show form)
         {
             InitializeComponent();
             namelabel.Text = name;
@@ -41,12 +41,6 @@ namespace Online_Shopping_Store
             InitializeComponent();
         }
 
-        private void but_readmore_Click(object sender, EventArgs e)
-        {
-            ViewProductDetails details = new ViewProductDetails();
-            details.Show();
-        }
-
         private void Buy_Cart_Click(object sender, EventArgs e)
         {
             CartList.Add(namelabel.Text);
@@ -55,8 +49,8 @@ namespace Online_Shopping_Store
             CartList.Add(pricelabel.Text);
 
             newItem = new Cart_items(CartList[0], CartList[1], CartList[2], CartList[3]);
-            itemNode = new LinkedListNode<Cart_items>(newItem);
-            cartLinkedList.AddLast(itemNode);
+            //itemNode = new LinkedListNode<Cart_items>(newItem);
+            cartLinkedList.AddLast(newItem);
             ps.cart_flowLayoutPanel.Controls.Add(newItem);
         }
     }

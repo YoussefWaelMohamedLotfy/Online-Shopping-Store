@@ -65,6 +65,7 @@
             this.furniture_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.electronics_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.appliances_SwitchToTab_button = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.productsShow_menuStrip.SuspendLayout();
             this.cart_tab.SuspendLayout();
             this.Beauty_Product_tab.SuspendLayout();
@@ -352,6 +353,7 @@
             // receipt_tab
             // 
             this.receipt_tab.BackColor = System.Drawing.Color.Transparent;
+            this.receipt_tab.Controls.Add(this.bunifuThinButton22);
             this.receipt_tab.Controls.Add(this.shippingFees_label);
             this.receipt_tab.Controls.Add(this.receipt_flowLayoutPanel);
             this.receipt_tab.Controls.Add(this.bunifuCustomLabel4);
@@ -601,6 +603,32 @@
             this.appliances_SwitchToTab_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.appliances_SwitchToTab_button.Click += new System.EventHandler(this.appliances_SwitchToTab_button_Click);
             // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Magenta;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Magenta;
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Back to Home Page";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Magenta;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Magenta;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(629, 160);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(181, 41);
+            this.bunifuThinButton22.TabIndex = 15;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            // 
             // products_show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -667,12 +695,13 @@
         private Bunifu.Framework.UI.BunifuThinButton2 beautyProducts_SwitchToTab_button;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.FlowLayoutPanel receipt_flowLayoutPanel;
         private Bunifu.Framework.UI.BunifuCustomLabel receiptNumber;
         private Bunifu.Framework.UI.BunifuCustomLabel shippingFees_label;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel orderTotal_label;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         public System.Windows.Forms.TabPage receipt_tab;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        public System.Windows.Forms.FlowLayoutPanel receipt_flowLayoutPanel;
     }
 }
