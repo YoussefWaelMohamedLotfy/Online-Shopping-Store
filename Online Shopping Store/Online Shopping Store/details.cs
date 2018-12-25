@@ -33,6 +33,17 @@ namespace Online_Shopping_Store
             brandLabel.Text = brand;
             this.ps = form;
         }
+        public details(string name, string id, string price, Image pic, string description, string brand)
+        {
+            InitializeComponent();
+            namelabel.Text = name;
+            idllabel.Text = id;
+            pricelabel.Text = price;
+            pictureBox1.Image = pic;
+            Desc_textbox.Text = description;
+            brandLabel.Text = brand;
+           
+        }
 
         public details()
         {
@@ -69,6 +80,11 @@ namespace Online_Shopping_Store
         }
 
         private void panel_usercontrol_product_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

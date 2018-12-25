@@ -152,5 +152,11 @@ namespace Online_Shopping_Store
             Email E = new Email();
             E.Show();
         }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search SP = new Search();
+            SP.Show();
+        }
     }
 }
