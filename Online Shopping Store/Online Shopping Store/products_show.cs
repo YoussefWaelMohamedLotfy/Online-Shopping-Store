@@ -242,26 +242,52 @@ namespace Online_Shopping_Store
         private void confirmPurchase_button_Click(object sender, EventArgs e)
         {
             //temp var
-            string name_rec="";
-            string id_rec="";
-            string brand_res="";
-            string pro_num_rec="";
-            string price_rec="";
+            bool check_full = true;
+            string name_rec = "";
+            string id_rec = "";
+            string brand_res = "";
+            string pro_num_rec = "";
+            string price_rec = "";
+            int total_int = 0;
             FileStream readBuynow = new FileStream("BuyNow.txt", FileMode.Open);
             BinaryFormatter Formatter = new BinaryFormatter();
-            while (readBuynow.Position != readBuynow.Length)
+            if (readBuynow.Length == 0)
             {
-               BuyNow Bn= (BuyNow)Formatter.Deserialize(readBuynow);
-                name_rec = Bn.name;
-                id_rec = Bn.id;
-                brand_res = Bn.brand;
-                pro_num_rec = Bn.product_num;
-                price_rec = Bn.price;
-                Receipt REC = new Receipt(id_rec,name_rec,brand_res,price_rec,pro_num_rec);//user control to send data on it 
-                receipt_flowLayoutPanel.Controls.Add(REC);
+                check_full = false;
+                MessageBox.Show("Sorry nothing in the cart");
+            }
+            else
+            {
+                while (readBuynow.Position != readBuynow.Length)
+                {
+                    BuyNow Bn = (BuyNow)Formatter.Deserialize(readBuynow);
+                    name_rec = Bn.name;
+                    id_rec = Bn.id;
+                    brand_res = Bn.brand;
+                    pro_num_rec = Bn.product_num;
+                    price_rec = Bn.price;
+                    if (pro_num_rec == "0")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        // total_int = Convert.ToInt32(Bn.product_num);
+                        total_int = Convert.ToInt32(Bn.product_num) * Convert.ToInt32(Bn.price);
+                        Receipt REC = new Receipt(id_rec, name_rec, brand_res, price_rec, pro_num_rec);//user control to send data on it 
+                        receipt_flowLayoutPanel.Controls.Add(REC);
+                    }
+                }
             }
             readBuynow.Close();
-            tabControl1.SelectedTab = receipt_tab;
+            if (check_full == true)
+            {
+                tabControl1.SelectedTab = receipt_tab;
+                orderTotal_label.Text = Convert.ToString(total_int);
+                FileStream clear = new FileStream("BuyNow.txt", FileMode.Truncate);
+                clear.Close();
+            }
+
 
             // Show receipt if user confirms the purchase
             //if (MessageBox.Show("Are you sure you want to confirm your purchase?\nCheck again if you want anything else.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

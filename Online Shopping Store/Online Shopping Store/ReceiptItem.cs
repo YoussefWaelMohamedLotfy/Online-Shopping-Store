@@ -26,8 +26,8 @@ namespace Online_Shopping_Store
             {
                 name_receiptLabel.Text = item.CartList[0];
                 price_receiptLabel.Text = item.CartList[3];
-                number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
-                totalItemsPrice_receiptLabel.Text = (cart.itemsNumberCounter.Value * Convert.ToInt32(price_receiptLabel.Text)).ToString();
+                //number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
+                //totalItemsPrice_receiptLabel.Text = (cart.itemsNumberCounter.Value * Convert.ToInt32(price_receiptLabel.Text)).ToString();
             }
             catch(Exception e)
             {
@@ -38,8 +38,8 @@ namespace Online_Shopping_Store
                     //receiptItem = new ReceiptItem();
                     name_receiptLabel.Text = item.CartList[0];
                     price_receiptLabel.Text = item.CartList[3];
-                    number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
-                    totalItemsPrice_receiptLabel.Text = (cart.itemsNumberCounter.Value * Convert.ToInt32(price_receiptLabel.Text)).ToString();
+                  //  number_receiptLabel.Text = cart.itemsNumberCounter.ToString();
+                    //totalItemsPrice_receiptLabel.Text = (cart.itemsNumberCounter.Value * Convert.ToInt32(price_receiptLabel.Text)).ToString();
                     ps.receipt_flowLayoutPanel.Controls.Add(receiptItem);
                     
                 }
