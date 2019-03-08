@@ -49,7 +49,6 @@ namespace Online_Shopping_Store
                     Check_repet.Add(S1.email, S1.password);
                     if (Check_repet.ContainsKey(Textbox3_email.Text))
                     {
-
                         MessageBox.Show("Hi " + S1.name);
                         tabPage1.Hide();
 

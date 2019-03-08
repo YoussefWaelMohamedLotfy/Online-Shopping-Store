@@ -74,8 +74,7 @@ namespace Online_Shopping_Store
                 string Product_Name = ProductNameTB.Text;
                 string Product_ID = ProductIdTB.Text;
                 string Price = PriceTB.Text;
-                List<string> Size = new List<string>();
-                List<string> color = new List<string>();
+               
                 string Product_Description = DescriptionTB.Text;
                 string Product_brand = BrandTB.Text;
                 string Availibility = "";
@@ -91,7 +90,7 @@ namespace Online_Shopping_Store
                 }
                 else if (!AvailableRadioButton.Checked)
                 {
-                    Availibility = AvailableRadioButton.Text;
+                    Availibility = NotAvailableRadioButton.Text;
                 }
                 Quantity = Convert.ToInt32(quantityCount.Value);
             if (CategoryCB.SelectedItem.ToString() == "Smart Phones")
@@ -149,8 +148,7 @@ namespace Online_Shopping_Store
              ProductNameTB.Text = null;
              ProductIdTB.Text = null;
               PriceTB.Text = null;
-             Size = null;
-             color = null;
+             
              DescriptionTB.Text = null;
              category = null;
              BrandTB.Text = null;
@@ -506,7 +504,7 @@ namespace Online_Shopping_Store
             else if (choose_cat_removecb.SelectedItem.ToString() == "Fashion")
             {
 
-                for (int i = 0; i < dataGridView3.Rows.Count; i++)
+                for (int i = 0; i < dataGridView2.Rows.Count; i++)
                 {
                     if (i == indexRow)
                     {

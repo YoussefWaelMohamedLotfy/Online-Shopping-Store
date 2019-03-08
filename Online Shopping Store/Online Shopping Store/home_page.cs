@@ -137,9 +137,18 @@ namespace Online_Shopping_Store
         private void showItem_MenuItem_Click(object sender, EventArgs e)
         {
             products_show cart = new products_show();
+
+            if (cart != null)
+            {
+                Application.OpenForms[cart.Name].Activate();
+                cart.TopMost = true;
+                cart.Focus();
+            }
+
+
             //this.Hide();
-            cart.tabControl1.SelectedTab = cart.cart_tab;
-            cart.ShowDialog();
+            //cart.tabControl1.SelectedTab = cart.cart_tab;
+            //cart.ShowDialog();
             //this.Close();
         }
 
@@ -156,8 +165,27 @@ namespace Online_Shopping_Store
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Search SP = new Search();
-            SP.Show();
+            //Search SP = new Search();
+            products_show ps = new products_show();
+
+            //if (ps != null)
+            //{
+
+            //    Application.OpenForms[ps.Name].Activate();
+            //    ps.TopMost = true;
+            //    ps.Focus();
+            //}
+            //else
+            //{
+            //    ps.tabControl1.SelectedTab = ps.search_tab;
+
+            //}
+            ps.Show();
+            ps.tabControl1.SelectedTab = ps.search_tab;
+
+
+
+            //SP.Show();
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)

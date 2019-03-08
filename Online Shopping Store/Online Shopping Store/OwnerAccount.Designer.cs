@@ -114,10 +114,10 @@
             this.MyAcc_label.AutoSize = true;
             this.MyAcc_label.BackColor = System.Drawing.Color.White;
             this.MyAcc_label.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.MyAcc_label.Location = new System.Drawing.Point(98, -111);
+            this.MyAcc_label.Location = new System.Drawing.Point(74, -90);
             this.MyAcc_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MyAcc_label.Name = "MyAcc_label";
-            this.MyAcc_label.Size = new System.Drawing.Size(202, 41);
+            this.MyAcc_label.Size = new System.Drawing.Size(159, 33);
             this.MyAcc_label.TabIndex = 31;
             this.MyAcc_label.Text = "My Account ";
             // 
@@ -128,11 +128,11 @@
             this.MyAccountTabControl.Controls.Add(this.AddTab);
             this.MyAccountTabControl.Controls.Add(this.UpdateTab);
             this.MyAccountTabControl.Controls.Add(this.RemoveTab);
-            this.MyAccountTabControl.Location = new System.Drawing.Point(2, 11);
+            this.MyAccountTabControl.Location = new System.Drawing.Point(2, 9);
             this.MyAccountTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.MyAccountTabControl.Name = "MyAccountTabControl";
             this.MyAccountTabControl.SelectedIndex = 0;
-            this.MyAccountTabControl.Size = new System.Drawing.Size(1384, 618);
+            this.MyAccountTabControl.Size = new System.Drawing.Size(1038, 502);
             this.MyAccountTabControl.TabIndex = 32;
             // 
             // OwnerTab
@@ -144,10 +144,10 @@
             this.OwnerTab.Controls.Add(this.UpdateTB);
             this.OwnerTab.Controls.Add(this.RemoveTB);
             this.OwnerTab.Controls.Add(this.AddProductTB);
-            this.OwnerTab.Location = new System.Drawing.Point(4, 25);
+            this.OwnerTab.Location = new System.Drawing.Point(4, 22);
             this.OwnerTab.Margin = new System.Windows.Forms.Padding(2);
             this.OwnerTab.Name = "OwnerTab";
-            this.OwnerTab.Size = new System.Drawing.Size(1354, 603);
+            this.OwnerTab.Size = new System.Drawing.Size(1030, 476);
             this.OwnerTab.TabIndex = 4;
             this.OwnerTab.Text = "Owner";
             // 
@@ -169,10 +169,10 @@
             this.CancelTB.IdleFillColor = System.Drawing.Color.White;
             this.CancelTB.IdleForecolor = System.Drawing.Color.Teal;
             this.CancelTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.CancelTB.Location = new System.Drawing.Point(46, 525);
-            this.CancelTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.CancelTB.Location = new System.Drawing.Point(34, 427);
+            this.CancelTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelTB.Name = "CancelTB";
-            this.CancelTB.Size = new System.Drawing.Size(377, 50);
+            this.CancelTB.Size = new System.Drawing.Size(283, 41);
             this.CancelTB.TabIndex = 5;
             this.CancelTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CancelTB.Click += new System.EventHandler(this.CancelTB_Click_1);
@@ -181,10 +181,10 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(38, 25);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(28, 20);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(194, 37);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(157, 30);
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "My Account\r\n";
             // 
@@ -206,10 +206,10 @@
             this.ViewTB.IdleFillColor = System.Drawing.Color.White;
             this.ViewTB.IdleForecolor = System.Drawing.Color.Teal;
             this.ViewTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.ViewTB.Location = new System.Drawing.Point(50, 474);
-            this.ViewTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.ViewTB.Location = new System.Drawing.Point(38, 385);
+            this.ViewTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ViewTB.Name = "ViewTB";
-            this.ViewTB.Size = new System.Drawing.Size(182, 41);
+            this.ViewTB.Size = new System.Drawing.Size(136, 33);
             this.ViewTB.TabIndex = 3;
             this.ViewTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ViewTB.Click += new System.EventHandler(this.ViewTB_Click);
@@ -232,10 +232,10 @@
             this.UpdateTB.IdleFillColor = System.Drawing.Color.White;
             this.UpdateTB.IdleForecolor = System.Drawing.Color.Teal;
             this.UpdateTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.UpdateTB.Location = new System.Drawing.Point(241, 423);
-            this.UpdateTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.UpdateTB.Location = new System.Drawing.Point(181, 344);
+            this.UpdateTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UpdateTB.Name = "UpdateTB";
-            this.UpdateTB.Size = new System.Drawing.Size(182, 41);
+            this.UpdateTB.Size = new System.Drawing.Size(136, 33);
             this.UpdateTB.TabIndex = 2;
             this.UpdateTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UpdateTB.Click += new System.EventHandler(this.UpdateTB_Click);
@@ -258,10 +258,10 @@
             this.RemoveTB.IdleFillColor = System.Drawing.Color.White;
             this.RemoveTB.IdleForecolor = System.Drawing.Color.Teal;
             this.RemoveTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.RemoveTB.Location = new System.Drawing.Point(241, 474);
-            this.RemoveTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.RemoveTB.Location = new System.Drawing.Point(181, 385);
+            this.RemoveTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RemoveTB.Name = "RemoveTB";
-            this.RemoveTB.Size = new System.Drawing.Size(182, 41);
+            this.RemoveTB.Size = new System.Drawing.Size(136, 33);
             this.RemoveTB.TabIndex = 1;
             this.RemoveTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RemoveTB.Click += new System.EventHandler(this.RemoveTB_Click);
@@ -284,10 +284,10 @@
             this.AddProductTB.IdleFillColor = System.Drawing.Color.White;
             this.AddProductTB.IdleForecolor = System.Drawing.Color.Teal;
             this.AddProductTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.AddProductTB.Location = new System.Drawing.Point(50, 423);
-            this.AddProductTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.AddProductTB.Location = new System.Drawing.Point(38, 344);
+            this.AddProductTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddProductTB.Name = "AddProductTB";
-            this.AddProductTB.Size = new System.Drawing.Size(182, 41);
+            this.AddProductTB.Size = new System.Drawing.Size(136, 33);
             this.AddProductTB.TabIndex = 0;
             this.AddProductTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddProductTB.Click += new System.EventHandler(this.AddProductTB_Click_1);
@@ -299,11 +299,11 @@
             this.ViewTab.Controls.Add(this.bunifuCustomLabel14);
             this.ViewTab.Controls.Add(this.back_view);
             this.ViewTab.Controls.Add(this.dataGridView1);
-            this.ViewTab.Location = new System.Drawing.Point(4, 25);
+            this.ViewTab.Location = new System.Drawing.Point(4, 22);
             this.ViewTab.Margin = new System.Windows.Forms.Padding(2);
             this.ViewTab.Name = "ViewTab";
             this.ViewTab.Padding = new System.Windows.Forms.Padding(2);
-            this.ViewTab.Size = new System.Drawing.Size(1376, 564);
+            this.ViewTab.Size = new System.Drawing.Size(1030, 476);
             this.ViewTab.TabIndex = 0;
             this.ViewTab.Text = "View products";
             this.ViewTab.UseVisualStyleBackColor = true;
@@ -327,10 +327,10 @@
             this.load_view.IdleFillColor = System.Drawing.Color.White;
             this.load_view.IdleForecolor = System.Drawing.Color.Teal;
             this.load_view.IdleLineColor = System.Drawing.Color.Teal;
-            this.load_view.Location = new System.Drawing.Point(404, 50);
-            this.load_view.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.load_view.Location = new System.Drawing.Point(303, 41);
+            this.load_view.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.load_view.Name = "load_view";
-            this.load_view.Size = new System.Drawing.Size(142, 37);
+            this.load_view.Size = new System.Drawing.Size(106, 30);
             this.load_view.TabIndex = 91;
             this.load_view.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.load_view.Click += new System.EventHandler(this.load_view_Click);
@@ -345,18 +345,20 @@
             "Appliances",
             "Fashion",
             "Furniture"});
-            this.choose_cat_viewcb.Location = new System.Drawing.Point(286, 18);
+            this.choose_cat_viewcb.Location = new System.Drawing.Point(214, 15);
+            this.choose_cat_viewcb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.choose_cat_viewcb.Name = "choose_cat_viewcb";
-            this.choose_cat_viewcb.Size = new System.Drawing.Size(259, 24);
+            this.choose_cat_viewcb.Size = new System.Drawing.Size(195, 21);
             this.choose_cat_viewcb.TabIndex = 90;
             // 
             // bunifuCustomLabel14
             // 
             this.bunifuCustomLabel14.AutoSize = true;
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(51, 18);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(38, 15);
+            this.bunifuCustomLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            this.bunifuCustomLabel14.Size = new System.Drawing.Size(208, 54);
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(169, 44);
             this.bunifuCustomLabel14.TabIndex = 89;
             this.bunifuCustomLabel14.Text = "Choose Category:\r\n\r\n";
             // 
@@ -378,10 +380,10 @@
             this.back_view.IdleFillColor = System.Drawing.Color.White;
             this.back_view.IdleForecolor = System.Drawing.Color.Teal;
             this.back_view.IdleLineColor = System.Drawing.Color.Teal;
-            this.back_view.Location = new System.Drawing.Point(1122, 546);
-            this.back_view.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.back_view.Location = new System.Drawing.Point(842, 444);
+            this.back_view.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back_view.Name = "back_view";
-            this.back_view.Size = new System.Drawing.Size(225, 57);
+            this.back_view.Size = new System.Drawing.Size(169, 46);
             this.back_view.TabIndex = 75;
             this.back_view.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.back_view.Click += new System.EventHandler(this.back_view_Click);
@@ -389,11 +391,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 76);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1347, 449);
+            this.dataGridView1.Size = new System.Drawing.Size(1010, 365);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -422,11 +424,11 @@
             this.AddTab.Controls.Add(this.bunifuCustomLabel4);
             this.AddTab.Controls.Add(this.ProductNameLabel);
             this.AddTab.Controls.Add(this.ProductNameTB);
-            this.AddTab.Location = new System.Drawing.Point(4, 25);
+            this.AddTab.Location = new System.Drawing.Point(4, 22);
             this.AddTab.Margin = new System.Windows.Forms.Padding(2);
             this.AddTab.Name = "AddTab";
             this.AddTab.Padding = new System.Windows.Forms.Padding(2);
-            this.AddTab.Size = new System.Drawing.Size(1376, 564);
+            this.AddTab.Size = new System.Drawing.Size(1030, 476);
             this.AddTab.TabIndex = 1;
             this.AddTab.Text = "Add product";
             // 
@@ -434,10 +436,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(859, 108);
+            this.pictureBox1.Location = new System.Drawing.Point(644, 88);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(472, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(354, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 80;
             this.pictureBox1.TabStop = false;
@@ -460,10 +462,10 @@
             this.AddPhoto.IdleFillColor = System.Drawing.Color.White;
             this.AddPhoto.IdleForecolor = System.Drawing.Color.Teal;
             this.AddPhoto.IdleLineColor = System.Drawing.Color.Teal;
-            this.AddPhoto.Location = new System.Drawing.Point(699, 178);
-            this.AddPhoto.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.AddPhoto.Location = new System.Drawing.Point(524, 145);
+            this.AddPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddPhoto.Name = "AddPhoto";
-            this.AddPhoto.Size = new System.Drawing.Size(151, 57);
+            this.AddPhoto.Size = new System.Drawing.Size(113, 46);
             this.AddPhoto.TabIndex = 79;
             this.AddPhoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddPhoto.Click += new System.EventHandler(this.AddPhoto_Click);
@@ -474,34 +476,35 @@
             this.ProductIdTB.BorderColor = System.Drawing.Color.Teal;
             this.ProductIdTB.Font = new System.Drawing.Font("Tahoma", 13F);
             this.ProductIdTB.ForeColor = System.Drawing.SystemColors.Info;
-            this.ProductIdTB.Location = new System.Drawing.Point(330, 151);
-            this.ProductIdTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProductIdTB.Location = new System.Drawing.Point(248, 123);
+            this.ProductIdTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductIdTB.Name = "ProductIdTB";
-            this.ProductIdTB.Size = new System.Drawing.Size(342, 34);
+            this.ProductIdTB.Size = new System.Drawing.Size(258, 28);
             this.ProductIdTB.TabIndex = 78;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(122, 150);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(92, 122);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(141, 54);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(116, 44);
             this.bunifuCustomLabel2.TabIndex = 77;
             this.bunifuCustomLabel2.Text = "Product ID:\r\n\r\n";
             // 
             // quantityCount
             // 
             this.quantityCount.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.quantityCount.Location = new System.Drawing.Point(294, 402);
-            this.quantityCount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.quantityCount.Location = new System.Drawing.Point(220, 327);
+            this.quantityCount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.quantityCount.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.quantityCount.Name = "quantityCount";
-            this.quantityCount.Size = new System.Drawing.Size(160, 22);
+            this.quantityCount.Size = new System.Drawing.Size(120, 20);
             this.quantityCount.TabIndex = 76;
             this.quantityCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.quantityCount.ThousandsSeparator = true;
@@ -515,9 +518,10 @@
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(138, 42);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(104, 34);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(121, 54);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(98, 44);
             this.bunifuCustomLabel3.TabIndex = 75;
             this.bunifuCustomLabel3.Text = "Category:\r\n\r\n";
             // 
@@ -539,10 +543,10 @@
             this.AddProductButton.IdleFillColor = System.Drawing.Color.White;
             this.AddProductButton.IdleForecolor = System.Drawing.Color.Teal;
             this.AddProductButton.IdleLineColor = System.Drawing.Color.Teal;
-            this.AddProductButton.Location = new System.Drawing.Point(503, 546);
-            this.AddProductButton.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.AddProductButton.Location = new System.Drawing.Point(377, 430);
+            this.AddProductButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddProductButton.Name = "AddProductButton";
-            this.AddProductButton.Size = new System.Drawing.Size(225, 57);
+            this.AddProductButton.Size = new System.Drawing.Size(169, 46);
             this.AddProductButton.TabIndex = 74;
             this.AddProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
@@ -565,10 +569,10 @@
             this.BackTB.IdleFillColor = System.Drawing.Color.White;
             this.BackTB.IdleForecolor = System.Drawing.Color.Teal;
             this.BackTB.IdleLineColor = System.Drawing.Color.Teal;
-            this.BackTB.Location = new System.Drawing.Point(760, 546);
-            this.BackTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.BackTB.Location = new System.Drawing.Point(571, 430);
+            this.BackTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BackTB.Name = "BackTB";
-            this.BackTB.Size = new System.Drawing.Size(225, 57);
+            this.BackTB.Size = new System.Drawing.Size(169, 46);
             this.BackTB.TabIndex = 73;
             this.BackTB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BackTB.Click += new System.EventHandler(this.BackTB_Click);
@@ -577,10 +581,10 @@
             // 
             this.NotAvailableRadioButton.AutoSize = true;
             this.NotAvailableRadioButton.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.NotAvailableRadioButton.Location = new System.Drawing.Point(503, 325);
-            this.NotAvailableRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NotAvailableRadioButton.Location = new System.Drawing.Point(377, 264);
+            this.NotAvailableRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NotAvailableRadioButton.Name = "NotAvailableRadioButton";
-            this.NotAvailableRadioButton.Size = new System.Drawing.Size(129, 25);
+            this.NotAvailableRadioButton.Size = new System.Drawing.Size(103, 21);
             this.NotAvailableRadioButton.TabIndex = 70;
             this.NotAvailableRadioButton.TabStop = true;
             this.NotAvailableRadioButton.Text = "Not Available";
@@ -590,10 +594,10 @@
             // 
             this.AvailableRadioButton.AutoSize = true;
             this.AvailableRadioButton.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AvailableRadioButton.Location = new System.Drawing.Point(310, 325);
-            this.AvailableRadioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvailableRadioButton.Location = new System.Drawing.Point(232, 264);
+            this.AvailableRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AvailableRadioButton.Name = "AvailableRadioButton";
-            this.AvailableRadioButton.Size = new System.Drawing.Size(98, 25);
+            this.AvailableRadioButton.Size = new System.Drawing.Size(77, 21);
             this.AvailableRadioButton.TabIndex = 69;
             this.AvailableRadioButton.TabStop = true;
             this.AvailableRadioButton.Text = "Available";
@@ -611,10 +615,10 @@
             "Fashion",
             "Smart Phones",
             "Furniture"});
-            this.CategoryCB.Location = new System.Drawing.Point(330, 48);
-            this.CategoryCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CategoryCB.Location = new System.Drawing.Point(248, 39);
+            this.CategoryCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CategoryCB.Name = "CategoryCB";
-            this.CategoryCB.Size = new System.Drawing.Size(186, 24);
+            this.CategoryCB.Size = new System.Drawing.Size(140, 21);
             this.CategoryCB.TabIndex = 68;
             // 
             // BrandTB
@@ -623,19 +627,20 @@
             this.BrandTB.BorderColor = System.Drawing.Color.Teal;
             this.BrandTB.Font = new System.Drawing.Font("Tahoma", 13F);
             this.BrandTB.ForeColor = System.Drawing.SystemColors.Info;
-            this.BrandTB.Location = new System.Drawing.Point(330, 199);
-            this.BrandTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BrandTB.Location = new System.Drawing.Point(248, 162);
+            this.BrandTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BrandTB.Name = "BrandTB";
-            this.BrandTB.Size = new System.Drawing.Size(244, 34);
+            this.BrandTB.Size = new System.Drawing.Size(184, 28);
             this.BrandTB.TabIndex = 67;
             // 
             // BrandLabel
             // 
             this.BrandLabel.AutoSize = true;
             this.BrandLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.BrandLabel.Location = new System.Drawing.Point(150, 204);
+            this.BrandLabel.Location = new System.Drawing.Point(112, 166);
+            this.BrandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BrandLabel.Name = "BrandLabel";
-            this.BrandLabel.Size = new System.Drawing.Size(86, 54);
+            this.BrandLabel.Size = new System.Drawing.Size(71, 44);
             this.BrandLabel.TabIndex = 66;
             this.BrandLabel.Text = "Brand:\r\n\r\n";
             // 
@@ -643,9 +648,10 @@
             // 
             this.QuantityLabel.AutoSize = true;
             this.QuantityLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.QuantityLabel.Location = new System.Drawing.Point(122, 395);
+            this.QuantityLabel.Location = new System.Drawing.Point(92, 321);
+            this.QuantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.QuantityLabel.Name = "QuantityLabel";
-            this.QuantityLabel.Size = new System.Drawing.Size(116, 54);
+            this.QuantityLabel.Size = new System.Drawing.Size(95, 44);
             this.QuantityLabel.TabIndex = 65;
             this.QuantityLabel.Text = "Quantity:\r\n\r\n";
             // 
@@ -653,9 +659,10 @@
             // 
             this.AvailabilityLabel.AutoSize = true;
             this.AvailabilityLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.AvailabilityLabel.Location = new System.Drawing.Point(114, 322);
+            this.AvailabilityLabel.Location = new System.Drawing.Point(86, 262);
+            this.AvailabilityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AvailabilityLabel.Name = "AvailabilityLabel";
-            this.AvailabilityLabel.Size = new System.Drawing.Size(145, 54);
+            this.AvailabilityLabel.Size = new System.Drawing.Size(114, 44);
             this.AvailabilityLabel.TabIndex = 62;
             this.AvailabilityLabel.Text = "Availability:\r\n\r\n";
             // 
@@ -664,20 +671,21 @@
             this.DescriptionTB.BackColor = System.Drawing.Color.DarkSlateGray;
             this.DescriptionTB.BorderColor = System.Drawing.Color.Teal;
             this.DescriptionTB.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.DescriptionTB.Location = new System.Drawing.Point(1026, 379);
-            this.DescriptionTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DescriptionTB.Location = new System.Drawing.Point(770, 308);
+            this.DescriptionTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DescriptionTB.Multiline = true;
             this.DescriptionTB.Name = "DescriptionTB";
-            this.DescriptionTB.Size = new System.Drawing.Size(315, 165);
+            this.DescriptionTB.Size = new System.Drawing.Size(237, 135);
             this.DescriptionTB.TabIndex = 61;
             // 
             // DescriptionLabel
             // 
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.DescriptionLabel.Location = new System.Drawing.Point(872, 383);
+            this.DescriptionLabel.Location = new System.Drawing.Point(654, 311);
+            this.DescriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Size = new System.Drawing.Size(148, 54);
+            this.DescriptionLabel.Size = new System.Drawing.Size(120, 44);
             this.DescriptionLabel.TabIndex = 60;
             this.DescriptionLabel.Text = "Description:\r\n\r\n";
             // 
@@ -687,19 +695,20 @@
             this.PriceTB.BorderColor = System.Drawing.Color.Teal;
             this.PriceTB.Font = new System.Drawing.Font("Tahoma", 13F);
             this.PriceTB.ForeColor = System.Drawing.SystemColors.Info;
-            this.PriceTB.Location = new System.Drawing.Point(330, 250);
-            this.PriceTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PriceTB.Location = new System.Drawing.Point(248, 203);
+            this.PriceTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PriceTB.Name = "PriceTB";
-            this.PriceTB.Size = new System.Drawing.Size(244, 34);
+            this.PriceTB.Size = new System.Drawing.Size(184, 28);
             this.PriceTB.TabIndex = 59;
             // 
             // PriceLabel
             // 
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.PriceLabel.Location = new System.Drawing.Point(152, 252);
+            this.PriceLabel.Location = new System.Drawing.Point(114, 205);
+            this.PriceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(76, 54);
+            this.PriceLabel.Size = new System.Drawing.Size(63, 44);
             this.PriceLabel.TabIndex = 58;
             this.PriceLabel.Text = "Price:\r\n\r\n";
             // 
@@ -707,9 +716,10 @@
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(654, 43);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(490, 35);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(201, 41);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(160, 33);
             this.bunifuCustomLabel4.TabIndex = 57;
             this.bunifuCustomLabel4.Text = "Add Product";
             // 
@@ -717,9 +727,10 @@
             // 
             this.ProductNameLabel.AutoSize = true;
             this.ProductNameLabel.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.ProductNameLabel.Location = new System.Drawing.Point(112, 96);
+            this.ProductNameLabel.Location = new System.Drawing.Point(84, 78);
+            this.ProductNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProductNameLabel.Name = "ProductNameLabel";
-            this.ProductNameLabel.Size = new System.Drawing.Size(177, 54);
+            this.ProductNameLabel.Size = new System.Drawing.Size(146, 44);
             this.ProductNameLabel.TabIndex = 56;
             this.ProductNameLabel.Text = "Product Name:\r\n\r\n";
             // 
@@ -729,10 +740,10 @@
             this.ProductNameTB.BorderColor = System.Drawing.Color.Teal;
             this.ProductNameTB.Font = new System.Drawing.Font("Tahoma", 13F);
             this.ProductNameTB.ForeColor = System.Drawing.SystemColors.Info;
-            this.ProductNameTB.Location = new System.Drawing.Point(330, 96);
-            this.ProductNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProductNameTB.Location = new System.Drawing.Point(248, 78);
+            this.ProductNameTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductNameTB.Name = "ProductNameTB";
-            this.ProductNameTB.Size = new System.Drawing.Size(342, 34);
+            this.ProductNameTB.Size = new System.Drawing.Size(258, 28);
             this.ProductNameTB.TabIndex = 55;
             // 
             // UpdateTab
@@ -757,10 +768,10 @@
             this.UpdateTab.Controls.Add(this.bunifuCustomLabel5);
             this.UpdateTab.Controls.Add(this.NameUP);
             this.UpdateTab.Controls.Add(this.dataGridView3);
-            this.UpdateTab.Location = new System.Drawing.Point(4, 25);
+            this.UpdateTab.Location = new System.Drawing.Point(4, 22);
             this.UpdateTab.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateTab.Name = "UpdateTab";
-            this.UpdateTab.Size = new System.Drawing.Size(1376, 564);
+            this.UpdateTab.Size = new System.Drawing.Size(1030, 476);
             this.UpdateTab.TabIndex = 2;
             this.UpdateTab.Text = "Update";
             // 
@@ -782,10 +793,10 @@
             this.Load_Cat.IdleFillColor = System.Drawing.Color.White;
             this.Load_Cat.IdleForecolor = System.Drawing.Color.Teal;
             this.Load_Cat.IdleLineColor = System.Drawing.Color.Teal;
-            this.Load_Cat.Location = new System.Drawing.Point(359, 71);
-            this.Load_Cat.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Load_Cat.Location = new System.Drawing.Point(269, 58);
+            this.Load_Cat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Load_Cat.Name = "Load_Cat";
-            this.Load_Cat.Size = new System.Drawing.Size(142, 37);
+            this.Load_Cat.Size = new System.Drawing.Size(106, 30);
             this.Load_Cat.TabIndex = 88;
             this.Load_Cat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Load_Cat.Click += new System.EventHandler(this.Load_Cat_Click);
@@ -800,9 +811,10 @@
             "Appliances",
             "Fashion",
             "Furniture"});
-            this.choose_CB.Location = new System.Drawing.Point(241, 39);
+            this.choose_CB.Location = new System.Drawing.Point(181, 32);
+            this.choose_CB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.choose_CB.Name = "choose_CB";
-            this.choose_CB.Size = new System.Drawing.Size(259, 24);
+            this.choose_CB.Size = new System.Drawing.Size(195, 21);
             this.choose_CB.TabIndex = 87;
             this.choose_CB.SelectedIndexChanged += new System.EventHandler(this.choose_CB_SelectedIndexChanged);
             // 
@@ -810,9 +822,10 @@
             // 
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(6, 39);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(4, 32);
+            this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(208, 54);
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(169, 44);
             this.bunifuCustomLabel13.TabIndex = 86;
             this.bunifuCustomLabel13.Text = "Choose Category:\r\n\r\n";
             // 
@@ -820,8 +833,8 @@
             // 
             this.back_up.ActiveBorderThickness = 2;
             this.back_up.ActiveCornerRadius = 25;
-            this.back_up.ActiveFillColor = System.Drawing.Color.PaleTurquoise;
-            this.back_up.ActiveForecolor = System.Drawing.Color.Teal;
+            this.back_up.ActiveFillColor = System.Drawing.Color.Teal;
+            this.back_up.ActiveForecolor = System.Drawing.Color.White;
             this.back_up.ActiveLineColor = System.Drawing.Color.Teal;
             this.back_up.BackColor = System.Drawing.Color.DarkSlateGray;
             this.back_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("back_up.BackgroundImage")));
@@ -834,10 +847,10 @@
             this.back_up.IdleFillColor = System.Drawing.Color.White;
             this.back_up.IdleForecolor = System.Drawing.Color.Teal;
             this.back_up.IdleLineColor = System.Drawing.Color.Teal;
-            this.back_up.Location = new System.Drawing.Point(377, 528);
-            this.back_up.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.back_up.Location = new System.Drawing.Point(283, 429);
+            this.back_up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back_up.Name = "back_up";
-            this.back_up.Size = new System.Drawing.Size(185, 44);
+            this.back_up.Size = new System.Drawing.Size(139, 36);
             this.back_up.TabIndex = 85;
             this.back_up.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.back_up.Click += new System.EventHandler(this.back_up_Click);
@@ -860,10 +873,10 @@
             this.FinalUpdate.IdleFillColor = System.Drawing.Color.White;
             this.FinalUpdate.IdleForecolor = System.Drawing.Color.Teal;
             this.FinalUpdate.IdleLineColor = System.Drawing.Color.Teal;
-            this.FinalUpdate.Location = new System.Drawing.Point(381, 487);
-            this.FinalUpdate.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.FinalUpdate.Location = new System.Drawing.Point(286, 396);
+            this.FinalUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FinalUpdate.Name = "FinalUpdate";
-            this.FinalUpdate.Size = new System.Drawing.Size(182, 41);
+            this.FinalUpdate.Size = new System.Drawing.Size(136, 33);
             this.FinalUpdate.TabIndex = 84;
             this.FinalUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.FinalUpdate.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
@@ -873,11 +886,11 @@
             this.DescriptionUP.BackColor = System.Drawing.Color.DarkSlateGray;
             this.DescriptionUP.BorderColor = System.Drawing.Color.Teal;
             this.DescriptionUP.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.DescriptionUP.Location = new System.Drawing.Point(10, 430);
-            this.DescriptionUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DescriptionUP.Location = new System.Drawing.Point(8, 349);
+            this.DescriptionUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DescriptionUP.Multiline = true;
             this.DescriptionUP.Name = "DescriptionUP";
-            this.DescriptionUP.Size = new System.Drawing.Size(357, 171);
+            this.DescriptionUP.Size = new System.Drawing.Size(269, 140);
             this.DescriptionUP.TabIndex = 83;
             this.DescriptionUP.TextChanged += new System.EventHandler(this.bunifuCustomTextbox4_TextChanged);
             // 
@@ -885,24 +898,25 @@
             // 
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(8, 390);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(6, 317);
+            this.bunifuCustomLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(148, 54);
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(120, 44);
             this.bunifuCustomLabel12.TabIndex = 82;
             this.bunifuCustomLabel12.Text = "Description:\r\n\r\n";
             // 
             // QuantityUP
             // 
             this.QuantityUP.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.QuantityUP.Location = new System.Drawing.Point(224, 290);
-            this.QuantityUP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.QuantityUP.Location = new System.Drawing.Point(168, 236);
+            this.QuantityUP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.QuantityUP.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.QuantityUP.Name = "QuantityUP";
-            this.QuantityUP.Size = new System.Drawing.Size(160, 22);
+            this.QuantityUP.Size = new System.Drawing.Size(120, 20);
             this.QuantityUP.TabIndex = 81;
             this.QuantityUP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.QuantityUP.ThousandsSeparator = true;
@@ -916,9 +930,10 @@
             // 
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(17, 283);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(13, 230);
+            this.bunifuCustomLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(116, 54);
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(95, 44);
             this.bunifuCustomLabel11.TabIndex = 80;
             this.bunifuCustomLabel11.Text = "Quantity:\r\n\r\n";
             // 
@@ -926,10 +941,10 @@
             // 
             this.NotAvailableUP.AutoSize = true;
             this.NotAvailableUP.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.NotAvailableUP.Location = new System.Drawing.Point(339, 340);
-            this.NotAvailableUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NotAvailableUP.Location = new System.Drawing.Point(254, 276);
+            this.NotAvailableUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NotAvailableUP.Name = "NotAvailableUP";
-            this.NotAvailableUP.Size = new System.Drawing.Size(129, 25);
+            this.NotAvailableUP.Size = new System.Drawing.Size(103, 21);
             this.NotAvailableUP.TabIndex = 79;
             this.NotAvailableUP.TabStop = true;
             this.NotAvailableUP.Text = "Not Available";
@@ -939,10 +954,10 @@
             // 
             this.AvailableUP.AutoSize = true;
             this.AvailableUP.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.AvailableUP.Location = new System.Drawing.Point(196, 340);
-            this.AvailableUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvailableUP.Location = new System.Drawing.Point(147, 276);
+            this.AvailableUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AvailableUP.Name = "AvailableUP";
-            this.AvailableUP.Size = new System.Drawing.Size(98, 25);
+            this.AvailableUP.Size = new System.Drawing.Size(77, 21);
             this.AvailableUP.TabIndex = 78;
             this.AvailableUP.TabStop = true;
             this.AvailableUP.Text = "Available";
@@ -952,9 +967,10 @@
             // 
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(8, 337);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(6, 274);
+            this.bunifuCustomLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(145, 54);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(114, 44);
             this.bunifuCustomLabel10.TabIndex = 77;
             this.bunifuCustomLabel10.Text = "Availability:\r\n\r\n";
             // 
@@ -964,19 +980,20 @@
             this.BrandUP.BorderColor = System.Drawing.Color.Teal;
             this.BrandUP.Font = new System.Drawing.Font("Tahoma", 13F);
             this.BrandUP.ForeColor = System.Drawing.SystemColors.Info;
-            this.BrandUP.Location = new System.Drawing.Point(224, 179);
-            this.BrandUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BrandUP.Location = new System.Drawing.Point(168, 145);
+            this.BrandUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BrandUP.Name = "BrandUP";
-            this.BrandUP.Size = new System.Drawing.Size(244, 34);
+            this.BrandUP.Size = new System.Drawing.Size(184, 28);
             this.BrandUP.TabIndex = 71;
             // 
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(35, 176);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(26, 143);
+            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(86, 54);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(71, 44);
             this.bunifuCustomLabel6.TabIndex = 70;
             this.bunifuCustomLabel6.Text = "Brand:\r\n\r\n";
             // 
@@ -986,19 +1003,20 @@
             this.PriceUP.BorderColor = System.Drawing.Color.Teal;
             this.PriceUP.Font = new System.Drawing.Font("Tahoma", 13F);
             this.PriceUP.ForeColor = System.Drawing.SystemColors.Info;
-            this.PriceUP.Location = new System.Drawing.Point(224, 229);
-            this.PriceUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PriceUP.Location = new System.Drawing.Point(168, 186);
+            this.PriceUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PriceUP.Name = "PriceUP";
-            this.PriceUP.Size = new System.Drawing.Size(244, 34);
+            this.PriceUP.Size = new System.Drawing.Size(184, 28);
             this.PriceUP.TabIndex = 69;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(45, 231);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(34, 188);
+            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(76, 54);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(63, 44);
             this.bunifuCustomLabel7.TabIndex = 68;
             this.bunifuCustomLabel7.Text = "Price:\r\n\r\n";
             // 
@@ -1006,9 +1024,10 @@
             // 
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(6, 128);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(4, 104);
+            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(177, 54);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(146, 44);
             this.bunifuCustomLabel5.TabIndex = 58;
             this.bunifuCustomLabel5.Text = "Product Name:\r\n\r\n";
             // 
@@ -1018,20 +1037,20 @@
             this.NameUP.BorderColor = System.Drawing.Color.Teal;
             this.NameUP.Font = new System.Drawing.Font("Tahoma", 13F);
             this.NameUP.ForeColor = System.Drawing.SystemColors.Info;
-            this.NameUP.Location = new System.Drawing.Point(225, 128);
-            this.NameUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.NameUP.Location = new System.Drawing.Point(169, 104);
+            this.NameUP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NameUP.Name = "NameUP";
-            this.NameUP.Size = new System.Drawing.Size(342, 34);
+            this.NameUP.Size = new System.Drawing.Size(258, 28);
             this.NameUP.TabIndex = 57;
             // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(574, 2);
+            this.dataGridView3.Location = new System.Drawing.Point(430, 2);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(778, 583);
+            this.dataGridView3.Size = new System.Drawing.Size(584, 474);
             this.dataGridView3.TabIndex = 0;
             this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
             // 
@@ -1044,10 +1063,10 @@
             this.RemoveTab.Controls.Add(this.back_rem);
             this.RemoveTab.Controls.Add(this.final_remove);
             this.RemoveTab.Controls.Add(this.dataGridView2);
-            this.RemoveTab.Location = new System.Drawing.Point(4, 25);
+            this.RemoveTab.Location = new System.Drawing.Point(4, 22);
             this.RemoveTab.Margin = new System.Windows.Forms.Padding(2);
             this.RemoveTab.Name = "RemoveTab";
-            this.RemoveTab.Size = new System.Drawing.Size(1376, 589);
+            this.RemoveTab.Size = new System.Drawing.Size(1030, 476);
             this.RemoveTab.TabIndex = 3;
             this.RemoveTab.Text = "Remove";
             // 
@@ -1069,10 +1088,10 @@
             this.load_removebtn.IdleFillColor = System.Drawing.Color.White;
             this.load_removebtn.IdleForecolor = System.Drawing.Color.Teal;
             this.load_removebtn.IdleLineColor = System.Drawing.Color.Teal;
-            this.load_removebtn.Location = new System.Drawing.Point(1180, 135);
-            this.load_removebtn.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.load_removebtn.Location = new System.Drawing.Point(885, 110);
+            this.load_removebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.load_removebtn.Name = "load_removebtn";
-            this.load_removebtn.Size = new System.Drawing.Size(142, 37);
+            this.load_removebtn.Size = new System.Drawing.Size(106, 30);
             this.load_removebtn.TabIndex = 94;
             this.load_removebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.load_removebtn.Click += new System.EventHandler(this.load_removebtn_Click);
@@ -1087,18 +1106,20 @@
             "Appliances",
             "Fashion",
             "Furniture"});
-            this.choose_cat_removecb.Location = new System.Drawing.Point(1069, 86);
+            this.choose_cat_removecb.Location = new System.Drawing.Point(802, 70);
+            this.choose_cat_removecb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.choose_cat_removecb.Name = "choose_cat_removecb";
-            this.choose_cat_removecb.Size = new System.Drawing.Size(259, 24);
+            this.choose_cat_removecb.Size = new System.Drawing.Size(195, 21);
             this.choose_cat_removecb.TabIndex = 93;
             // 
             // bunifuCustomLabel15
             // 
             this.bunifuCustomLabel15.AutoSize = true;
             this.bunifuCustomLabel15.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(1064, 29);
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(798, 24);
+            this.bunifuCustomLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(208, 54);
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(169, 44);
             this.bunifuCustomLabel15.TabIndex = 92;
             this.bunifuCustomLabel15.Text = "Choose Category:\r\n\r\n";
             // 
@@ -1120,10 +1141,10 @@
             this.back_rem.IdleFillColor = System.Drawing.Color.White;
             this.back_rem.IdleForecolor = System.Drawing.Color.Teal;
             this.back_rem.IdleLineColor = System.Drawing.Color.Teal;
-            this.back_rem.Location = new System.Drawing.Point(1103, 527);
-            this.back_rem.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.back_rem.Location = new System.Drawing.Point(827, 428);
+            this.back_rem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back_rem.Name = "back_rem";
-            this.back_rem.Size = new System.Drawing.Size(225, 57);
+            this.back_rem.Size = new System.Drawing.Size(169, 46);
             this.back_rem.TabIndex = 74;
             this.back_rem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.back_rem.Click += new System.EventHandler(this.back_rem_Click);
@@ -1146,10 +1167,10 @@
             this.final_remove.IdleFillColor = System.Drawing.Color.White;
             this.final_remove.IdleForecolor = System.Drawing.Color.Teal;
             this.final_remove.IdleLineColor = System.Drawing.Color.Teal;
-            this.final_remove.Location = new System.Drawing.Point(1103, 481);
-            this.final_remove.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.final_remove.Location = new System.Drawing.Point(827, 391);
+            this.final_remove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.final_remove.Name = "final_remove";
-            this.final_remove.Size = new System.Drawing.Size(219, 53);
+            this.final_remove.Size = new System.Drawing.Size(164, 43);
             this.final_remove.TabIndex = 3;
             this.final_remove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.final_remove.Click += new System.EventHandler(this.final_remove_Click);
@@ -1157,25 +1178,27 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(-4, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(-3, 0);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1026, 583);
+            this.dataGridView2.Size = new System.Drawing.Size(770, 474);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // OwnerAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1431, 655);
+            this.ClientSize = new System.Drawing.Size(1028, 532);
             this.Controls.Add(this.MyAccountTabControl);
             this.Controls.Add(this.MyAcc_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OwnerAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Account";

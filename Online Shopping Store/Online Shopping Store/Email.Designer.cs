@@ -180,7 +180,7 @@
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.isPassword = true;
             this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.SeaGreen;
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SlateGray;
@@ -209,7 +209,7 @@
             this.Promo.Image = ((System.Drawing.Image)(resources.GetObject("Promo.Image")));
             this.Promo.ImageActive = ((System.Drawing.Image)(resources.GetObject("Promo.ImageActive")));
             this.Promo.InitialImage = null;
-            this.Promo.Location = new System.Drawing.Point(-7, -5);
+            this.Promo.Location = new System.Drawing.Point(-7, 0);
             this.Promo.Name = "Promo";
             this.Promo.Size = new System.Drawing.Size(493, 408);
             this.Promo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,6 +254,8 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Email";
             this.Text = "Email";
             this.Load += new System.EventHandler(this.Email_Load);

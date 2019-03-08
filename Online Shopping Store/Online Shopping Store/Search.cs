@@ -23,6 +23,7 @@ namespace Online_Shopping_Store
 
         private void Load_Cat_Click(object sender, EventArgs e)
         {
+            search_flowLayoutPanel.Controls.Clear();
             string name;
             string price;
             string id;
@@ -49,13 +50,15 @@ namespace Online_Shopping_Store
                     if (textBox1.Text == name)
                     {
                         found = true;
-                        flowLayoutPanel1.Controls.Add(details);
+                     
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
                    
                 }
                 if (!found)
                 {
-                    flowLayoutPanel1.Controls.Clear();
+                    MessageBox.Show("Not Found");
+                    search_flowLayoutPanel.Controls.Clear();
                 }
 
                 //dataGridView3.DataSource = Items_Details;
@@ -81,12 +84,13 @@ namespace Online_Shopping_Store
                     if (textBox1.Text == name)
                     {
                         found = true;
-                        flowLayoutPanel1.Controls.Add(details);
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
                 }
                 if (!found)
                 {
-                    flowLayoutPanel1.Controls.Clear();
+                    search_flowLayoutPanel.Controls.Clear();
+                    MessageBox.Show("Not Found");
                 }
                 //  dataGridView3.DataSource = Items_Details;
                 FashionFile.Close();
@@ -111,11 +115,12 @@ namespace Online_Shopping_Store
                     if (textBox1.Text == name)
                     {
                         found = true;
-                        flowLayoutPanel1.Controls.Add(details);
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
                     if (!found)
                     {
-                        flowLayoutPanel1.Controls.Clear();
+                        search_flowLayoutPanel.Controls.Clear();
+                        MessageBox.Show("Not Found");
                     }
                 }
                 //  dataGridView3.DataSource = Items_Details;
@@ -142,13 +147,14 @@ namespace Online_Shopping_Store
                     {
                         found = true;
                    
-                        flowLayoutPanel1.Controls.Add(details);
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
 
                 }
                 if (!found)
                 {
-                    flowLayoutPanel1.Controls.Clear();
+                    MessageBox.Show("Not Found");
+                    search_flowLayoutPanel.Controls.Clear();
                 }
                 // dataGridView3.DataSource = Items_Details;
                 beautyproductsFile.Close();
@@ -173,12 +179,13 @@ namespace Online_Shopping_Store
                     if (textBox1.Text == name)
                     {
                         found = true;
-                        flowLayoutPanel1.Controls.Add(details);
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
                 }
                 if (!found)
                 {
-                    flowLayoutPanel1.Controls.Clear();
+                    MessageBox.Show("Not Found");
+                    search_flowLayoutPanel.Controls.Clear();
                 }
                 // dataGridView3.DataSource = Items_Details;
                 appliancesFile.Close();
@@ -203,12 +210,13 @@ namespace Online_Shopping_Store
                     if (textBox1.Text == name)
                     {
                         found = true;
-                        flowLayoutPanel1.Controls.Add(details);
+                        search_flowLayoutPanel.Controls.Add(details);
                     }
                 }
                 if (!found)
                 {
-                    flowLayoutPanel1.Controls.Clear();
+                    MessageBox.Show("Not Found");
+                    search_flowLayoutPanel.Controls.Clear();
                 }
                 //  dataGridView3.DataSource = Items_Details;
                 FurnitureFile.Close();

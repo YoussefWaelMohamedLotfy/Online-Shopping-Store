@@ -19,7 +19,6 @@ namespace Online_Shopping_Store
         public Cart_items newItem;
         public LinkedList<Cart_items> cartLinkedList = new LinkedList<Cart_items>();
         public LinkedListNode<Cart_items> itemNode;
-        //public static home_page home = new home_page();
         products_show ps = new products_show();
 
         public details(string name, string id, string price, Image pic,string description, string brand, products_show form)
@@ -60,9 +59,9 @@ namespace Online_Shopping_Store
                 
 
             newItem = new Cart_items(CartList[0], CartList[1], CartList[2], CartList[3]);
-            //itemNode = new LinkedListNode<Cart_items>(newItem);
             cartLinkedList.AddLast(newItem);
             ps.cart_flowLayoutPanel.Controls.Add(newItem);
+
             //my code to save in file then recipet
             string name=CartList[1];
             string id=CartList[0];
